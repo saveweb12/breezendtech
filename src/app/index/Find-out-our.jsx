@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Finduoutour = () => {
+const Findoutour = () => {
   return (
     <>
           <section className="blog-section bg_light_1">
@@ -163,4 +163,4 @@ const Finduoutour = () => {
   )
 }
 
-export default Finduoutour
+export default Findoutour
