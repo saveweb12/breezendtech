@@ -1,32 +1,26 @@
-import Header from "./header";
 import Footer from "./footer";
-import OurClientsGetResults from "../app/index/Our-Clients-Get-Results";
-import CustomerSatisfaction from "../app/index/Customer-Satisfaction";
-import MarketingAgency from "../app/index/Marketing-Agency";
-import Findoutour from "../app/index/Find-out-our";
-import Seoservices from "../app/index/Seo-services";
-import Growyourbusiness from "../app/index/Grow-your-business";
-import Enteryourweblink from "../app/index/Enter-your-web-link";
-import "../../assets/css/style.css";
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/font-awesome.min.css";
-import "../../assets/css/jquery.fancybox.min.css";
-import "../../assets/css/owl.css";
-import "../../assets/css/swiper.min.css";
-import "../../assets/css/woocommerce-layout.css";
-import "../../assets/css/woocommerce.css";
-import "../../assets/css/scss/elements/theme-css.css";
+import OurClientsGetResults from "../components/index/Our-Clients-Get-Results";
+import CustomerSatisfaction from "../components/index/Customer-Satisfaction";
+import MarketingAgency from "../components/index/Marketing-Agency";
+import Findoutour from "../components/index/Find-out-our";
+import Seoservices from "../components/index/Seo-services";
+import Growyourbusiness from "../components/index/Grow-your-business";
+import Enteryourweblink from "../components/index/Enter-your-web-link";
+import "../assets/css/style.css";
+import "../assets/css/bootstrap.min.css";
+import "../assets/css/font-awesome.min.css";
+import "../assets/css/jquery.fancybox.min.css";
+import "../assets/css/owl.css";
+import "../assets/css/swiper.min.css";
+import "../assets/css/woocommerce-layout.css";
+import "../assets/css/woocommerce.css";
+import "../assets/css/scss/elements/theme-css.css";
 //import "../assets/css/scss/elements/theme-cssc8d8.css";
-import "../../assets/css/scss/elements/theme-css.css";
+import "../assets/css/scss/elements/theme-css.css";
 const index = () => {
   return (
     <>
-      <Header />
-      {/*===============PAGE CONTENT ==============*/}
-      {/*===============PAGE CONTENT ==============*/}
       <div id="content" className="site-content ">
-        {/*-slider--*/}
         <section className="slider style_one pag_position_two">
           <div
             className="banner_carousel owl-carousel owl_nav_none owl_dots_block theme_carousel owl-theme"
@@ -164,7 +158,7 @@ const index = () => {
           </div>
         </section>
       </div>
-      {/*-slider-end--*/}
+
       <Enteryourweblink />
       <section
         className="process-section fixed-background bg_op_1"
@@ -200,7 +194,7 @@ const index = () => {
           <div className="row"></div>
         </div>
       </section>
-      {/*-client--*/}
+
       <section className="client-brand-section bg_light_1">
         <div className="container">
           <div className="row">
@@ -356,7 +350,6 @@ const index = () => {
         <div className="pd_bottom_30" />
         {/*===============spacing==============*/}
       </section>
-      {/*-client-end--*/}
 
       <OurClientsGetResults />
       <CustomerSatisfaction />

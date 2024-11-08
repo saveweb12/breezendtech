@@ -1,5 +1,17 @@
 import localFont from "next/font/local";
-
+import Header from "./header";
+import Footer from "./footer";
+import "../assets/css/style.css";
+import "../assets/css/bootstrap.min.css";
+import "../assets/css/font-awesome.min.css";
+import "../assets/css/jquery.fancybox.min.css";
+import "../assets/css/owl.css";
+import "../assets/css/swiper.min.css";
+import "../assets/css/woocommerce-layout.css";
+import "../assets/css/woocommerce.css";
+import "../assets/css/scss/elements/theme-css.css";
+//import "../assets/css/scss/elements/theme-cssc8d8.css";
+import "../assets/css/scss/elements/theme-css.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,7 +32,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -77,7 +77,7 @@ const header = () => {
   />
   <link
     rel="stylesheet"
-    href="../assets/css/style.css"
+    href="/assets/css/style.css"
     type="text/css"
     media="all"
   />

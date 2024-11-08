@@ -3,16 +3,13 @@ import React from 'react'
 const socialmediaadvertising = () => {
   return (
     <>
-  {/*?php include 'header.php' ?*/}
-  {/*===============PAGE CONTENT ==============*/}
-  {/*===============spacing==============*/}
   <div className="pd_top_70" />
   {/*===============spacing==============*/}
   <div className="page_header_default style_one ">
     <div className="parallax_cover">
       <div className="simpleParallax">
         <img
-          src="assets/images/bg-inner-banner.jpg"
+          src="/images/bg-inner-banner.jpg"
           alt="bg_image"
           className="cover-parallax"
         />
@@ -174,7 +171,7 @@ const socialmediaadvertising = () => {
               <div className="image_boxes style_four">
                 <div className="image one pd_bottom_25">
                   <img
-                    src="assets/images/service/social-media-advertising-img.jpg"
+                    src="/images/service/social-media-advertising-img.jpg"
                     className="img-fluid"
                     alt="about"
                   />
@@ -261,7 +258,7 @@ const socialmediaadvertising = () => {
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div className="image one">
             <img
-              src="assets/images/service/advertising-social-media.jpg"
+              src="/images/service/advertising-social-media.jpg"
               className="background_image"
               alt="image"
             />
@@ -287,7 +284,7 @@ const socialmediaadvertising = () => {
             <div className="image_boxes style_four">
               <div className="image one">
                 <img
-                  src="assets/images/service/paid-social-media.jpg"
+                  src="/images/service/paid-social-media.jpg"
                   className="img-fluid"
                   alt="about"
                 />
@@ -390,7 +387,7 @@ const socialmediaadvertising = () => {
         <div className="col-lg-5">
           <div className="image one">
             <img
-              src="assets/images/service/marketing-services.png"
+              src="/images/service/marketing-services.png"
               className="background_image"
               alt="image"
             />
@@ -406,7 +403,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/increase-follower-growth-rate.png"
+                  src="/images/icons/increase-follower-growth-rate.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -430,7 +427,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/boost-organic-posts.png"
+                  src="/images/icons/boost-organic-posts.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -454,7 +451,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/optimization.png"
+                  src="/images/icons/optimization.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -480,7 +477,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/drive-more-clicks-and-views.png"
+                  src="/images/icons/drive-more-clicks-and-views.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -505,7 +502,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/attract-qualified-leads.png"
+                  src="/images/icons/attract-qualified-leads.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -529,7 +526,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/gain-actionable-insights.png"
+                  src="/images/icons/gain-actionable-insights.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -556,7 +553,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/value-proposition.png"
+                  src="/images/icons/value-proposition.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -580,7 +577,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/reputation-management.png"
+                  src="/images/icons/reputation-management.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -604,7 +601,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/allocate-spending-wisely.png"
+                  src="/images/icons/allocate-spending-wisely.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -666,7 +663,7 @@ const socialmediaadvertising = () => {
           <div className="case-study">
             <div className="image_boxes">
               <img
-                src="assets/images/service/rv-repair-shop.jpg"
+                src="/images/service/rv-repair-shop.jpg"
                 className="background_image"
                 alt="image"
               />
@@ -712,7 +709,7 @@ const socialmediaadvertising = () => {
           <div className="case-study">
             <div className="image_boxes">
               <img
-                src="assets/images/service/ecommerce-business.jpg"
+                src="/images/service/ecommerce-business.jpg"
                 className="background_image"
                 alt="image"
               />
@@ -755,7 +752,7 @@ const socialmediaadvertising = () => {
           <div className="case-study">
             <div className="image_boxes">
               <img
-                src="assets/images/service/law-firm.jpg"
+                src="/images/service/law-firm.jpg"
                 className="background_image"
                 alt="image"
               />
@@ -870,7 +867,7 @@ const socialmediaadvertising = () => {
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div className="image one">
             <img
-              src="assets/images/service/social-media-management.jpg"
+              src="/images/service/social-media-management.jpg"
               className="background_image"
               alt="image"
             />
@@ -922,7 +919,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/facebook-marketing.png"
+                    src="/images/icons/facebook-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -949,7 +946,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/twitter-marketing.png"
+                    src="/images/icons/twitter-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -976,7 +973,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/instagram-marketing.png"
+                    src="/images/icons/instagram-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1003,7 +1000,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/linkedIn-marketing.png"
+                    src="/images/icons/linkedIn-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1030,7 +1027,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/you-tube-marketing.png"
+                    src="/images/icons/you-tube-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1057,7 +1054,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/pinterest-marketing.png"
+                    src="/images/icons/pinterest-marketing.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1084,7 +1081,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/reddit-advertising.png"
+                    src="/images/icons/reddit-advertising.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1143,7 +1140,7 @@ const socialmediaadvertising = () => {
             <div className="image_boxes style_four">
               <div className="one">
                 <img
-                  src="assets/images/service/best-uses-social-media-advertising.jpg"
+                  src="/images/service/best-uses-social-media-advertising.jpg"
                   className="img-fluid"
                   alt="about"
                 />
@@ -1282,7 +1279,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/search-ads.png"
+                  src="/images/icons/search-ads.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1306,7 +1303,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/social-media-management.png"
+                  src="/images/icons/social-media-management.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1330,7 +1327,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/social-media-brand-management.png"
+                  src="/images/icons/social-media-brand-management.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1356,7 +1353,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/follower-growth.png"
+                  src="/images/icons/follower-growth.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1380,7 +1377,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/social-media-seo.png"
+                  src="/images/icons/social-media-seo.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1404,7 +1401,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/website-design-and-development.png"
+                  src="/images/icons/website-design-and-development.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1430,7 +1427,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/video-player.png"
+                  src="/images/icons/video-player.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1454,7 +1451,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/content-writing.png"
+                  src="/images/icons/content-writing.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1478,7 +1475,7 @@ const socialmediaadvertising = () => {
             <div className="process_box_outer">
               <div className="icon">
                 <img
-                  src="assets/images/icons/reputation-management.png"
+                  src="/images/icons/reputation-management.png"
                   className="img-fluid svg_image"
                   alt="icon png"
                 />
@@ -1540,7 +1537,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/advertising-goals.png"
+                    src="/images/icons/advertising-goals.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1565,7 +1562,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/campaign-tracking-reporting.png"
+                    src="/images/icons/campaign-tracking-reporting.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1590,7 +1587,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/analyze.png"
+                    src="/images/icons/analyze.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1617,7 +1614,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/expert-consultations.png"
+                    src="/images/icons/expert-consultations.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1642,7 +1639,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/report.png"
+                    src="/images/icons/report.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1667,7 +1664,7 @@ const socialmediaadvertising = () => {
               <div className="process_box_outer">
                 <div className="icon">
                   <img
-                    src="assets/images/icons/experience-matters.png"
+                    src="/images/icons/experience-matters.png"
                     className="img-fluid svg_image"
                     alt="icon png"
                   />
@@ -1895,7 +1892,7 @@ const socialmediaadvertising = () => {
           <div className="image_boxes style_four">
             <div className="one">
               <img
-                src="assets/images/about/digital-marketing-proposal.jpg"
+                src="/images/about/digital-marketing-proposal.jpg"
                 className="img-fluid"
                 alt="about"
               />
