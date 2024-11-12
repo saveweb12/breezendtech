@@ -9,12 +9,12 @@ import "../../assets/css/woocommerce.css";
 import "../../assets/css/scss/elements/theme-css.css";
 //import "../assets/css/scss/elements/theme-cssc8d8.css";
 import "../../assets/css/scss/elements/theme-css.css";
-import Realreview from "./real-review";
-import Establishedfact from "./established-fact";
-import RelationshipsandResults from "./Relationships-and-Results";
-import OurSatisfiedCustomers from "./Our-Satisfied-Customers";
-import LookingforQuality from "./Looking-for-Quality";
-import DreamBigandMake from "./Dream-Big-and-Make";
+import Realreview from "./realreview";
+import Establishedfact from "./establishedfact";
+import RelationshipsandResults from "./RelationshipsandResults";
+import OurSatisfiedCustomers from "./OurSatisfiedCustomers";
+import LookingforQuality from "./LookingforQuality";
+import DreamBigandMake from "./DreamBigandMake";
 const realreviewsfromrealpeople = () => {
   return (
     <>

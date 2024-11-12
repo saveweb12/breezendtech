@@ -1,5 +1,5 @@
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
-import InterestedGetinTouch from "./Interested-Get-in-Touch";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import InterestedGetinTouch from "./InterestedGetinTouch";
 const page = () => {
   return (
     <>

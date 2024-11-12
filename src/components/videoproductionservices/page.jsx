@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import YourNextVideoProject from "./YourNextVideoProject";
 import Kindofvideo from "./kindofvideo";
 import VideoProductionServices from "./VideoProductionServices";

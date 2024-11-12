@@ -1,12 +1,12 @@
-import DigitalMarketingServices from "./Digital-Marketing-Services";
-import Letstalk from "./let's-talk";
-import MarketingBrandingStrategy from "./Marketing-Branding-Strategy";
-import Longestablishedfact from "./long-established-fact";
+import DigitalMarketingServices from "./DigitalMarketingServices";
+import Letstalk from "./let'stalk";
+import MarketingBrandingStrategy from "./MarketingBrandingStrategy";
+import Longestablishedfact from "./longestablishedfact";
 import MarketingWhats from "./Marketing-What’s";
-import BreezendTechDigitalMarketingServices from "./BreezendTech-Digital-Marketing-Services";
-import WhyYourBusinessShould from "./Why-Your-Business-Should";
-import WhyChooseBreezendTech from "./Why-Choose-BreezendTech";
-import GetMyFREEDigital from "./Get-My-FREE-Digital";
+import BreezendTechDigitalMarketingServices from "./BreezendTechDigitalMarketingServices";
+import WhyYourBusinessShould from "./WhyYourBusinessShould";
+import WhyChooseBreezendTech from "./WhyChooseBreezendTech";
+import GetMyFREEDigital from "./GetMyFreeDigital";
 const page = () => {
   return (
     <>

@@ -7,7 +7,7 @@ import DedicatedTeam from "./DedicatedTeam";
 import OurCandidateExperience from "./OurCandidateExperience";
 import BreezeEndTechnologySignificant from "./BreezeEndTechnologySignificant";
 import JoinOurGlobalTeam from "./JoinOurGlobalTeam";
-import MailingList from "../about/Mailing-List";
+import MailingList from "../about/MailingList";
 const page = () => {
   return (
     <>

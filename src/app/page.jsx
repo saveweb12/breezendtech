@@ -1,11 +1,12 @@
+
 import Footer from "./footer";
-import OurClientsGetResults from "../components/index/Our-Clients-Get-Results";
-import CustomerSatisfaction from "../components/index/Customer-Satisfaction";
-import MarketingAgency from "../components/index/Marketing-Agency";
-import Findoutour from "../components/index/Find-out-our";
+import OurClientsGetResults from "../components/index/OurClientsGetResults";
+import CustomerSatisfaction from "../components/index/CustomerSatisfaction";
+import MarketingAgency from "../components/index/MarketingAgency";
+import Findoutour from "../components/index/FindOutOur";
 import Seoservices from "../components/index/Seo-services";
-import Growyourbusiness from "../components/index/Grow-your-business";
-import Enteryourweblink from "../components/index/Enter-your-web-link";
+import Growyourbusiness from "../components/index/GrowyourBusiness";
+import Enteryourweblink from "../components/index/EnterYourWebLink";
 import "../assets/css/style.css";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/font-awesome.min.css";

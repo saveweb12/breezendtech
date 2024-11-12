@@ -1,12 +1,12 @@
 
-import SupportService from "./Support-Service";
-import OutofOurServices from "./Out-of-Our-Services";
-import DigitalMarketingAgency from "./Digital-Marketing-Agency";
-import OurHistory from "./Our-History";
-import ProfessionalGrowth from "./Professional-Growth";
-import MailingList from "./Mailing-List";
-import AboutUs from "./About-Us";
-import OptimzeMarketingProcesses from "./Optimze-Marketing-Processes";
+import SupportService from "./SupportService";
+import OutofOurServices from "./OutofOurServices";
+import DigitalMarketingAgency from "./DigitalMarketingAgency";
+import OurHistory from "./OurHistory";
+import ProfessionalGrowth from "./ProfessionalGrowth";
+import MailingList from "./MailingList";
+import AboutUs from "./AboutUs";
+import OptimzeMarketingProcesses from "./OptimzeMarketingProcesses";
 import Reviews from "./Reviews";
 const aboutus = () => {
   return (

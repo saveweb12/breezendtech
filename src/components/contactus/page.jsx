@@ -1,8 +1,8 @@
 import React from "react";
-import LetsStartDiscussion from "./Lets-Start-Discussion";
-import WereaTeam from "./Were-a-500-Team";
-import JoinOurSuccessStories from "./Join-Our-Success-Stories";
-import MailingList from "../about/Mailing-List";
+import LetsStartDiscussion from "./LetsStartDiscussion";
+import WereaTeam from "./Werea500Team";
+import JoinOurSuccessStories from "./JoinOurSuccessStories";
+import MailingList from "../about/MailingList";
 const page = () => {
   return (
     <>

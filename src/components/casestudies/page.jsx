@@ -1,8 +1,8 @@
 import React from "react";
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import RevampandYear from "./RevampandYear";
 import Incredibly from "./Incredibly";
-import MailingList from "../about/Mailing-List";
+import MailingList from "../about/MailingList";
 const page = () => {
   return (
     <>

@@ -1,7 +1,7 @@
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
-import LinkBuilding from "./Link-Building";
-import WhyShouldBusiness from "./Why-Should-Business";
-import MailingList from "../about/Mailing-List";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import LinkBuilding from "./LinkBuilding";
+import WhyShouldBusiness from "./WhyShouldBusiness";
+import MailingList from "../about/MailingList";
 const page = () => {
   return (
     <>

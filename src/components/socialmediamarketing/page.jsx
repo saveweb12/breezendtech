@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import MarketingServiceViews from "./MarketingServiceViews";
 import MarketingBasics from "./MarketingBasics";
 import WhatIsSocialM from "./WhatIsSocialM";
@@ -15,8 +15,8 @@ import Buildacommunity from "./Buildacommunity";
 import MarketingServices from "./MarketingServices";
 import MarketingPlatforms from "./MarketingPlatforms";
 import ForYourSocialMediaMarketing from "./forYourSocialMediaMarketing";
-import LetsConnect from "../socialmediaadvertising/Lets-Connect";
-import GetMyFREEDigital from "../digitalmarketingservices/Get-My-FREE-Digital";
+import LetsConnect from "../socialmediaadvertising/LetsConnect";
+import GetMyFREEDigital from "../digitalmarketingservices/GetMyFreeDigital";
 import OptimizationFAQs from "./OptimizationFAQs";
 const page = () => {
   return (

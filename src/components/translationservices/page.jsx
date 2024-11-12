@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import TranslateNow from "./Translate-Now";
 import LocalizeMyContent from "./Localize-My-Content";
 const page = () => {

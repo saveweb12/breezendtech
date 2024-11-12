@@ -1,5 +1,5 @@
 
-import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
+import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import ViewAll from "./ViewAll"
 import HealthyFoodRecipes from "./HealthyFoodRecipes"
 const page = () => {
