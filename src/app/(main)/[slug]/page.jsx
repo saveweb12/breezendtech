@@ -1,36 +1,60 @@
 // src/app/[slug]/page.jsx
-import { fetchRoutes } from "@/lib/fetchRoutes";
 
 export default async function DynamicPage({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
+  console.log("slug", slug);
+  if (slug === "favicon.ico") {
+    return null;
+  }
 
-  // Static data simulating the backend response
-  const routes = await fetchRoutes();
-  const routeData = routes.find((route) => route.slug === slug);
+  let data;
 
-  if (!routeData) {
+  try {
+    const response = await fetch(
+      "https://breezend-backend.onrender.com/api/get-page",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ slug }),
+        cache: "no-store",
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch page data");
+    }
+
+    data = await response.json();
+  } catch (error) {
+    console.error("Error fetching page data:", error);
+    return <div>Error loading page: {error.message}</div>;
+  }
+
+  const { components: componentData, page } = data;
+
+  if (!page || !page.status) {
     return <div>Page not found</div>;
   }
 
-  const componentsToRender = routeData.component;
-  const loadedComponents = [];
+  // Render each component dynamically with associated data
+  const loadedComponents = page.components.map((componentName) => {
+    const componentProps = componentData[componentName];
 
-  // Dynamically import all components
-  for (const component of componentsToRender) {
+    // Dynamically import the component based on the component name
     try {
-      const { default: Component } = await import(
-        `@/components/index/${component}`
-      );
-      loadedComponents.push(<Component key={component} />);
+      const Component = require(`@/components/index/${componentName}`).default;
+      return <Component key={componentName} data={componentProps} />;
     } catch (error) {
-      console.error(`Component "${component}" not found:`, error);
-      loadedComponents.push(<div key={component}>Component not found</div>);
+      console.error(`Component "${componentName}" not found:`, error);
+      return <div key={componentName}>Component not found</div>;
     }
-  }
+  });
 
   return (
     <div>
-      {/* <h1>{slug.charAt(0).toUpperCase() + slug.slice(1)} Page</h1> */}
+      {/* <h1>{page.title}</h1> */}
       {loadedComponents.length > 0 ? (
         loadedComponents
       ) : (
