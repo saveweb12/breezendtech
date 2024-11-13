@@ -1,4 +1,7 @@
+import React, { useEffect, useState } from "react";
+
 const OurClientsGetResults = () => {
+
   return (
     <>
       <section className="team-section bg_light_2">

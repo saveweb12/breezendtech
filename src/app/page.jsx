@@ -7,17 +7,6 @@ import Findoutour from "../components/index/FindOutOur";
 import Seoservices from "../components/index/Seo-services";
 import Growyourbusiness from "../components/index/GrowyourBusiness";
 import Enteryourweblink from "../components/index/EnterYourWebLink";
-import "../assets/css/style.css";
-import "../assets/css/bootstrap.min.css";
-import "../assets/css/font-awesome.min.css";
-import "../assets/css/jquery.fancybox.min.css";
-import "../assets/css/owl.css";
-import "../assets/css/swiper.min.css";
-import "../assets/css/woocommerce-layout.css";
-import "../assets/css/woocommerce.css";
-import "../assets/css/scss/elements/theme-css.css";
-//import "../assets/css/scss/elements/theme-cssc8d8.css";
-import "../assets/css/scss/elements/theme-css.css";
 const index = () => {
   return (
     <>
