@@ -31,9 +31,9 @@ const WhyChoose = () => {
                 packages and web page editors now use.
               </p>
             </div>
-            {/*===============spacing==============*/}
+          
             <div className="pd_bottom_50" />
-            {/*===============spacing==============*/}
+           
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div className="process_box style_one dark_color">

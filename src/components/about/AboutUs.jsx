@@ -7,9 +7,9 @@ const AboutUs = () => {
      className="image-section bg_dark_1"
      style={{ background: "url(/images/about/about-01.jpg)" }}
    >
-     {/*===============spacing==============*/}
+    
      <div className="pd_top_130" />
-     {/*===============spacing==============*/}
+    
      <div className="large-container pd_zero">
        <div className="row">
          <div className="col-lg-5">

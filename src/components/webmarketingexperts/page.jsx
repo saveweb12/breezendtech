@@ -9,17 +9,17 @@ import "../../assets/css/woocommerce.css";
 import "../../assets/css/scss/elements/theme-css.css";
 //import "../assets/css/scss/elements/theme-cssc8d8.css";
 import "../../assets/css/scss/elements/theme-css.css";
-import WhyChooseUs from "./Why-Choose-Us";
-import ProvenMethodology from "./Proven-Methodology";
-import FoundationofProfessional from "./Foundation-of-Professional";
-import WeLeadFrom from "./We-Lead-From";
-import WeBringYearsofExpertise from "./We-Bring-Years-of-Expertise";
-import OurLatestCustomWebsite from "./Our-Latest-Custom-Website";
+import WhyChooseUs from "./WhyChooseUs";
+import ProvenMethodology from "./ProvenMethodology";
+import FoundationofProfessional from "./FoundationofProfessional";
+import WeLeadFrom from "./WeLeadFrom";
+import WeBringYearsofExpertise from "./WeBringYearsofExpertise";
+import OurLatestCustomWebsite from "./OurLatestCustomWebsite";
 import WeLeadFrom1 from "./We-Lead-From1";
-import FullServiceFranchise from "./Full-Service-Franchise";
-import FranchiseClientSuccess from "./Franchise-Client-Success";
-import RecordofSuccess from "./Record-of-Success";
-import ClientsAreSaying from "./Clients-Are-Saying";
+import FullServiceFranchise from "./FullServiceFranchise";
+import FranchiseClientSuccess from "./FranchiseClientSuccess";
+import RecordofSuccess from "./RecordofSuccess";
+import ClientsAreSaying from "./ClientsAreSaying";
 import MailingList from "../about/MailingList";
 const webmarketingexperts = () => {
   return (

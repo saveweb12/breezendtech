@@ -4,10 +4,8 @@ const LetsConnect = () => {
   return (
   <>
      <section className="feature-section bg_dark_2">
-        {/*===============spacing==============*/}
-        <div className="pd_top_70" />
-        {/*===============spacing==============*/}
-        <div className="container">
+           <div className="pd_top_70" />
+         <div className="container">
           <div className="row">
             <div className="col-lg-2" />
             <div className="col-lg-8">
