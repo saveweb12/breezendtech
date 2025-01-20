@@ -1,8 +1,8 @@
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import WhyYouNeed from "./WhyYouNeed";
-import WhatsIncludedinYour from "./What’sIncludedinYour";
-import AnAdvancedStrategy from "./AnAdvancedStrategy";
-import Strategize from "./STRATEGIZE";
+import WhyYouNeed from "../index/WhyYouNeed";
+import WhatsIncludedinYour from "../index/WhatsIncludedinYour";
+import AnAdvancedStrategy from "../index/AnAdvancedStrategy";
+import Strategize from "../index/Strategies";
 const page = () => {
   return (
     <>

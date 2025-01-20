@@ -1,6 +1,6 @@
 //import DigitalMarketingServices from "../digitalmarketingservices/Digital-Marketing-Services";
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import BreezendTechEmailMarketing from "./BreezendTechEmailMarketing";
+import BreezendTechEmailMarketing from "../index/BreezendTechEmailMarketing";
 const page = () => {
   return (
     <>

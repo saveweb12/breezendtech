@@ -11,7 +11,7 @@ export default async function DynamicPage({ params }) {
 
   try {
     const response = await fetch(
-      "https://breezend-backend.onrender.com/api/get-page",
+      "http://localhost:3005/api/get-page",
       {
         method: "POST",
         headers: {
@@ -54,7 +54,6 @@ export default async function DynamicPage({ params }) {
 
   return (
     <div>
-      {/* <h1>{page.title}</h1> */}
       {loadedComponents.length > 0 ? (
         loadedComponents
       ) : (

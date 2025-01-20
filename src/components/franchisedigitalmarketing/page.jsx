@@ -1,6 +1,6 @@
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import EntrustYourBrandToThePros from "./EntrustYourBrandToThePros";
-import FranchiseSEO from "./FranchiseSeo";
+import EntrustYourBrandToThePros from "../index/EntrustYourBrandToThePros";
+import FranchiseSEO from "../index/FranchiseSEO";
 import FranchiseHyperLocalSEO from "./FranchiseHyperLocalSeo";
 const page = () => {
   return (

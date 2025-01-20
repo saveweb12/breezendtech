@@ -2,10 +2,8 @@ const Seoservices = () => {
   return (
     <>
       <section className="feature-section bg_light_2">
-        {/*===============spacing==============*/}
-        <div className="pd_top_90" />
-        {/*===============spacing==============*/}
-        <div className="container">
+          <div className="pd_top_90" />
+         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="title_all_box style_seven text-center dark_color">
@@ -14,10 +12,8 @@ const Seoservices = () => {
                   <div className="small_text_sub">SEO SERVICES</div>
                   <div className="title"> Our Digital Marketing Expertise</div>
                 </div>
-                {/*===============spacing==============*/}
-                <div className="pd_bottom_30" />
-                {/*===============spacing==============*/}
-              </div>
+                  <div className="pd_bottom_30" />
+               </div>
             </div>
           </div>
           <div className="row border-bottom">

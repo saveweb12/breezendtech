@@ -4,10 +4,8 @@ const FranchiseHyperLocalSEO = () => {
   return (
     <>
       <section className="feature-section">
-        {/*===============spacing==============*/}
-        <div className="pd_top_50" />
-        {/*===============spacing==============*/}
-        <div className="container">
+          <div className="pd_top_50" />
+         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="title_all_box style_seven text-center dark_color">
@@ -23,10 +21,8 @@ const FranchiseHyperLocalSEO = () => {
                     here, content here.
                   </p>
                 </div>
-                {/*===============spacing==============*/}
                 <div className="pd_bottom_30" />
-                {/*===============spacing==============*/}
-              </div>
+               </div>
             </div>
             <div className="col-lg-1" />
             <div className="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">

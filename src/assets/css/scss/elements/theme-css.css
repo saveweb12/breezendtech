@@ -1466,7 +1466,7 @@ ul {
 }
 
 .page_wapper #wrapper_full {
-  overflow: hidden;
+  /*overflow: scroll;*/
 }
 
 .footer_sticky_body .content_all_warpper {

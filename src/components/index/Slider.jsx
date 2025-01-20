@@ -2,10 +2,10 @@ import React from "react";
 
 function Slider({ data }) {
   // console.log(props);
-  console.log(data)
+ 
   return (
     <>
-    {data.map((slider) => (
+    {/* {data.map((slider) => (
       <div key={slider.id}>
         <section className="slider style_one pag_position_two">
           <div
@@ -149,7 +149,7 @@ function Slider({ data }) {
           </div>
         </section>
       </div>
-    ))}
+    ))} */}
   </>
   );
 }

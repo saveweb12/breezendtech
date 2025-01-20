@@ -10,10 +10,10 @@ import "../../assets/css/scss/elements/theme-css.css";
 //import "../assets/css/scss/elements/theme-cssc8d8.css";
 import "../../assets/css/scss/elements/theme-css.css";
 import Realreview from "./realreview";
-import Establishedfact from "./establishedfact";
-import RelationshipsandResults from "./RelationshipsandResults";
-import OurSatisfiedCustomers from "./OurSatisfiedCustomers";
-import LookingforQuality from "./LookingforQuality";
+import Establishedfact from "../index/Establishedfact";
+import RelationshipsandResults from "../index/RelationshipsandResults";
+import OurSatisfiedCustomers from "../index/OurSatisfiedCustomers";
+import LookingforQuality from "../index/LookingforQuality";
 import DreamBigandMake from "./DreamBigandMake";
 const realreviewsfromrealpeople = () => {
   return (

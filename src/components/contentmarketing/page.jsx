@@ -1,5 +1,5 @@
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import BreezendTechContentMarketing from "./BreezendTechContentMarketing";
+import BreezendTechContentMarketing from "../index/BreezendTechContentMarketing";
 const page = () => {
   return (
     <>

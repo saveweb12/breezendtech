@@ -1,12 +1,12 @@
-import AvailableJobsChoose from "./AvailableJobsChoose";
-import WhyBreezeEnd from "./WhyBreezeEnd";
-import OurCulture from "./OurCulture";
-import WhoArethe from "./WhoArethe";
-import MakeTheRight from "./MakeTheRight";
-import DedicatedTeam from "./DedicatedTeam";
-import OurCandidateExperience from "./OurCandidateExperience";
-import BreezeEndTechnologySignificant from "./BreezeEndTechnologySignificant";
-import JoinOurGlobalTeam from "./JoinOurGlobalTeam";
+import AvailableJobsChoose from "../index/AvailableJobsChoose";
+import WhyBreezeEnd from "../index/WhyBreezeEnd";
+import OurCulture from "../index/OurCulture";
+import WhoArethe from "../index/WhoArethe";
+import MakeTheRight from "../index/MakeTheRight";
+import DedicatedTeam from "../index/DedicatedTeam";
+import OurCandidateExperience from "../index/OurCandidateExperience";
+import BreezeEndTechnologySignificant from "../index/BreezeEndTechnologySignificant";
+import JoinOurGlobalTeam from "../index/JoinOurGlobalTeam";
 import MailingList from "../about/MailingList";
 const page = () => {
   return (

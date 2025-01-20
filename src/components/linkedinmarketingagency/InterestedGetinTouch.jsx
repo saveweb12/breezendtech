@@ -1,12 +1,8 @@
-import React from 'react'
-
 const InterestedGetinTouch = () => {
   return (
    <>
     <section className="service-section bg_light_1">
-        {/*===============spacing==============*/}
-        <div className="pd_top_80" />
-        {/*===============spacing==============*/}
+       <div className="pd_top_80" />
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -14,10 +10,8 @@ const InterestedGetinTouch = () => {
                 <div className="title_sections">
                   <h2>Interested? Get in Touch!</h2>
                 </div>
-                {/*===============spacing==============*/}
                 <div className="pd_bottom_20" />
-                {/*===============spacing==============*/}
-              </div>
+               </div>
             </div>
           </div>
           <div className="row">
@@ -336,9 +330,7 @@ const InterestedGetinTouch = () => {
               </section>
             </div>
           </div>
-          {/*===============spacing==============*/}
-          <div className="pd_bottom_60" />
-          {/*===============spacing==============*/}
+           <div className="pd_bottom_60" />
         </div>
       </section>
    </>

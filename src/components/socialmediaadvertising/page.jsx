@@ -1,13 +1,13 @@
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import ResultsDrivenSocial from "./ResultsDrivenSocial";
-import AdvertisingonSocialMedia from "./AdvertisingonSocialMedia";
-import PaidSocialMedia from "./PaidSocialMedia";
-import WhyYourBusinessNeeds from "./WhyYourBusinessNeeds";
-import PPCAgencyThat from "./PPCAgencyThat";
-import SocialMediaPlatforms from "./SocialMediaPlatformsYourBusiness";
-import SocialMediaPlatformsforBusiness from "./SocialMediaPlatformsforBusiness";
+import ResultsDrivenSocial from "../index/ResultsDrivenSocial";
+import AdvertisingonSocialMedia from "../index/AdvertisingonSocialMedia";
+import PaidSocialMedia from "../index/PaidSocialMedia";
+import WhyYourBusinessNeeds from "../index/WhyYourBusinessNeeds";
+import PPCAgencyThat from "../index/PPCAgencyThat";
+import SocialMediaPlatforms from "../index/SocialMediaPlatforms";
+import SocialMediaPlatformsforBusiness from "../index/SocialMediaPlatformsforBusiness";
 import BreezendTechDigitalMarketingServices from "../digitalmarketingservices/BreezendTechDigitalMarketingServices";
-import WhyChoose from "./WhyChoose";
+import WhyChoose from "../index/WhyChoose";
 import GetMyFREEDigital from "../digitalmarketingservices/GetMyFreeDigital";
 const page = () => {
   return (

@@ -15,7 +15,7 @@ import Buildacommunity from "./Buildacommunity";
 import MarketingServices from "./MarketingServices";
 import MarketingPlatforms from "./MarketingPlatforms";
 import ForYourSocialMediaMarketing from "./forYourSocialMediaMarketing";
-import LetsConnect from "../socialmediaadvertising/LetsConnect";
+import LetsConnect from "../index/LetsConnect";
 import GetMyFREEDigital from "../digitalmarketingservices/GetMyFreeDigital";
 import OptimizationFAQs from "./OptimizationFAQs";
 const page = () => {
