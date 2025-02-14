@@ -1,8 +1,11 @@
 const BoostYourBrand = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="feature-section">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="feature-section">
         <div className="pd_top_70" />
 
         <div className="container">
@@ -35,10 +38,10 @@ const BoostYourBrand = ({ data }) => {
             <div className="pd_bottom_30" />
 
             <div className="row">
-              {items.sections.map((item) => (
+              {items.sections?.map((item,idx) => (
                 <div
                   className="col-lg-6 col-md-6 col-sm-6 col-xs-12"
-                  key={item.id}
+                  key={item.id||idx}
                 >
                   <div className="process_box style_one dark_color">
                     <div className="process_box_outer">
@@ -64,6 +67,7 @@ const BoostYourBrand = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+      ))}
     </>
   );
 };

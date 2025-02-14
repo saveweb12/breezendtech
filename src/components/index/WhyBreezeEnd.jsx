@@ -1,9 +1,10 @@
 const WhyBreezeEnd = ({ data }) => {
-  const items = data[0];
+ 
  
   return (
     <>
-      <section className="contact-client-carousel-section">
+     {data.map((items) => (
+      <section key={items.id} className="contact-client-carousel-section">
         <div className="pd_top_90" />
         <div className="container">
           <div className="row">
@@ -21,7 +22,7 @@ const WhyBreezeEnd = ({ data }) => {
                   <p>{items.description}</p>
                 </div>
                 <div className="row gutter_15px">
-                  {items.link.map((item) => (
+                  {items.link?.map((item) => (
                     <div className="col-lg-4 col-md-12" key={item.id}>
                       <div
                         className="icon_box_all  style_two"
@@ -53,6 +54,7 @@ const WhyBreezeEnd = ({ data }) => {
         </div>
         <div className="pd_bottom_0" />
       </section>
+     ))}
     </>
   );
 };

@@ -1,9 +1,10 @@
 const OurLatestWebDesignProjects = ({ data }) => {
-  const items = data[0];
+ 
 
   return (
     <>
-      <section className="service-section-two bg_light_1">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="service-section-two bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="col-lg-12">
@@ -15,7 +16,8 @@ const OurLatestWebDesignProjects = ({ data }) => {
             </div>
           </div>
           <div className="pd_bottom_30" />
-          <div className="row">
+          {items.sliders?.map((item,idx) => (
+          <div  key={item.id||idx} className="row">
             <div className="col-lg-12">
               <div className="service_all_styles carousel owl_new_one">
                 <div
@@ -31,11 +33,11 @@ const OurLatestWebDesignProjects = ({ data }) => {
                         width: 7220,
                       }}
                     >
-                      {/* {items.sliders.map((item) => (
+                      
                         <div
                           className="owl-item cloned"
                           style={{ width: 350, marginRight: 30 }}
-                          key={item.id}
+                         
                         >
                           <div className="service_box type_two dark_color clearfix">
                             <div className="content_heaing">
@@ -52,7 +54,7 @@ const OurLatestWebDesignProjects = ({ data }) => {
                             </div>
                           </div>
                         </div>
-                      ))} */}
+                    
                       {/* <div
                         className="owl-item cloned"
                         style={{ width: 350, marginRight: 30 }}
@@ -206,7 +208,7 @@ const OurLatestWebDesignProjects = ({ data }) => {
                         </div>
                       </div> */}
 
-                      {items.sliders.map((item) => (
+                      {/* {items.sliders.map((item) => (
                         <div
                           className="owl-item cloned"
                           style={{ width: 350, marginRight: 30 }}
@@ -227,7 +229,7 @@ const OurLatestWebDesignProjects = ({ data }) => {
                             </div>
                           </div>
                         </div>
-                      ))}
+                      ))} */}
 
                       {/* <div
                         className="owl-item cloned active"
@@ -247,8 +249,8 @@ const OurLatestWebDesignProjects = ({ data }) => {
                             />
                           </div>
                         </div>
-                      </div> */}
-                      {/* <div
+                      </div>
+                      <div
                         className="owl-item cloned active"
                         style={{ width: 350, marginRight: 30 }}
                       >
@@ -266,8 +268,8 @@ const OurLatestWebDesignProjects = ({ data }) => {
                             />
                           </div>
                         </div>
-                      </div> */}
-                      {/* <div
+                      </div>
+                      <div
                         className="owl-item cloned active"
                         style={{ width: 350, marginRight: 30 }}
                       >
@@ -295,8 +297,10 @@ const OurLatestWebDesignProjects = ({ data }) => {
 
             <div className="pd_bottom_70" />
           </div>
+            ))}
         </div>
       </section>
+     ))}
     </>
   );
 };

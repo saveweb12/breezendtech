@@ -1,8 +1,9 @@
 const SocialMediaPlatformsforBusiness = ({ data }) => {
-  const items = data[0];
+
   return (
     <>
-      <section className="feature-section">
+    {data.map((items) => (
+      <section key={items.id} className="feature-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -62,6 +63,7 @@ const SocialMediaPlatformsforBusiness = ({ data }) => {
         <div className="pd_bottom_70" />
         {/*===============spacing==============*/}
       </section>
+    ))}
     </>
   );
 };

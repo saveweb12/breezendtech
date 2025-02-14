@@ -1,11 +1,12 @@
 import React from "react";
 
 const RelationshipsandResults = ({ data }) => {
-  const items = data[0];
+  
   
   return (
     <>
-      <section className="service-section">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="service-section">
         <div className="pd_top_0" />
 
         <div className="container">
@@ -25,10 +26,10 @@ const RelationshipsandResults = ({ data }) => {
 
           <div className="row gutter_30px ">
             <div className="col-lg-12">
-              {items.images.map((img) => (
+              {items.images.map((img,idx) => (
                 <div
                   className="service_section grid_all four_column news_wrapper_grid dark_color"
-                  key={img.id}
+                  key={img.id||idx}
                 >
                   <div
                     className="grid_show_case grid_layout clearfix text-center"
@@ -260,6 +261,7 @@ const RelationshipsandResults = ({ data }) => {
 
         <div className="pd_bottom_70" />
       </section>
+     ))}
     </>
   );
 };

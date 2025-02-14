@@ -1,7 +1,8 @@
 const Seoservices = () => {
   return (
     <>
-      <section className="feature-section bg_light_2">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="feature-section bg_light_2">
           <div className="pd_top_90" />
          <div className="container">
           <div className="row">
@@ -261,6 +262,7 @@ const Seoservices = () => {
         <div className="pd_bottom_80" />
         {/*===============spacing==============*/}
       </section>
+     ))}
     </>
   );
 };

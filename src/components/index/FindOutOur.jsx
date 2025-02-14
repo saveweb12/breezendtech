@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Findoutour = () => {
   return (
     <>
-          <section className="blog-section bg_light_1">
+      <section className="blog-section bg_light_1">
         {/*===============spacing==============*/}
         <div className="pd_top_80" />
         {/*===============spacing==============*/}
-      <div className="container">
+        <div className="container">
           <div className="row gutter_35px">
             <div className="col-lg-12">
               <div className="title_all_box style_three text-center dark_color">
@@ -154,13 +154,13 @@ const Findoutour = () => {
             </div>
           </div>
         </div>
-          {/*===============spacing==============*/}
-          <div className="pd_bottom_60" />
+        {/*===============spacing==============*/}
+        <div className="pd_bottom_60" />
         {/*===============spacing==============*/}
       </section>
       {/*-blog-end-*/}
     </>
-  )
-}
+  );
+};
 
-export default Findoutour
+export default Findoutour;

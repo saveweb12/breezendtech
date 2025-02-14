@@ -1,8 +1,11 @@
 const BreezendTechContentMarketing = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section">
+    {data.map((items, index) => (
+      <section  key={items.id || index} className="service-section">
         <div className="pd_top_70">
           <div className="container">
             <div className="row">
@@ -16,16 +19,16 @@ const BreezendTechContentMarketing = ({ data }) => {
                 </div>
                 <p>{items.text}</p>  
                 <div className="row">
-                  {items.cards.map((item) => (
-                    <div className="col-lg-6" key={item.id}>
+                  {items.cards?.map((item,idx) => (
+                    <div className="col-lg-6" key={item.id||idx}>
                       <div className="content-marketing-tech content-number1 wp-block-column grey-box-col">
                         <div className="title_all_box style_one dark_color">
                           <div className="title_sections">
                             <h6>{item.title}</h6>
                           </div>
                           <ul className="wp-block-list">
-                            {item.lists.map((list) => (
-                              <li key={list.id}>{list.text}</li>
+                            {item.lists?.map((list,idx) => (
+                              <li key={list.id||idx}>{list.text}</li>
                             ))}
                           </ul>
                         </div>
@@ -50,6 +53,7 @@ const BreezendTechContentMarketing = ({ data }) => {
           </div>
         </div>
       </section>
+       ))}
     </>
   );
 };

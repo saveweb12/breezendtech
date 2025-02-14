@@ -1,9 +1,12 @@
 const DedicatedTeam = ({ data }) => {
-  const items = data[0];
- 
+  //const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="team bg_light_1 bg_pattern_2">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="team bg_light_1 bg_pattern_2">
         <div className="pd_bottom_80" />
         <div className="container">
           <div className="row">
@@ -19,10 +22,10 @@ const DedicatedTeam = ({ data }) => {
             </div>
           </div>
           <div className="row">
-            {items.cards.map((item) => (
+            {items.cards?.map((item,idx) => (
               <div
                 className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0"
-                key={item.id}
+                key={item.id||idx}
               >
                 <div className="team_box style_four">
                   <div className="team_box_outer">
@@ -59,6 +62,7 @@ const DedicatedTeam = ({ data }) => {
         </div>
         <div className="pd_bottom_50" />
       </section>
+       ))}
     </>
   );
 };

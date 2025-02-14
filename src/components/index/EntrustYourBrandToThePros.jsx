@@ -1,9 +1,12 @@
 const EntrustYourBrandToThePros = ({ data }) => {
-  const items = data[0];
- 
+ // const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="feature-section">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="feature-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -19,10 +22,10 @@ const EntrustYourBrandToThePros = ({ data }) => {
             </div>
           </div>
           <div className="row">
-            {items.cards.map((item) => (
+            {items.cards?.map((item,idx) => (
               <div
                 className="col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                key={item.id}
+                key={item.id||idx}
               >
                 <div className="franchise-marketing">
                   <div className="ads-wrap">
@@ -64,6 +67,7 @@ const EntrustYourBrandToThePros = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+       ))}
     </>
   );
 };

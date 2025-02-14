@@ -1,9 +1,10 @@
 const OurLinkBuildingStats = ({ data }) => {
-  const items = data[0];
- 
+  //const items = data[0];
+
   return (
     <>
-      <section className="image-section">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="image-section">
         <div className="pd_top_30" />
 
         <div className="container">
@@ -18,10 +19,10 @@ const OurLinkBuildingStats = ({ data }) => {
               <div className="row pd_bottom_50"></div>
 
               <div className="row">
-                {items.sections.map((item) => (
+                {items.sections.map((item,idx) => (
                   <div
                     className="col-xl-4 col-lg-6 col-md-6 col-sm-12"
-                    key={item.id}
+                    key={item.id||idx}
                   >
                     <div className="process_box style_four dark_color">
                       <div className="process_box_outer_four ">
@@ -50,6 +51,7 @@ const OurLinkBuildingStats = ({ data }) => {
           </div>
         </div>
       </section>
+     ))}
     </>
   );
 };

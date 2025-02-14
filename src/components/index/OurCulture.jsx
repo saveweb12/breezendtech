@@ -1,8 +1,9 @@
 const OurCulture = ({ data }) => {
-  const items = data[0];
+  
   return (
     <>
-      <section className="service-section-two">
+    {data.map((items, index) => (
+      <section  key={items.id || index} className="service-section-two">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -19,10 +20,10 @@ const OurCulture = ({ data }) => {
           </div>
           <div className="pd_bottom_30" />
           <div className="row">
-            {items.sections.map((item) => (
+            {items.sections?.map((item,idx) => (
               <div
                 className="col-xl-4 col-lg-6 col-md-6 col-sm-12"
-                key={item.id}
+                key={item.id||idx}
               >
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
@@ -60,6 +61,7 @@ const OurCulture = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+      ))}
     </>
   );
 };

@@ -1,8 +1,9 @@
-const WeHelpYouImproveYour = ({data}) => {
-  const items=data[0]
+const WeHelpYouImproveYour = ({ data }) => {
+ 
   return (
     <>
-      <section className="service-section bg_light_1">
+    {data.map((items) => (
+      <section key={items.id} className="service-section bg_light_1">
         <div className="pd_top_70" />
 
         <div className="container">
@@ -11,11 +12,7 @@ const WeHelpYouImproveYour = ({data}) => {
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="one">
-                    <img
-                      src={items.image}
-                      className="img-fluid"
-                      alt="about"
-                    />
+                    <img src={items.image} className="img-fluid" alt="about" />
                   </div>
                 </div>
               </div>
@@ -23,13 +20,9 @@ const WeHelpYouImproveYour = ({data}) => {
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div className="title_all_box style_three  dark_color">
                 <div className="title_sections three left">
-                  <h3>
-                   {items.title}
-                  </h3>
-                  <p>
-                   {items.text}
-                  </p>
-                 
+                  <h3>{items.title}</h3>
+                  <p>{items.text}</p>
+
                   <div className="theme_btn_all color_one pd_top_25">
                     <a
                       href="#"
@@ -37,7 +30,7 @@ const WeHelpYouImproveYour = ({data}) => {
                       rel="nofollow"
                       className="theme-btn one"
                     >
-                    {items.btntext}
+                      {items.btntext}
                     </a>
                   </div>
                 </div>
@@ -47,6 +40,7 @@ const WeHelpYouImproveYour = ({data}) => {
         </div>
         <div className="pd_bottom_50" />
       </section>
+    ))}
     </>
   );
 };

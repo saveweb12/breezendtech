@@ -1,23 +1,18 @@
-const PaidSocialMedia = ({data}) => {
- const items =data[0]
- 
+const PaidSocialMedia = ({ data }) => {
+  
+
   return (
     <>
-     <section>
-        {/*===============spacing==============*/}
+    {data.map((items, index) => (
+      <section key={items.id || index}>
         <div className="pd_top_80" />
-        {/*===============spacing==============*/}
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="image one">
-                    <img
-                      src={items.image}
-                      className="img-fluid"
-                      alt="about"
-                    />
+                    <img src={items.image} className="img-fluid" alt="about" />
                   </div>
                 </div>
               </div>
@@ -27,9 +22,7 @@ const PaidSocialMedia = ({data}) => {
                 <div className="title_sections three left">
                   <div className="before_title">{items.text}</div>
                   <h2>{items.title}</h2>
-                  <p>
-                   {items.description}
-                  </p>
+                  <p>{items.description}</p>
                 </div>
               </div>
             </div>
@@ -42,17 +35,18 @@ const PaidSocialMedia = ({data}) => {
                     rel="nofollow"
                     className="theme-btn one"
                   >
-                   {items.btnText}
+                    {items.btnText}
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-         <div className="pd_bottom_70" />
-         </section>
+        <div className="pd_bottom_70" />
+      </section>
+    ))}
     </>
-  )
-}
+  );
+};
 
-export default PaidSocialMedia
+export default PaidSocialMedia;

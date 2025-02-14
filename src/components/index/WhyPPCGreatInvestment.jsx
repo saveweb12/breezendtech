@@ -1,8 +1,9 @@
 const WhyPPCGreatInvestment = ({ data }) => {
-  const items = data[0];
+  
   return (
     <>
-      <section className="service-section">
+     {data.map((items) => (
+      <section key={items.id} className="service-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -53,6 +54,7 @@ const WhyPPCGreatInvestment = ({ data }) => {
         </div>
         <div className="pd_bottom_50" />
       </section>
+     ))}
     </>
   );
 };

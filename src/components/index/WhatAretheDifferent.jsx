@@ -1,8 +1,9 @@
 const WhatAretheDifferent = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section className="feature-section bg_light_1">
+    {data.map((items) => (
+      <section key={items.id} className="feature-section bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -47,6 +48,7 @@ const WhatAretheDifferent = ({ data }) => {
 
         <div className="pd_bottom_70" />
       </section>
+    ))}
     </>
   );
 };

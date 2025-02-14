@@ -1,10 +1,9 @@
 const WeLeadFrom = ({data}) => {
-  const items =data[0]
-
 
   return (
    <>
-    <section className="">
+    {data.map((items) => (
+    <section key={items.id} className="">
     <div className="pd_top_70" />
     <div className="container">
       <div className="row">
@@ -36,6 +35,7 @@ const WeLeadFrom = ({data}) => {
     </div>
      <div className="pd_bottom_70" />
   </section>
+    ))}
    </>
   )
 }

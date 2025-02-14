@@ -1,9 +1,9 @@
 const SeovsPPCWhich = ({ data }) => {
-  const items = data[0];
 
   return (
     <>
-      <section className="service-section bg_light_1">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="service-section bg_light_1">
         <div className="pd_top_80" />
         <div className="container">
           <div className="row">
@@ -73,6 +73,7 @@ const SeovsPPCWhich = ({ data }) => {
         <div className="pd_bottom_200" />
         <div className="pd_bottom_30" />
       </section>
+    ))}
     </>
   );
 };

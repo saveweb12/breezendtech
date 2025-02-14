@@ -1,8 +1,9 @@
 const PremiumeCommerceProduct = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section className="service-section bg_light_1">
+     {data.map((items, index) => (
+      <section  key={items.id || index} className="service-section bg_light_1">
         <div className="pd_top_80" />
         <div className="container">
           <div className="row">
@@ -16,7 +17,7 @@ const PremiumeCommerceProduct = ({ data }) => {
             </div>
           </div>
           <div className="col-lg-12">
-            {items.sections.map((item) => (
+            {items.sections?.map((item) => (
               <div
                 className="title_all_box style_one text-center dark_color"
                 key={item.id}
@@ -33,18 +34,18 @@ const PremiumeCommerceProduct = ({ data }) => {
           </div>
           <div className="row">
             {items.sections?.map((section) =>
-              section.cards.map((card) => (
-                <div className="col-lg-4" key={card.id}>
+              section.cards.map((card,idx) => (
+                <div className="col-lg-4" key={card.id||idx}>
                   <div className="packages-primium-header">
                     <dl className="">
                       <dt className="faq_header active">{card.cartitle}</dt>
                       <dd className="accordion-content hide" style={{}}>
                         <div className="list_item_box style_two style_list">
                           <ul className="list-inline">
-                            {card.lists.map((list) => (
+                            {card.lists.map((list,idx) => (
                               <li
                                 className="list_items pd_bottom_10"
-                                key={list.id}
+                                key={list.id||idx}
                               >
                                 <small className="d-flex">
                                   <span className="icon_bx">
@@ -294,6 +295,7 @@ const PremiumeCommerceProduct = ({ data }) => {
         </div>
         <div className="pd_bottom_60" />
       </section>
+     ))}
     </>
   );
 };

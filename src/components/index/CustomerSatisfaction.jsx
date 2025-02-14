@@ -1,6 +1,10 @@
 const CustomerSatisfaction = () => {
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
+     {data.map((items, index) => (
       <section className="testimonial-section bg_light_1">
         {/*===============spacing==============*/}
         <div className="pd_bottom_80" />
@@ -547,6 +551,7 @@ const CustomerSatisfaction = () => {
         <div className="pd_bottom_80" />
         {/*===============spacing==============*/}
       </section>
+       ))}
       {/*-tab-end-*/}
     </>
   );

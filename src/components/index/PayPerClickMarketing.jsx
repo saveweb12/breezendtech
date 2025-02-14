@@ -1,8 +1,9 @@
 const PayPerClickMarketing = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section>
+      {data.map((items, index) => (
+      <section key={items.id || index} >
         <div className="pd_top_80" />
 
         <div className="container">
@@ -44,6 +45,7 @@ const PayPerClickMarketing = ({ data }) => {
 
         <div className="pd_bottom_70" />
       </section>
+      ))}
     </>
   );
 };

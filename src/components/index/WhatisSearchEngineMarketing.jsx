@@ -1,8 +1,9 @@
 const WhatisSearchEngineMarketing = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section className="service-section bg_light_1">
+    {data.map((items) => (
+      <section key={items.id} className="service-section bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -29,6 +30,7 @@ const WhatisSearchEngineMarketing = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+    ))}
     </>
   );
 };
