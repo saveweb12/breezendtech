@@ -579,15 +579,13 @@
 import React, { useState } from "react";
 import "../../assets/css/style.css";
 import "../../assets/css/bootstrap.min.css";
-
+import Link from "next/link";
 const Layout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setaboutOpen] = useState(false);
   const [ServicesOpen, setServicesOpen] = useState(false);
   const [OurWorkOpen, setOurWorkOpen] = useState(false);
-  const [CareersOpen, setCareersOpen] = useState(false);
-  const [BlogsOpen, setBlogsOpen] = useState(false);
-  const [ContactOpen, setContactOpen] = useState(false);
+
   const handleMenuToggle = () => {
     setMenuOpen((prev) => !prev);
   };
@@ -600,15 +598,6 @@ const Layout = () => {
   };
   const handleOurWorkToggle = () => {
     setOurWorkOpen((prev) => !prev);
-  };
-  const handleCareersToggle = () => {
-    setCareersOpen((prev) => !prev);
-  };
-  const handleblogsToggle = () => {
-    setBlogsOpen((prev) => !prev);
-  };
-  const handleContactToggle = () => {
-    setContactOpen((prev) => !prev);
   };
 
   return (
@@ -672,47 +661,23 @@ const Layout = () => {
           </div>
 
           <div>
-            <li onClick={handleCareersToggle} className="">
+            <li className="">
               <span>Careers </span>
             </li>
-
-            <div
-              className={`home-list ${CareersOpen ? "open" : ""}`}
-              style={{ backgroundColor: "" }}
-            >
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </div>
           </div>
 
           <div>
-            <li onClick={handleblogsToggle} className="">
+            <li className="">
               <span>Blogs</span>
             </li>
-
-            <div
-              className={`home-list ${BlogsOpen ? "open" : ""}`}
-              style={{ backgroundColor: "" }}
-            >
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </div>
           </div>
-          <div>
-            <li onClick={handleContactToggle} className="">
-              <span>Contact Us</span>
-            </li>
 
-            <div
-              className={`home-list ${ContactOpen ? "open" : ""}`}
-              style={{ backgroundColor: "" }}
-            >
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </div>
+          <div>
+            <li className="">
+            <Link href="/contactus">
+          <span>Contact Us</span>
+        </Link>
+            </li>
           </div>
         </ul>
       </div>
@@ -721,64 +686,3 @@ const Layout = () => {
 };
 
 export default Layout;
-
-// import React from 'react'
-// import { Button } from "@/components/ui/button"
-// import { Input } from "@/components/ui/input"
-// import { Label } from "@/components/ui/label"
-// import {
-//   Sheet,
-//   SheetClose,
-//   SheetContent,
-//   SheetDescription,
-//   SheetFooter,
-//   SheetHeader,
-//   SheetTitle,
-//   SheetTrigger,
-// } from "@/components/ui/sheet"
-
-// const SHEET_SIDES = ["left"]
-// const heade = (typeof SHEET_SIDES)
-
-// const header = () => {
-//   return (
-//     <div className="grid grid-cols-2 gap-2">
-//     {SHEET_SIDES.map((side) => (
-//       <Sheet key={side}>
-//         <SheetTrigger asChild>
-//           <Button variant="outline">{side}</Button>
-//         </SheetTrigger>
-//         <SheetContent side={side}>
-//           <SheetHeader>
-//             <SheetTitle>Edit profile</SheetTitle>
-//             <SheetDescription>
-//               Make changes to your profile here. Click save when you're done.
-//             </SheetDescription>
-//           </SheetHeader>
-//           <div className="grid gap-4 py-4">
-//             <div className="grid grid-cols-4 items-center gap-4">
-//               <Label htmlFor="name" className="text-right">
-//                 Name
-//               </Label>
-//               <Input id="name" value="Pedro Duarte" className="col-span-3" />
-//             </div>
-//             <div className="grid grid-cols-4 items-center gap-4">
-//               <Label htmlFor="username" className="text-right">
-//                 Username
-//               </Label>
-//               <Input id="username" value="@peduarte" className="col-span-3" />
-//             </div>
-//           </div>
-//           <SheetFooter>
-//             <SheetClose asChild>
-//               <Button type="submit">Save changes</Button>
-//             </SheetClose>
-//           </SheetFooter>
-//         </SheetContent>
-//       </Sheet>
-//     ))}
-//   </div>
-//   )
-// }
-
-// export default header

@@ -2,7 +2,7 @@ import React from "react";
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import RevampandYear from "./RevampandYear";
 import Incredibly from "./Incredibly";
-import MailingList from "../about/MailingList";
+import MailingList from "../../app/contactus/MailingList";
 const page = () => {
   return (
     <>

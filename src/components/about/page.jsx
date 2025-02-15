@@ -4,7 +4,7 @@ import OutofOurServices from "./OutofOurServices";
 import DigitalMarketingAgency from "./DigitalMarketingAgency";
 import OurHistory from "./OurHistory";
 import ProfessionalGrowth from "./ProfessionalGrowth";
-import MailingList from "./MailingList";
+import MailingList from "../../app/contactus/MailingList";
 import AboutUs from "./AboutUs";
 import OptimzeMarketingProcesses from "./OptimzeMarketingProcesses";
 import Reviews from "./Reviews";

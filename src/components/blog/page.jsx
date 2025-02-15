@@ -1,7 +1,7 @@
 import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
 import LinkBuilding from "../index/LinkBuilding";
 import WhyShouldBusiness from "../index/WhyShouldBusiness";
-import MailingList from "../about/MailingList";
+import MailingList from "../../app/contactus/MailingList";
 const page = () => {
   return (
     <>

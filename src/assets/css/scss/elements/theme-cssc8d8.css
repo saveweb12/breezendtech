@@ -20912,8 +20912,8 @@ form br {
   top: 42px;
   bottom: inherit;
 }
-.contact_form_box_all.type_two .contact_form_shortcode form p::last-child,
-.contact_form_box_all.type_two .contact_form_shortcode form div::last-child {
+.contact_form_box_all.type_two .contact_form_shortcode form p:last-child,
+.contact_form_box_all.type_two .contact_form_shortcode form div:last-child {
   margin-bottom: 0px;
 }
 .contact_form_box_all.type_three .contact_form_box_inner.simple_form {
@@ -25472,7 +25472,7 @@ form .wpcf7-response-output {
   position: absolute;
   width: 16px;
   border-radius: 50%;
-  border: 2px solid var(primary-color-one);
+  border: 2px solid var(--primary-color-two);
   border-top-color: transparent;
   height: 16px;
   top: 0;
@@ -25521,7 +25521,7 @@ form .wpcf7-response-output {
   padding: 0px;
 }
 .quick_view .mfp-close {
-  background: var(primary-color-two);
+  background: var(--primary-color-two);
   color: var(--bs-dark);
   border-radius: 0px 15px;
   opacity: 1;
@@ -25547,8 +25547,8 @@ form .wpcf7-response-output {
   background: var(--primary-color-one);
   box-shadow: inset 0 0 6px var(--primary-color-one);
 }
-.quick_view .quickproduct_content:window-inactive {
-  background: var(--primary-color-one);
+.quick_view .quickproduct_content {
+  background: var(--primary-color-one); /* Keep this if it's needed */
 }
 .quick_view .summary {
   float: unset !important;
@@ -29376,8 +29376,8 @@ ul.job_listings li.job_listing.job_position_featured, ul.job_listings li.no_job_
   background: var(--primary-color-one);
   box-shadow: inset 0 0 6px var(--primary-color-one);
 }
-.sidemenu_area .side_menu_content::-webkit-scrollbar-thumb:window-inactive {
-  background: var(--primary-color-one);
+.sidemenu_area .side_menu_content::-webkit-scrollbar-thumb {
+  background: var(--primary-color-one); /* Keep the normal style */
 }
 
 body.side_menu_toggled .sidemenu_area {
