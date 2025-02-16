@@ -602,7 +602,12 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <div className="menu-icon" onClick={handleMenuToggle}>
+      <title>
+        Custom Software Development | IT Professional Services - BreezeTECH
+      </title>
+      <link rel="icon" href="/images/faviconicon.png" type="image/x-icon" />
+
+      <div className="menu-icon" style={{}} onClick={handleMenuToggle}>
         ☰
       </div>
 
@@ -662,7 +667,9 @@ const Layout = () => {
 
           <div>
             <li className="">
-              <span>Careers </span>
+              <Link href="/careers">
+                <span>Careers</span>
+              </Link>
             </li>
           </div>
 
@@ -674,9 +681,9 @@ const Layout = () => {
 
           <div>
             <li className="">
-            <Link href="/contactus">
-          <span>Contact Us</span>
-        </Link>
+              <Link href="/contactus">
+                <span>Contact Us</span>
+              </Link>
             </li>
           </div>
         </ul>

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Slider({ data }) {
+function Slider({  }) {
  
 
   return (
     <>
-      {data.map((slider) => (
+      {/* {data.map((slider) => (
         <section key={slider.id} className="slider style_one pag_position_two">
           <div className="banner_carousel owl_nav_none owl_dots_block theme_carousel owl-theme">
             <div className="slide-item">
@@ -137,9 +137,9 @@ function Slider({ data }) {
                 </div>
               </div>
             </div> */}
-          </div>
-        </section>
-      ))}
+          {/* </div> */}
+        {/* </section> */}
+      {/* ))}  */}
     </>
   );
 }
