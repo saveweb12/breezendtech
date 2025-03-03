@@ -1,8 +1,11 @@
 const EnlistOurLinkBuilding = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section-two">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="service-section-two">
         <div className="pd_top_70" />
 
         <div className="container">
@@ -44,6 +47,7 @@ const EnlistOurLinkBuilding = ({ data }) => {
         </div>
         <div className="pd_bottom_60" />
       </section>
+       ))}
     </>
   );
 };

@@ -1,8 +1,9 @@
 const PPCAgencyThat = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section className="service-section-two">
+     {data.map((items, index) => (
+      <section key={items.id || index} className="service-section-two">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -20,10 +21,10 @@ const PPCAgencyThat = ({ data }) => {
           <div className="pd_bottom_30" />
 
           <div className="row">
-            {items.cards.map((item) => (
+            {items.cards?.map((item,idx) => (
               <div
                 className="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                key={item.id}
+                key={item.id||idx}
               >
                 <div className="case-study">
                   <div className="image_boxes">
@@ -71,6 +72,7 @@ const PPCAgencyThat = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+     ))}
     </>
   );
 };

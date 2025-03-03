@@ -1,7 +1,7 @@
 const Enteryourweblink = () => {
   return (
     <>
-    <section className="bg_light_1">
+      <section className="bg_light_1">
         <div className="container">
           <div className="row">
             <div className="col-lg-2" />
@@ -36,7 +36,7 @@ const Enteryourweblink = () => {
         </div>
       </section>
     </>
-)
-}
+  );
+};
 
-export default Enteryourweblink
+export default Enteryourweblink;

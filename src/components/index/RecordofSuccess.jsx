@@ -1,9 +1,10 @@
 const RecordofSuccess = ({data}) => {
-  const items=data[0]
+
  
   return (
    <>
-   <section className="service-section-two track-record-sec">
+    {data.map((items, index) => (
+   <section key={items.id || index} className="service-section-two track-record-sec">
          <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -21,10 +22,10 @@ const RecordofSuccess = ({data}) => {
               </div>
             </div>
             <div className="col-lg-8 col-md-12 col-sm-12 background_color">
-              {items.lists.map((item)=>(
+              {items.lists.map((item,idx)=>(
 
               
-              <div className="process_box style_three dark_color divider_1"key={item.id}>
+              <div className="process_box style_three dark_color divider_1"key={item.id||idx}>
                 <div className="process_box_outer_three track-number">
                   <div className="number">
                     <h6>{item.number}</h6>
@@ -87,6 +88,7 @@ const RecordofSuccess = ({data}) => {
         </div>
         <div className="pd_bottom_60" />
       </section>
+    ))}
    </>
   )
 }

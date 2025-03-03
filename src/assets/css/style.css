@@ -12,6 +12,128 @@ Generat Settings
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
+
+
+
+/* Layout container */
+/* .layout {
+    top:100%;
+    left:0;
+    margin-top:.125rem
+  } */
+  
+/* .menu-icon {
+    position:fixed;
+    top: 20px; 
+    right: 100px; 
+    font-size: 2rem; 
+    cursor: pointer;
+    z-index: 100; 
+  } */
+  
+ 
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: 100%; 
+    height: 100%;
+    width: 100%;
+   background-color:black;
+    color: white;
+    transition: right 0.3s ease; 
+  
+  }
+  
+  .side-menu.open {
+    right: 0; 
+  }
+  
+  /* .side-menu ul {
+    padding-top: 10px;
+    list-style-type: none;
+   
+  } */
+  
+  /* .side-menu li {
+ 
+    cursor: pointer;
+   
+    margin-left: 5rem;
+    font-size: x-large;
+  } */
+
+
+  /* .home-list {
+    position: absolute;
+    right: 0%; 
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    transition: right 0.3s ease;   
+    display: flex;
+    padding-top: 129px;
+  } */
+
+  /* .home-list li{
+    cursor: pointer;
+    text-align: left;
+    margin-left: 5rem;
+    font-size: x-large;
+  } */
+  /* .services-list {
+    position: relative; 
+    top: 1px;
+    color: white;
+    transition: right 0.3s ease; 
+    display: flex;
+   
+  } */
+  /* .Work-list{
+    position: absolute;
+    right: 100%; 
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    transition: right 0.3s ease; 
+    top: -1px;
+    display: flex;
+    padding-top: 129px;
+  } */
+/*   
+  .home-list.open {
+    left: 16px; 
+  } */
+
+  /* .services-list.open {
+    left: 166px; 
+  }
+  .Work-list.open {
+    left: 166px; 
+  } */
+
+
+
+
+
+  .hover-text {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .hover-text:hover {
+    color: red;
+  }
+  
+  
+  
+
+
+
+
+
+
+
 html {
     line-height: 1.15;
     /* 1 */
@@ -1276,7 +1398,7 @@ Header section .header {
     }
 
     .m_column {
-        top: -120px;
+        top: -200px;
         position: relative;
     }
 

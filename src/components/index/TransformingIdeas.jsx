@@ -1,10 +1,10 @@
 const TransformingIdeas = ({ data }) => {
-  const items = data[0];
+  
   return (
     <>
-      <section className="service-section bg_light_1">
+     {data.map((items) => (
+      <section key={items.id} className="service-section bg_light_1">
         <div className="pd_top_80" />
-
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -52,6 +52,7 @@ const TransformingIdeas = ({ data }) => {
 
         <div className="pd_bottom_60" />
       </section>
+     ))}
     </>
   );
 };

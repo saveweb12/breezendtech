@@ -1,11 +1,13 @@
 import React from "react";
 
 const AnAdvancedStrategy = ({ data }) => {
-  const items = data[0];
-
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="service-section">
         <div className="pd_top_0" />
 
         <div className="container">
@@ -31,8 +33,8 @@ const AnAdvancedStrategy = ({ data }) => {
             <div className="row pd_top_30">
               <div className="col-xl-1" />
               <div className="col-xl-10">
-                {items.lists.map((list) => (
-                  <div className="row align-items-center" key={list.id}>
+                {items.lists?.map((list,idx) => (
+                  <div className="row align-items-center" key={list.id||idx}>
                     <div className="col-xl-1  bg_dark_6">
                       <div className="brand-pd">
                         <div className="text-center">
@@ -67,7 +69,7 @@ const AnAdvancedStrategy = ({ data }) => {
                   rel="nofollow"
                   className="theme-btn one"
                 >
-                 {items.btntext}
+                  {items.btntext}
                 </a>
               </div>
             </div>
@@ -76,6 +78,7 @@ const AnAdvancedStrategy = ({ data }) => {
 
         <div className="pd_bottom_70" />
       </section>
+        ))}
     </>
   );
 };

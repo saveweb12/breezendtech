@@ -1,8 +1,11 @@
 const BreezendTechsAgileSEOMethodology = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="service-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -32,10 +35,10 @@ const BreezendTechsAgileSEOMethodology = ({ data }) => {
 
           <div className="container">
             <div className="row">
-              {items.cards.map((card) => (
+              {items.cards?.map((card,idx) => (
                 <div
                   className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                  key={card.id}
+                  key={card.id||idx}
                 >
                   <div className="service_box style_four dark_color">
                     <div className="service_content">
@@ -60,6 +63,7 @@ const BreezendTechsAgileSEOMethodology = ({ data }) => {
           <div className="pd_bottom_60" />
         </section>
       </section>
+      ))}
     </>
   );
 };

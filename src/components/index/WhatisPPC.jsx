@@ -1,8 +1,9 @@
-const WhatisPPC = ({data}) => {
-  const items=data[0]
+const WhatisPPC = ({ data }) => {
+  
   return (
     <>
-      <section>
+    {data.map((items) => (
+      <section key={items.id}>
         <div className="pd_top_80" />
 
         <div className="container">
@@ -11,11 +12,7 @@ const WhatisPPC = ({data}) => {
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="image one">
-                    <img
-                      src={items.image}
-                      className="img-fluid"
-                      alt="about"
-                    />
+                    <img src={items.image} className="img-fluid" alt="about" />
                   </div>
                 </div>
               </div>
@@ -24,10 +21,7 @@ const WhatisPPC = ({data}) => {
               <div className="title_all_box style_three  dark_color">
                 <div className="title_sections three left">
                   <h2>{items.title}</h2>
-                  <p>
-                   {items.description}
-                  </p>
-                 
+                  <p>{items.description}</p>
                 </div>
               </div>
             </div>
@@ -36,6 +30,7 @@ const WhatisPPC = ({data}) => {
 
         <div className="pd_bottom_70" />
       </section>
+    ))}
     </>
   );
 };

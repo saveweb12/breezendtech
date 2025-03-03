@@ -1,8 +1,11 @@
 const BreezendTechsGoogleAd = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section-two bg_light_1">
+      {data.map((items, index) => (
+      <section key={items.id || index}  className="service-section-two bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -22,8 +25,8 @@ const BreezendTechsGoogleAd = ({ data }) => {
             <div className="col-xl-12">
               <div className="">
                 <div className="row">
-                  {items.list.map((item) => (
-                    <div className="col-xl-12" key={item.id}>
+                  {items.list?.map((item,idx) => (
+                    <div className="col-xl-12" key={item.id||idx}>
                       <div className="list_item_box style_two style_list">
                         <ul className="marketing-google">
                           <li>
@@ -51,6 +54,7 @@ const BreezendTechsGoogleAd = ({ data }) => {
           <div className="pd_bottom_60" />
         </div>
       </section>
+       ))}
     </>
   );
 };

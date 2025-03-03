@@ -1,9 +1,11 @@
 const FoundationofProfessional = ({ data }) => {
-  const items = data[0];
-  
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="service-section-two bg_light_1">
+      {data.map((items, index) => (
+      <section key={items.id || index} className="service-section-two bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -23,10 +25,10 @@ const FoundationofProfessional = ({ data }) => {
 
           <div className="row align-items-center">
             <div className="col-lg-4 col-md-12 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
-              {items.sections.map((item) => (
+              {items.sections?.map((item,idx) => (
                 <div
                   className="process_box style_three dark_color"
-                  key={item.id}
+                  key={item.id||idx}
                 >
                   <div className="process_box_outer_three right">
                     <div className="content_box">
@@ -59,10 +61,10 @@ const FoundationofProfessional = ({ data }) => {
             </div>
 
             <div className="col-lg-4 col-md-12 col-sm-12">
-              {items.sections.map((item) => (
+              {items.sections.map((item,idx) => (
                 <div
                   className="process_box style_three dark_color"
-                  key={item.id}
+                  key={item.id||idx}
                 >
                   <div className="process_box_outer_three left">
                     <div className="number">
@@ -87,6 +89,7 @@ const FoundationofProfessional = ({ data }) => {
         </div>
         <div className="pd_bottom_60" />
       </section>
+      ))}
     </>
   );
 };

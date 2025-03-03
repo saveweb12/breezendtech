@@ -2,12 +2,12 @@ import AvailableJobsChoose from "../index/AvailableJobsChoose";
 import WhyBreezeEnd from "../index/WhyBreezeEnd";
 import OurCulture from "../index/OurCulture";
 import WhoArethe from "../index/WhoArethe";
-import MakeTheRight from "../index/MakeTheRight";
+import MakeTheRight from "../../app/careers/MakeTheRight";
 import DedicatedTeam from "../index/DedicatedTeam";
 import OurCandidateExperience from "../index/OurCandidateExperience";
 import BreezeEndTechnologySignificant from "../index/BreezeEndTechnologySignificant";
 import JoinOurGlobalTeam from "../index/JoinOurGlobalTeam";
-import MailingList from "../about/MailingList";
+import MailingList from "../../app/contactus/MailingList";
 const page = () => {
   return (
     <>

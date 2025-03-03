@@ -1,9 +1,12 @@
 const AvailableJobsChoose = ({ data }) => {
-  const items = data[0];
  
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="image-section bg_light_1">
+    {data.map((items, index) => (
+      <section key={items.id || index} className="image-section bg_light_1">
         <div className="pd_top_130" />
         <div className="container">
           <div className="row">
@@ -42,6 +45,7 @@ const AvailableJobsChoose = ({ data }) => {
           <div className="pd_bottom_25" />
         </div>
       </section>
+        ))}
     </>
   );
 };

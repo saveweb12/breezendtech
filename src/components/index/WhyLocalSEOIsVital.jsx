@@ -1,8 +1,9 @@
 const WhyLocalSEOIsVital = ({ data }) => {
-  const items = data[0];
+ 
   return (
     <>
-      <section className="service-section-two bg_light_1">
+     {data.map((items) => (
+      <section key={items.id} className="service-section-two bg_light_1">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -45,7 +46,7 @@ const WhyLocalSEOIsVital = ({ data }) => {
                   <div className="col-xl-6">
                     <div className="list_item_box style_two style_list">
                       <ul className="marketing-local">
-                        {items.lists.map((item) => (
+                        {items.lists?.map((item) => (
                           <li key={item.id}>
                             <span> {item.text}</span>
                             <i className="fa fa-check" />
@@ -62,6 +63,7 @@ const WhyLocalSEOIsVital = ({ data }) => {
 
         <div className="pd_bottom_60" />
       </section>
+     ))}
     </>
   );
 };

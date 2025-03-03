@@ -2,7 +2,7 @@ import React from "react";
 import LetsStartDiscussion from "./LetsStartDiscussion";
 import WereaTeam from "./Werea500Team";
 import JoinOurSuccessStories from "./JoinOurSuccessStories";
-import MailingList from "../about/MailingList";
+import MailingList from "../../app/contactus/MailingList";
 const page = () => {
   return (
     <>

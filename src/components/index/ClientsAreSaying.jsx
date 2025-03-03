@@ -1,8 +1,11 @@
 const ClientsAreSaying = ({ data }) => {
-  const items = data[0];
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No data available</div>;
+  }
   return (
     <>
-      <section className="testimonial-section">
+    {data.map((items, index) => (
+      <section  key={items.id || index}  className="testimonial-section">
         <div className="pd_top_90" />
         <div className="container">
           <div className="row">
@@ -31,11 +34,11 @@ const ClientsAreSaying = ({ data }) => {
                         width: 3885,
                       }}
                     >
-                      {items.slider.map((item) => (
+                      {items.slider?.map((item,idx) => (
                         <div
                           className="owl-item cloned"
                           style={{ width: 555 }}
-                          key={item.id}
+                          key={item.id||idx}
                         >
                           <div className="testimonial_box type_two">
                             <div className="upper_content">
@@ -100,6 +103,7 @@ const ClientsAreSaying = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+       ))}
     </>
   );
 };

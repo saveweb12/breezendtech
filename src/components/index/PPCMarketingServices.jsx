@@ -1,8 +1,9 @@
 const PPCMarketingServices = ({ data }) => {
-  const items = data[0];
+  
   return (
     <>
-      <section className="feature-section">
+    {data.map((items, index) => (
+      <section key={items.id || index}  className="feature-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -17,7 +18,7 @@ const PPCMarketingServices = ({ data }) => {
             </div>
           </div>
           <div className="row border-bottom">
-            {items.sections.map((item) => (
+            {items.sections?.map((item) => (
               <div
                 className="col-lg-4 col-md-6 col-sm-6 col-xs-12 border-right"
                 key={item.id}
@@ -59,6 +60,7 @@ const PPCMarketingServices = ({ data }) => {
         </div>
         <div className="pd_bottom_70" />
       </section>
+    ))}
     </>
   );
 };

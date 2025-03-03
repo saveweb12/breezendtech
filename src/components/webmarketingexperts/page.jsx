@@ -20,7 +20,7 @@ import FullServiceFranchise from "../index/FullServiceFranchise";
 import FranchiseClientSuccess from "../index/FranchiseClientSuccess";
 import RecordofSuccess from "../index/RecordofSuccess";
 import ClientsAreSaying from "../index/ClientsAreSaying";
-import MailingList from "../about/MailingList";
+import MailingList from "../../app/contactus/MailingList";
 const webmarketingexperts = () => {
   return (
     <>
