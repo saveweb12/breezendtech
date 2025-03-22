@@ -11,8 +11,9 @@ import "../../assets/css/swiper.min.css";
 import "../../assets/css/woocommerce-layout.css";
 import "../../assets/css/woocommerce.css";
 import "../../assets/css/scss/elements/theme-css.css";
-//import "../assets/css/scss/elements/theme-cssc8d8.css";
+// import "../assets/css/scss/elements/theme-cssc8d8.css";
 import "../../assets/css/scss/elements/theme-css.css";
+import "../../assets/css/icomoon.css";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
