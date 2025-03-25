@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 
-const MakeTheRight = () => {
-  
+const MakeTheRight = ({ data }) => {
+
   const [selectedCategory, setSelectedCategory] = useState("*");
-  
+
   const jobListings = [
     { id: 1, title: "Website Project Coordinator", category: "human-resources" },
     { id: 2, title: "Human Resources Director", category: "human-resources" },
@@ -40,30 +40,14 @@ const MakeTheRight = () => {
       <section className="project-section">
         <div className="container">
           <div className="title_all_box style_one text-center dark_color">
-            <div className="title_sections">
-              <h2>Make The Right Career Choice With Us</h2>
-              <p>
-                You can make a career with us by joining our dynamic team. We
-                offer Job vacancies periodically depending on our needs. We
-                advise you to visit our website more frequently when there are
-                vacancies or subscribe to your newsletter to receive any form of
-                updates about Breeze End Technology.
-              </p>
-              <p>
-                We value professionals with a strategic vision, a proven
-                capacity to work in teams and generate results, and a deep
-                understanding of a strong commitment to international
-                development.
-              </p>
-              <p>
-                In addition to providing a supportive and thriving work
-                environment, Breeze End Technology offers professional career
-                development and an attractive remuneration package with
-                competitive pay and benefits. The benefits package includes
-                dependency allowance, education grant up to university level,
-                home leave, medical insurance, and social security.
-              </p>
-            </div>
+            {data.map((items) => (
+              <div className="title_sections" key={items.id}>
+                <h2>{items.title}</h2>
+                <p>
+                  {items.description}
+                </p>
+              </div>
+            ))}
           </div>
           <div className="project_all filt_style_six filter_enabled">
             <div className="row">
