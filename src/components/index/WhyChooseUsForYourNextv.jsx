@@ -1,4 +1,4 @@
-const WhyChooseUsForYourNextVideoProject = () => {
+const WhyChooseUsForYourNextv = () => {
     return (
         <>
             <section className="timeline-section">
@@ -42,4 +42,4 @@ const WhyChooseUsForYourNextVideoProject = () => {
     )
 }
 
-export default WhyChooseUsForYourNextVideoProject
+export default WhyChooseUsForYourNextv

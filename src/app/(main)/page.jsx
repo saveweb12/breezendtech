@@ -1,6 +1,7 @@
 "use client";
 import axios from 'axios';
 import dynamic from 'next/dynamic';
+
 import { useRef, useEffect, useState } from "react";
 
 import gsap from "gsap";
@@ -135,7 +136,7 @@ const index = () => {
                                 <div
                                     className="image-layer"
                                     style={{
-                                        backgroundImage: "url(/images/sliders/slider-2-bg.jpg)",
+                                        backgroundImage: "Url(/images/sliders/slider-2-bg.jpg)",
                                     }}
                                 />
                                 <div className="auto-container">
@@ -176,7 +177,7 @@ const index = () => {
                                 <div
                                     className="image-layer"
                                     style={{
-                                        backgroundImage: "url(/images/sliders/slider-2-bg.jpg)",
+                                        backgroundImage: "Url(/images/sliders/slider-2-bg.jpg)",
                                     }}
                                 />
                                 <div className="auto-container">
@@ -220,7 +221,7 @@ const index = () => {
                                 <div
                                     className="image-layer"
                                     style={{
-                                        backgroundImage: "url(/images/sliders/slider-2-bg.jpg)",
+                                        backgroundImage: "Url(/images/sliders/slider-2-bg.jpg)",
                                     }}
                                 />
                                 <div className="auto-container">
@@ -290,7 +291,7 @@ const index = () => {
             </section>
             <section
                 className="process-section fixed-title bg_op_1 "
-                style={{ backgroundImage: "url(/images/image-mountain2.png)" }}
+                style={{ backgroundImage: "Url(/images/image-mountain2.png)" }}
             >
                 {/*===============spacing==============*/}
                 <div className="pd_top_60" />

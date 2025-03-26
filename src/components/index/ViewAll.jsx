@@ -4,11 +4,10 @@ const ViewAll = () => {
   return (
     <>
       <section className="project_all filt_style_four  filter_enabled">
+        <h1>Effective portfolio</h1>
         <div className="container">
-          {/*===============spacing==============*/}
           <div className="pd_top_90" />
-          {/*===============spacing==============*/}
-          <div className="row">
+            <div className="row">
             <div className="col-lg-12">
               <div
                 className="fliter_group"
@@ -216,9 +215,7 @@ const ViewAll = () => {
               </div>
             </div>
           </div>
-          {/*===============spacing==============*/}
           <div className="pd_bottom_20" />
-          {/*===============spacing==============*/}
         </div>
       </section>
 
