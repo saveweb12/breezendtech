@@ -13,6 +13,8 @@ const Selector = ({ value, onChange }) => {
         { key: 1, Option: "None" },
         { key: 2, Option: "Home" },
         { key: 3, Option: "About Us" },
+        { key: 17, Option: "Services" },
+        { key: 18, Option: "Our Work" },
         { key: 4, Option: "Service Locations" },
         { key: 5, Option: "Professionals Associations" },
         { key: 6, Option: "Associations of Cpmouter Repair" },

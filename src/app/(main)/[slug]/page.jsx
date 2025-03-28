@@ -58,6 +58,7 @@ export default async function DynamicPage({ params }) {
 
       const Component = dynamic(() => import(`@/components/index/${componentName}`).catch(() => null), {
         ssr: true,
+        loading: () => <P>Loading...</P>,
       });
       return <Component key={componentName} data={componentProps} />;
     } catch (error) {

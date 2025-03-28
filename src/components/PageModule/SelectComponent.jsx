@@ -16,7 +16,7 @@ const SelectComponent = ({ isOpen, onClose }) => {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <div className='w-full flex justify-between items-center px-4 bg-white relative'>
-                        <div className='w-[45%] flex justify-start items-baseline'>
+                        <div className='w-[50%] flex justify-start items-baseline'>
                             <h2 className='text-2xl p-3'>
                                 Select Component
                             </h2>

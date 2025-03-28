@@ -187,7 +187,7 @@ function DataTable() {
   const [rowSelection, setRowSelection] = React.useState({});
 
   const [tableData, setTableData] = useState([]);
-  console.log(tableData)
+  // console.log(tableData)
 
   useEffect(() => {
     dispatch(getDataFromBackend());

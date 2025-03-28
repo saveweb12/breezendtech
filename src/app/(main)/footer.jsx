@@ -1,19 +1,14 @@
-import "../../assets/css/style.css";
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/scss/elements/theme-css.css";
-
 const footer = () => {
   return (
     <>
-      {/*-==============footer start =================*/}
       <div className="footer_area footer_two" id="footer_contents">
         <div className="container">
           <section className="bg_light_2">
             <div className="container">
               <div className="row">
-                {/*===============spacing==============*/}
+                
                 <div className="pd_top_80" />
-                {/*===============spacing==============*/}
+                
                 <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                   <div className="row align-items-center">
                     <div className="footer_logo">
@@ -97,15 +92,15 @@ const footer = () => {
                 </div>
               </div>
             </div>
-            {/*===============spacing==============*/}
+            
             <div className="pd_bottom_60" />
-            {/*===============spacing==============*/}
+            
           </section>
         </div>
         <div className="footer_widgets_wrap bg_dark_2">
-          {/*===============spacing==============*/}
+          
           <div className="pd_top_80" />
-          {/*===============spacing==============*/}
+          
           <div className="auto-container">
             <div className="row">
               <div className="title_all_box style_three text-center light_color">
@@ -113,9 +108,9 @@ const footer = () => {
                   <h2>Growing Businesses Since 2008</h2>
                   <p>Made with in 25 cities around the world</p>
                 </div>
-                {/*===============spacing==============*/}
+                
                 <div className="mr_bottom_35" />
-                {/*===============spacing==============*/}
+                
               </div>
               <dov className="col-lg-1" />
               <div className="col-xl-2 col-lg-6 col-md-12 col-sm-12">
@@ -261,14 +256,14 @@ const footer = () => {
               </div>
             </div>
           </div>
-          {/*===============spacing==============*/}
+          
           <div className="pd_bottom_40" />
-          {/*===============spacing==============*/}
+          
         </div>
         <div className="footer_copy_right bg_dark_3">
-          {/*===============spacing==============*/}
+          
           <div className="pd_top_20" />
-          {/*===============spacing==============*/}
+          
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 col-sm-12">
@@ -294,9 +289,9 @@ const footer = () => {
               </div>
             </div>
           </div>
-          {/*===============spacing==============*/}
+          
           <div className="pd_bottom_20" />
-          {/*===============spacing==============*/}
+          
         </div>
       </div>
       {/*-==============footer end =================*/}

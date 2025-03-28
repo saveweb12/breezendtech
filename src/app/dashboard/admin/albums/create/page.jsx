@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { useForm } from 'react-hook-form';
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import Editor from '@/components/Editor';
 
 const Page = () => {
   const [image, setImage] = useState();
@@ -24,6 +25,7 @@ const Page = () => {
 
   }
   const onSubmit = async (data) => {
+    console.log(data)
     const formdata = new FormData();
 
     formdata.append("title", data.title);
@@ -65,7 +67,7 @@ const Page = () => {
           </Button>
         </div>
       </header> */}
-      <header className="flex justify-between items-center px-2 py-3 border-b-2">
+      <header className="flex justify-between items-center px-2 py-3 border-b-2 mb-5">
         <h2 className="text-2xl font-semibold">Create Portfolio</h2>
         <div className="flex justify-center items-center gap-2">
           {/* Back Button */}
@@ -92,13 +94,19 @@ const Page = () => {
       </header>
       <main>
         <form id='portfolioForm' onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
-          <div>
-            <Label className="mb-1">Project Title</Label>
-            <Input type="text" placeholder="Enter project title" className="border p-2 rounded-md w-full" {...register("title")} />
+          <div className='flex items-center mb-1 gap-2'>
+            <div className='w-1/2'>
+              <Label className="mb-1">Portfolio Title</Label>
+              <Input type="text" placeholder="Enter project title" className="border p-2 rounded-md w-full" {...register("title")} />
+            </div>
+            <div className='w-1/2'>
+              <Label className="mb-1">Portfolio Category</Label>
+              <Input type="text" placeholder="Enter project title" className="border p-2 rounded-md w-full" {...register("category")} />
+            </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <Label htmlFor="image">Project Image</Label>
+          <div className="flex flex-col gap-2 mb-5">
+            <Label htmlFor="image">Portfolio Image</Label>
             <div className="relative flex items-center justify-center border-dashed border-2 border-gray-300 rounded-lg p-4 cursor-pointer">
               {image ? (
                 <div className="relative">
@@ -123,7 +131,15 @@ const Page = () => {
           </div>
 
 
-          <Label className="mb-1">Project Link</Label>
+          <div className="flex flex-col items-start gap-2 border p-2 rounded-md">
+            {/* <Link2 size={16} className="text-gray-500" /> */}
+            <Label className="mb-1">Portfolio Description</Label>
+            {/* <Input type="url" placeholder="Enter project link" className="flex-1 border-none outline-none"
+              {...register("link", { required: "Link is required", pattern: { value: /^(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}.*$/, message: "Enter a valid URL" } })}
+            /> */}
+            <Editor />
+          </div>
+          <Label className="mb-1">Portfolio Link</Label>
           <div className="flex items-center gap-2 border p-2 rounded-md">
             <Link2 size={16} className="text-gray-500" />
             <Input type="url" placeholder="Enter project link" className="flex-1 border-none outline-none"

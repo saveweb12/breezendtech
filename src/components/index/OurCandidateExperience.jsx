@@ -6,8 +6,8 @@ const OurCandidateExperience = ({ data }) => {
 
   return (
     <>
-      {data.map((items) => (
-        <section className="tab-section bg_op_1">
+      {data.map((items, index) => (
+        <section className="tab-section bg_op_1" key={index}>
           <div className="pd_top_70" />
           <div className="container">
             <div className="row">

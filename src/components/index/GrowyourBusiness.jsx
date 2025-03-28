@@ -40,8 +40,7 @@ const Growyourbusiness = ({ data }) => {
                       role="button"
                       rel="noopener"
                     >
-                      <span className="fl-button-text">{items.btnText}</span>{" "}
-                      {/* <span className="fl-button-text">GET FREE PROPOSAL</span>{" "} */}
+                      <span className="fl-button-text">GET FREE PROPOSAL</span>{" "}
                     </a>
                   </div>
                   <div className="col-auto custom_or">

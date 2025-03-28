@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const index = () => {
+const Index = () => {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
 
@@ -115,6 +115,7 @@ const index = () => {
     try {
       return dynamic(() => import(`@/components/index/${componentName}`).catch(() => null), {
         ssr: false, // Avoid SSR errors for dynamic imports
+        loading: () => <p>loading...</p>,
       });
     } catch (error) {
       console.error(`Component "${componentName}" not found:`, error);
@@ -176,7 +177,7 @@ const index = () => {
                 <div
                   className="image-layer"
                   style={{
-                    backgroundImage: "url(/images/sliders/slider-2-bg.jpg)",
+                    backgroundImage: "Url(/images/sliders/slider-2-bg.jpg)",
                   }}
                 />
                 <div className="auto-container">
@@ -220,7 +221,7 @@ const index = () => {
                 <div
                   className="image-layer"
                   style={{
-                    backgroundImage: "url(/images/sliders/slider-2-bg.jpg)",
+                    backgroundImage: "Url(/images/sliders/slider-2-bg.jpg)",
                   }}
                 />
                 <div className="auto-container">
@@ -352,7 +353,7 @@ const index = () => {
                     <div className="swiper-slide">
                       <div className="image">
                         <img
-                          src="/images/icons/partners-01.jpg"
+                          src="/images/icons/partners-04.jpg"
                           alt="clients-logo"
                         />
                       </div>
@@ -369,6 +370,14 @@ const index = () => {
                       <div className="image">
                         <img
                           src="/images/icons/partners-03.jpg"
+                          alt="clients-logo"
+                        />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="image">
+                        <img
+                          src="/images/icons/partners-04.jpg"
                           alt="clients-logo"
                         />
                       </div>
@@ -437,32 +446,14 @@ const index = () => {
                         />
                       </div>
                     </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <img
-                          src="/images/icons/partners-12.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/*===============spacing==============*/}
         <div className="pd_bottom_30" />
-        {/*===============spacing==============*/}
       </section>
-      {/*-client-end--*/}
-
-      {/* <OurClientsGetResults />
-      <CustomerSatisfaction />
-      <MarketingAgency />
-      <Finduoutour />
-      <Seoservices />
-      <Growyourbusiness /> */}
       {/* <div>
         {loadedComponents.length > 0 ? (
           loadedComponents
@@ -480,4 +471,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -2,6 +2,7 @@ import { DEFAULT_SANS_SERIF_FONT } from 'next/dist/shared/lib/constants'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	important: true,
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

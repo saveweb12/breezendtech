@@ -54,7 +54,7 @@ const data = {
           link: "#",
           additionalItem: [
             { label: "Portfolio List", link: "/dashboard/admin/albums" },
-            { label: "Add Portfolio", link: "#" },
+            { label: "Add Portfolio", link: "/dashboard/admin/albums/create" },
           ],
         },
       ],

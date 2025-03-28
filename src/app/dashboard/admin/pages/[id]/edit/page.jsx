@@ -25,15 +25,8 @@ const Page = () => {
             try {
                 const response = await axios.get(`https://breezend-backend-2.onrender.com/api/edit/${id}`);
                 const pageData = response.data;
-                console.log(pageData)
-                console.log(pageData.page.title)
-
-                // let ogPictureFile = null;
-                // if (pageData.page.openGraph.image) {
-                //     const imageResponse = await fetch(pageData.og_picture);
-                //     const imageBlob = await imageResponse.blob();
-                //     ogPictureFile = new File([imageBlob], "image.jpg", { type: imageBlob.type });
-                // }
+                console.log(pageData);
+                console.log(pageData.page.metaTags);
 
                 reset({
                     title: pageData.page.title,

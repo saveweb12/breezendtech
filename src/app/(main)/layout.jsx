@@ -14,17 +14,9 @@ import "../../assets/css/scss/elements/theme-css.css";
 // import "../assets/css/scss/elements/theme-cssc8d8.css";
 import "../../assets/css/scss/elements/theme-css.css";
 import "../../assets/css/icomoon.css";
+import "../../assets/css/swiper.min.css";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+// import "../../app/globals.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -33,12 +25,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <div>
+      <Header />
+      {children}
+      <Footer />
+    </div>
   );
 }

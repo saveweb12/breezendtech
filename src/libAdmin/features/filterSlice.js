@@ -113,7 +113,7 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" },
             { name: "icon", type: "file" },
             { name: "icon_text", type: "text" }
@@ -123,7 +123,7 @@ const initialState = {
           id: 403, image: "/services/AdvertisingonSocialMedia.png", name: "AdvertisingonSocialMedia",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
@@ -132,7 +132,7 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "btnText", type: "text" },
             { name: "image", type: "file" }
           ]
@@ -141,7 +141,7 @@ const initialState = {
           id: 405, image: "/services/WhyYourBusinessNeeds.png", name: "WhyYourBusinessNeeds",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
@@ -150,7 +150,7 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
           ]
         },
         {
@@ -158,7 +158,7 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
@@ -174,7 +174,7 @@ const initialState = {
           id: 409, image: "/services/HowMuchDoesSocial.png", name: "HowMuchDoesSocial",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" },
             { name: "icon", type: "file" },
             { name: "icon_text", type: "text" }
@@ -184,7 +184,7 @@ const initialState = {
         {
           id: 411, image: "/services/WhyChoose.png", name: "WhyChoose",
           schema: [
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "icon", type: "file" },
             { name: "iconTitle", type: "text" }
           ]
@@ -208,14 +208,14 @@ const initialState = {
     },
     {
       id: 6,
-      name: "Carriers",
+      name: "Careers",
       items: [
         {
           id: 601, image: "/Carriers/AvailableJobsChoose.png", name: "AvailableJobsChoose",
           schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "video", type: "file" },
             { name: "btnText", type: "text" },
           ]
@@ -224,7 +224,7 @@ const initialState = {
           id: 602, image: "/Carriers/WhyBreezeEnd.png", name: "WhyBreezeEnd",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
@@ -249,7 +249,7 @@ const initialState = {
           id: 605, image: "/Carriers/MakeTheRight.png", name: "MakeTheRight",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" }
+            { name: "description", type: "textarea" }
           ]
         },
         {
@@ -257,7 +257,7 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "subtitle", type: "text" },
-            { name: "description", type: "text" }
+            { name: "description", type: "textarea" }
           ]
         },
         {
@@ -265,14 +265,14 @@ const initialState = {
           schema: [
             { name: "title", type: "text" },
             { name: "subtitle", type: "text" },
-            { name: "description", type: "text" }
+            { name: "description", type: "textarea" }
           ]
         },
         {
           id: 608, image: "/Carriers/BreezeEndTechnologySignificant.png", name: "BreezeEndTechnologySignificant",
           schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" },
             { name: "text", type: "text" }
           ]
@@ -280,12 +280,48 @@ const initialState = {
         {
           id: 609, image: "/Carriers/JoinOurGlobalTeam.png", name: "JoinOurGlobalTeam", schema: [
             { name: "title", type: "text" },
-            { name: "description", type: "text" },
+            { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         }
       ]
     },
+    {
+      id: 7,
+      name: "Portfolio",
+      items: [
+        { id: 701, image: "/portfolio/image1.png", name: "DigitalMarketingServices" },
+        { id: 702, image: "/portfolio/portfolio.png", name: "AvailableJobsChoose" },
+      ]
+    },
+    {
+      id: 8,
+      name: "Video Production",
+      items: [
+        { id: 801, image: "/video/image1.png", name: "DigitalMarketingServices" },
+        { id: 802, image: "/video/image2.png", name: "AvailableJobsChoose" },
+        { id: 803, image: "/video/image3.png", name: "AvailableJobsChoose" },
+        { id: 804, image: "/video/image4.png", name: "AvailableJobsChoose" },
+      ]
+    },
+    {
+      id: 9,
+      name: "Clients",
+      items: [
+        { id: 801, image: "/clients/image1.png", name: "DigitalMarketingServices" },
+        { id: 802, image: "/clients/client.png", name: "AvailableJobsChoose" }
+      ]
+    },
+    {
+      id: 10,
+      name: "Case Study",
+      items: [
+        { id: 901, image: "/case-study/image1.png", name: "DigitalMarketingServices" },
+        { id: 902, image: "/case-study/Revamp.png", name: "AvailableJobsChoose" },
+        { id: 903, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose" },
+        { id: 904, image: "/case-study/joinourmail.png", name: "AvailableJobsChoose" }
+      ]
+    }
   ],
   filteredItems: [],
   selectedImage: [],
