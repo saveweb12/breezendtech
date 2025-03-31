@@ -101,7 +101,7 @@ margin-top:-.5em;
 content:"";
 -webkit-animation:spin 1s ease-in-out infinite;
 animation:spin 1s ease-in-out infinite;
-background:url(../images/icons/loader.html) center center;
+/* background:url(../images/icons/loader.html) center center; */
 background-size:cover;
 line-height:1;
 text-align:center;
@@ -121,7 +121,7 @@ margin-top:-.5em;
 content:"";
 -webkit-animation:spin 1s ease-in-out infinite;
 animation:spin 1s ease-in-out infinite;
-background:url(../images/icons/loader.html) center center;
+/* background:url(../images/icons/loader.html) center center; */
 background-size:cover;
 line-height:1;
 text-align:center;
