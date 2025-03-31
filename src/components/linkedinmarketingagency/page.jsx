@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import InterestedGetinTouch from "../index/InterestedGetinTouch";
 const page = () => {
   return (

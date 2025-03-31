@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import ResultsDrivenSocial from "../index/ResultsDrivenSocial";
 import AdvertisingonSocialMedia from "../index/AdvertisingonSocialMedia";
 import PaidSocialMedia from "../index/PaidSocialMedia";

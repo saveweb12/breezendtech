@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import WhyYouNeed from "../index/WhyYouNeed";
 import WhatsIncludedinYour from "../index/WhatsIncludedinYour";
 import AnAdvancedStrategy from "../index/AnAdvancedStrategy";

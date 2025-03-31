@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import LinkBuilding from "../index/LinkBuilding";
 import WhyShouldBusiness from "../index/WhyShouldBusiness";
 import MailingList from "../../app/contactus/MailingList";

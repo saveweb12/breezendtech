@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import MarketingServiceViews from "./MarketingServiceViews";
 import MarketingBasics from "./MarketingBasics";
 import WhatIsSocialM from "./WhatIsSocialM";
