@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const FranchiseClientSuccess = ({ data }) => {
   const items = data[0];
 
@@ -26,12 +28,12 @@ const FranchiseClientSuccess = ({ data }) => {
                 <div className="service_post style_one">
                   <div className="image">
                     <div className="overlay" />
-                    <img
+                    <Image
                       loading="lazy"
                       width={500}
                       height={500}
                       src={item.image}
-                      alt="img"
+                      alt="Image"
                     />
                   </div>
                   <div className="service_content icon_yes">

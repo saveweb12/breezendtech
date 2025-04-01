@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhoArethe = ({ data }) => {
 
   return (
@@ -32,14 +34,14 @@ const WhoArethe = ({ data }) => {
                 <div className="col-lg-5">
                   <div className="image_boxes style_four">
                     <div className="image_box one">
-                      <img src="/images/about/about-01.jpg" className="img-fluid" alt="about" />
+                      <Image src="/images/about/about-01.jpg" className="img-fluid" alt="about" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-7">
                   <div className="image_boxes style_four">
                     <div className="image_box one">
-                      <img src="/images/about/about-01.jpg" className="img-fluid" alt="about" />
+                      <Image src="/images/about/about-01.jpg" className="img-fluid" alt="about" />
                     </div>
                   </div>
                 </div>
@@ -47,21 +49,21 @@ const WhoArethe = ({ data }) => {
                   <div className="col-lg-6">
                     <div className="image_boxes style_four">
                       <div className="image_box one">
-                        <img src="/images/about/about-9.jpg" className="img-fluid one_img" alt="about" />
+                        <Image src="/images/about/about-9.jpg" className="img-fluid one_img" alt="about" />
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3">
                     <div className="image_boxes style_four">
                       <div className="image_box one">
-                        <img src="/images/about/about-8.jpg" className="img-fluid one_img" alt="about" />
+                        <Image src="/images/about/about-8.jpg" className="img-fluid one_img" alt="about" />
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3">
                     <div className="image_boxes style_four">
                       <div className="image_box one">
-                        <img src="/images/about/about-3.jpg" className="img-fluid one_img" alt="about" />
+                        <Image src="/images/about/about-3.jpg" className="img-fluid one_img" alt="about" />
                       </div>
                     </div>
                   </div>

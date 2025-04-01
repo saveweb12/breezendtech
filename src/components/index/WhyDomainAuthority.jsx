@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhyDomainAuthority = ({ data }) => {
   return (
     <>
@@ -11,7 +13,7 @@ const WhyDomainAuthority = ({ data }) => {
                 <div className="service_box style_two dark_color">
                   <div className="image_boxes style_four">
                     <div className="image one">
-                      <img src={item.image} className="img-fluid" alt="about" />
+                      <Image src={item.image} className="img-fluid" alt="about" />
                     </div>
                   </div>
                 </div>

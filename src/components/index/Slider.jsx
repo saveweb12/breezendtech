@@ -1,7 +1,8 @@
 import React from "react";
+import Image from 'next/image'
 
-function Slider({  }) {
- 
+function Slider({ }) {
+
 
   return (
     <>
@@ -36,7 +37,7 @@ function Slider({  }) {
                     </div>
                     <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                       <div className="slider_image">
-                        <img
+                        <Image
                           src={slider.slider_image}
                           className="img-fluid"
                           alt="slider image"
@@ -80,7 +81,7 @@ function Slider({  }) {
                     </div>
                     <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                       <div className="slider_image">
-                        <img
+                        <Image
                           src="/images/sliders/slider-2-2.png"
                           className="img-fluid"
                           alt="slider image"
@@ -125,7 +126,7 @@ function Slider({  }) {
                       </div>
                       <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                         <div className="slider_image">
-                          <img
+                          <Image
                             src="/images/sliders/slider-2-3.png"
                             className="img-fluid"
                             alt="slider image"
@@ -137,8 +138,8 @@ function Slider({  }) {
                 </div>
               </div>
             </div> */}
-          {/* </div> */}
-        {/* </section> */}
+      {/* </div> */}
+      {/* </section> */}
       {/* ))}  */}
     </>
   );

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ViewAll = () => {
   return (
@@ -7,7 +8,7 @@ const ViewAll = () => {
         <h1>Effective portfolio</h1>
         <div className="container">
           <div className="pd_top_90" />
-            <div className="row">
+          <div className="row">
             <div className="col-lg-12">
               <div
                 className="fliter_group"
@@ -39,7 +40,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}
@@ -69,7 +70,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}
@@ -99,7 +100,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}
@@ -129,7 +130,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}
@@ -159,7 +160,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}
@@ -189,7 +190,7 @@ const ViewAll = () => {
               >
                 <div className="project_post style_one style_four">
                   <div className="image">
-                    <img
+                    <Image
                       loading="lazy"
                       width={746}
                       height={497}

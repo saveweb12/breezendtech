@@ -1,6 +1,8 @@
 import React from "react";
+import Image from 'next/image'
+
 const WeTurn = ({ data }) => {
-  
+
   return (
     <>
       {data.map((items) => (
@@ -29,7 +31,7 @@ const WeTurn = ({ data }) => {
                       <div className="process_box style_four dark_color process_right">
                         <div className="process_box_outer_four">
                           <div className="icon-setting turn-customers">
-                            <img
+                            <Image
                               src={item.icon}
                               className="img-fluid turn-png svg_image"
                               alt="icon png"
@@ -50,7 +52,7 @@ const WeTurn = ({ data }) => {
                 <div className="visitor-hover-content">
                   <div className="image-wrap">
                     <div className="half-circle-content">
-                      <img
+                      <Image
                         src="images/icons/man-icon-white.png"
                         className="img-fluid"
                         alt="icon png"
@@ -58,7 +60,7 @@ const WeTurn = ({ data }) => {
                     </div>
                   </div>
                   <p className="sec-content">
-                   {items.text}
+                    {items.text}
                   </p>
                 </div>
               </div>

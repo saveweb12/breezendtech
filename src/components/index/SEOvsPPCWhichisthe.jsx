@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const SEOvsPPCWhichisthe = ({ data }) => {
   return (
     <>
@@ -43,7 +45,7 @@ const SEOvsPPCWhichisthe = ({ data }) => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div className="image one">
-                  <img
+                  <Image
                     src={items.image}
                     className="background_image"
                     alt="image"

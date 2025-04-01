@@ -1,74 +1,75 @@
 import React from "react";
+import Image from 'next/image'
 
 const RelationshipsandResults = ({ data }) => {
-  
-  
+
+
   return (
     <>
-     {data.map((items, index) => (
-      <section key={items.id || index} className="service-section">
-        <div className="pd_top_0" />
+      {data.map((items, index) => (
+        <section key={items.id || index} className="service-section">
+          <div className="pd_top_0" />
 
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="title_all_box style_seven text-center dark_color">
-                <div className="title_sections">
-                  <h2>{items.title}</h2>
-                  <div className="before_title">{items.subtitle}</div>
-                  <p>{items.text}</p>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="title_all_box style_seven text-center dark_color">
+                  <div className="title_sections">
+                    <h2>{items.title}</h2>
+                    <div className="before_title">{items.subtitle}</div>
+                    <p>{items.text}</p>
+                  </div>
+
+                  <div className="pd_bottom_15" />
                 </div>
-
-                <div className="pd_bottom_15" />
               </div>
             </div>
-          </div>
 
-          <div className="row gutter_30px ">
-            <div className="col-lg-12">
-              {items.images.map((img,idx) => (
-                <div
-                  className="service_section grid_all four_column news_wrapper_grid dark_color"
-                  key={img.id||idx}
-                >
+            <div className="row gutter_30px ">
+              <div className="col-lg-12">
+                {items.images.map((img, idx) => (
                   <div
-                    className="grid_show_case grid_layout clearfix text-center"
-                    style={{ position: "relative", height: 400 }}
+                    className="service_section grid_all four_column news_wrapper_grid dark_color"
+                    key={img.id || idx}
                   >
                     <div
-                      className="grid_box _card"
-                      style={{ position: "absolute", left: 0, top: 0 }}
+                      className="grid_show_case grid_layout clearfix text-center"
+                      style={{ position: "relative", height: 400 }}
                     >
-                      <div className="service_post style_five">
-                        <div className="image_box">
-                          <img
-                            loading="lazy"
-                            width={500}
-                            height={300}
-                            src={img.image}
-                            alt="img"
-                          />
-                          <div className="gradient" />
-                        </div>
-                        <div className="content_box text-center">
-                          <h2 className="bookmark-title">
-                            <a href="#" rel="bookmark">
-                              {img.number}
-                            </a>
-                          </h2>
-                          <p className="post-title">{img.title} </p>
-                          <p className="">{img.text}</p>
+                      <div
+                        className="grid_box _card"
+                        style={{ position: "absolute", left: 0, top: 0 }}
+                      >
+                        <div className="service_post style_five">
+                          <div className="image_box">
+                            <Image
+                              loading="lazy"
+                              width={500}
+                              height={300}
+                              src={img.image}
+                              alt="img"
+                            />
+                            <div className="gradient" />
+                          </div>
+                          <div className="content_box text-center">
+                            <h2 className="bookmark-title">
+                              <a href="#" rel="bookmark">
+                                {img.number}
+                              </a>
+                            </h2>
+                            <p className="post-title">{img.title} </p>
+                            <p className="">{img.text}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -88,13 +89,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "379.953px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-5.jpg"
@@ -116,13 +117,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -142,13 +143,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -170,13 +171,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -196,13 +197,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -224,13 +225,13 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
-                    {/* <div
+                      {/* <div
               className="grid_box _card"
               style={{ position: "absolute", left: "759.906px", top: 0 }}
             >
               <div className="service_post style_five">
                 <div className="image_box">
-                  <img
+                  <Image
                     width={500}
                     height={300}
                     src="/images/service/service-image-4.jpg"
@@ -252,16 +253,16 @@ const RelationshipsandResults = ({ data }) => {
                 </div>
               </div>
             </div> */}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="pd_bottom_70" />
-      </section>
-     ))}
+          <div className="pd_bottom_70" />
+        </section>
+      ))}
     </>
   );
 };

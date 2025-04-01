@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const MarketingAgency = ({ data }) => {
   return (
     <>
@@ -26,7 +28,7 @@ const MarketingAgency = ({ data }) => {
               </div>
               <div className="col-md-5">
                 <div className="image_boxes">
-                  <img
+                  <Image
                     src={items.image}
                     className="background_image"
                     alt="image"

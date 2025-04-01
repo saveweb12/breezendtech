@@ -1,8 +1,10 @@
+import Image from 'next/image'
+
 const WhyYourBusinessNeeds = ({ data }) => {
   return (
     <>
       {data.map((items) => (
-        <section  key={items.id} className="feature-section bg_light_1">
+        <section key={items.id} className="feature-section bg_light_1">
           <div className="pd_top_70" />
           <div className="container">
             <div className="row">
@@ -23,7 +25,7 @@ const WhyYourBusinessNeeds = ({ data }) => {
               </div>
               <div className="col-lg-5">
                 <div className="image one">
-                  <img
+                  <Image
                     src={items.image}
                     className="background_image"
                     alt="image"
@@ -43,7 +45,7 @@ const WhyYourBusinessNeeds = ({ data }) => {
                   <div className="process_box style_one dark_color">
                     <div className="process_box_outer">
                       <div className="icon">
-                        <img
+                        <Image
                           src={item.icon}
                           className="img-fluid svg_image"
                           alt="icon png"

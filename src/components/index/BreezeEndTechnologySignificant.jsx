@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const BreezeEndTechnologySignificant = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
     return <div>No data available</div>;
@@ -27,7 +28,7 @@ const BreezeEndTechnologySignificant = ({ data }) => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div className="image_box_new type_one clearfix">
                   <div className="image_one">
-                    <img src={items.image} className="img-fluid" alt="img" />
+                    <Image src={items.image} className="img-fluid" alt="Image" />
                     <div className="year_experience">
                       <h2>{items.text}</h2>
                     </div>

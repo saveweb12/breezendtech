@@ -1,5 +1,7 @@
-const HowDoesPPCMarketingWork = ({data}) => {
-  const items=data[0]
+import Image from 'next/image';
+
+const HowDoesPPCMarketingWork = ({ data }) => {
+  const items = data[0]
   return (
     <>
       <section className="service-section-two">
@@ -22,7 +24,7 @@ const HowDoesPPCMarketingWork = ({data}) => {
                 <div className="process_box">
                   <div className="content_box">
                     <p>
-                     {items.description}
+                      {items.description}
                     </p>
                   </div>
                 </div>
@@ -30,7 +32,7 @@ const HowDoesPPCMarketingWork = ({data}) => {
               <div className="process_box style_one dark_color">
                 <div className="process_box">
                   <div className="content_box">
-                   
+
                   </div>
                 </div>
               </div>
@@ -38,7 +40,7 @@ const HowDoesPPCMarketingWork = ({data}) => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div className="image one">
-                <img
+                <Image
                   src={items.image}
                   className="background_image"
                   alt="image"

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const OurCertifications = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
     return <div>No data available</div>;
@@ -38,7 +40,7 @@ const OurCertifications = ({ data }) => {
                   key={item.id || idx}
                 >
                   <div className="image_boxes partner-pd">
-                    <img src={item.image} className="img-fluid" alt="image" />
+                    <Image src={item.image} className="img-fluid" alt="image" />
                   </div>
                 </div>
               ))}

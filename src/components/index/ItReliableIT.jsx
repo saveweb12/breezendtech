@@ -1,9 +1,9 @@
-import { Item } from "@radix-ui/react-dropdown-menu";
 import React from "react";
+import Image from 'next/image'
 
 const ItReliableIT = ({ data }) => {
   const items = data[0];
- 
+
   return (
     <section className="service-section">
       <div className="pd_top_70" />
@@ -26,9 +26,9 @@ const ItReliableIT = ({ data }) => {
             <div className="title_all_box">
               <div className="title_sections">
                 <p>
-                {items.short_desc}
+                  {items.short_desc}
                 </p>
-                
+
                 <ul className="custom-software-service">
                   {items.list.map((lis) => (
                     <li key={lis.id}>
@@ -44,7 +44,7 @@ const ItReliableIT = ({ data }) => {
             <div className="service_box style_two dark_color">
               <div className="image_boxes style_four">
                 <div className="one">
-                  <img src={items.image} className="img-fluid" alt="about" />
+                  <Image src={items.image} className="img-fluid" alt="about" />
                 </div>
               </div>
             </div>

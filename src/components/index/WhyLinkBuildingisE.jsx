@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhyLinkBuildingisE = ({ data }) => {
   return (
     <>
@@ -19,7 +21,7 @@ const WhyLinkBuildingisE = ({ data }) => {
                   <div className="service_box style_two dark_color">
                     <div className="image_boxes style_four">
                       <div className="image one pd_bottom_25">
-                        <img
+                        <Image
                           src={item.image}
                           className="img-fluid"
                           alt="about"

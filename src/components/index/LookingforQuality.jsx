@@ -1,8 +1,9 @@
 import React from "react";
+import Image from 'next/image';
 
 const LookingforQuality = ({ data }) => {
   const items = data[0];
- 
+
   return (
     <>
       <section className="feature-section">
@@ -32,7 +33,7 @@ const LookingforQuality = ({ data }) => {
                     <div className="testimonial_box">
                       <div className="box_inner not_ovelay">
                         <div className="image_box icon">
-                          <img src={card.image} alt="image" />
+                          <Image src={card.image} alt="image" />
                         </div>
                         <div className="rating">
                           <ul className="icon-rating">

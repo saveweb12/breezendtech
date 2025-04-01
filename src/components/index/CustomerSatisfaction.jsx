@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const CustomerSatisfaction = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
     return <div>No data available</div>;
@@ -70,11 +71,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-five-bg.jpg" alt="image" />
+                            <Image src="/images/banner-five-bg.jpg" alt="image" />
                           </div>/
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/12.png" alt="image" />
+                              <Image src="/images/icons/12.png" alt="image" />
                             </div>
                             <h4>Software & Software</h4>
                             <h6>Highly Recommended for all businesses</h6>
@@ -83,7 +84,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -104,11 +105,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 3" data-swiper-slide-index="2" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/1234.png" alt="image" />
+                              <Image src="/images/icons/1234.png" alt="image" />
                             </div>
                             <h4>House of Textile</h4>
                             <h6>Exceptional services with Great results</h6>
@@ -117,7 +118,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -136,11 +137,11 @@ const CustomerSatisfaction = ({ data }) => {
                       </div><div className="swiper-slide swiper-slide-active" role="group" aria-label="3 / 3" data-swiper-slide-index="3" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/Logo_1.png" alt="image" />
+                              <Image src="/images/icons/Logo_1.png" alt="image" />
                             </div>
                             <h4>Main IT Services, Inc</h4>
                             <h6>Feedback on Main IT Services, Inc</h6>
@@ -149,7 +150,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -169,11 +170,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="4 / 4" data-swiper-slide-index="4" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/salonegoo_logo.png" alt="image" />
+                              <Image src="/images/icons/salonegoo_logo.png" alt="image" />
                             </div>
                             <h4>Salone Goo</h4>
                             <h6>Feedback on Salone Goo</h6>
@@ -182,7 +183,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/female-avatar.png" alt="image" />
+                                <Image src="/images/icons/female-avatar.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -202,11 +203,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="5 / 5" data-swiper-slide-index="5" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/logo-progect.png" alt="image" />
+                              <Image src="/images/icons/logo-progect.png" alt="image" />
                             </div>
                             <h4>Main IT Store eCommerce</h4>
                             <h6>Feedback on Main IT Store eCommerce</h6>
@@ -215,7 +216,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -235,11 +236,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="6 / 6" data-swiper-slide-index="6" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/ES-AV-LLC.png" alt="image" />
+                              <Image src="/images/icons/ES-AV-LLC.png" alt="image" />
                             </div>
                             <h4>ES.AV LLC</h4>
                             <h6>Professional App Design and Development company</h6>
@@ -248,7 +249,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -268,11 +269,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" data-swiper-slide-index="7" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/africa-center.png" alt="image" />
+                              <Image src="/images/icons/africa-center.png" alt="image" />
                             </div>
                             <h4>Africa Center for Strategic Progress</h4>
                             <h6>All about professionalism and excellent service delivery</h6>
@@ -281,7 +282,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">
@@ -301,11 +302,11 @@ const CustomerSatisfaction = ({ data }) => {
                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="2 / 6" data-swiper-slide-index="8" style={{ width: "920px", marginRight: "10px" }}>
                         <div className="testimonial_box clearfix">
                           <div className="image">
-                            <img src="/images/banner-four-bg.jpg" alt="image" />
+                            <Image src="/images/banner-four-bg.jpg" alt="image" />
                           </div>
                           <div className="authour_details">
                             <div className="b_image">
-                              <img src="/images/icons/123.png" alt="image" />
+                              <Image src="/images/icons/123.png" alt="image" />
                             </div>
                             <h4>Midway Travels</h4>
                             <h6>Breeze End Technology Team Fulfilled My Expectations</h6>
@@ -314,7 +315,7 @@ const CustomerSatisfaction = ({ data }) => {
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">
-                                <img src="/images/icons/placeholder.png" alt="image" />
+                                <Image src="/images/icons/placeholder.png" alt="image" />
                               </div>
                               <div className="c_content">
                                 <div className="content_in">

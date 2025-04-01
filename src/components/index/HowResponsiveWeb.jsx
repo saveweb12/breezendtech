@@ -1,6 +1,8 @@
-const HowResponsiveWeb = ({data}) => {
-    const items=data[0]
-   
+import Image from 'next/image';
+
+const HowResponsiveWeb = ({ data }) => {
+  const items = data[0]
+
   return (
     <>
       <section className="service-section">
@@ -13,7 +15,7 @@ const HowResponsiveWeb = ({data}) => {
                 <div className="title_sections">
                   <h3>{items.title}</h3>
                   <div className="before_title">
-                   {items.subtitle}
+                    {items.subtitle}
                   </div>
                 </div>
 
@@ -26,7 +28,7 @@ const HowResponsiveWeb = ({data}) => {
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="one">
-                    <img
+                    <Image
                       src={items.image}
                       className="img-fluid"
                       alt="about"
@@ -39,43 +41,43 @@ const HowResponsiveWeb = ({data}) => {
               <div className="title_all_box dark_color">
                 <div className="title_sections three left">
                   <p>
-                  {items.description}
+                    {items.description}
                   </p>
                 </div>
               </div>
             </div>
             <div className="pd_bottom_35" />
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            
+
             </div>
             <div className="row pd_top_30">
               <div className="col-xl-1" />
               <div className="col-xl-10">
-                {items.lists.map((item)=>(
+                {items.lists.map((item) => (
 
-               
-                <div className="row pd_bottom_10" key={item.id}>
-                  <div className="col-xl-2 bg_dark_5">
-                    <div className="boost-use">
-                      <div className="text-center">
-                        <h1>{item.count}</h1>
+
+                  <div className="row pd_bottom_10" key={item.id}>
+                    <div className="col-xl-2 bg_dark_5">
+                      <div className="boost-use">
+                        <div className="text-center">
+                          <h1>{item.count}</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-4 bg_dark_1">
+                      <div className="boost-use">
+                        <h3>{item.title}</h3>
+                      </div>
+                    </div>
+                    <div className="col-xl-6 bg_light_1">
+                      <div className="boost-use">
+                        <p className="">
+                          {item.text}
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-4 bg_dark_1">
-                    <div className="boost-use">
-                      <h3>{item.title}</h3>
-                    </div>
-                  </div>
-                  <div className="col-xl-6 bg_light_1">
-                    <div className="boost-use">
-                      <p className="">
-                      {item.text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                 ))}
+                ))}
                 {/* <div className="row pd_bottom_10">
                   <div className="col-xl-2 bg_dark_5">
                     <div className="boost-use">

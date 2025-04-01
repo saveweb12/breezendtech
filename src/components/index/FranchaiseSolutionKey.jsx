@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import React from "react";
 
 const FranchaiseSolutionKey = ({ data }) => {
   const items = data[0];
- 
+
   return (
     <section className="service-section container">
       <div
@@ -22,9 +23,9 @@ const FranchaiseSolutionKey = ({ data }) => {
           <div className="service_box style_two dark_color">
             <div className="image_boxes style_four text-center">
               <div className="one">
-                <img
+                <Image
                   src={items.image}
-                  className="img-fluid"
+                  className="Image-fluid"
                   alt="about"
                 />
               </div>
@@ -49,19 +50,19 @@ const FranchaiseSolutionKey = ({ data }) => {
             </div>
             <div className="row">
               {items.lists.map((list) => (
-                <div className="col-xl-6"key={list.id}>
+                <div className="col-xl-6" key={list.id}>
                   <div className="list_item_box style_two style_list">
                     <ul className="marketing-local">
                       <li>
                         <span > {list.text}</span>
                         <i className="fa fa-check" />
                       </li>
-                  
+
                     </ul>
                   </div>
                 </div>
               ))}
-             
+
             </div>
           </div>
         </div>

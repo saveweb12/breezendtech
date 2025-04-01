@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const HowToUseHaroforBacklinks = ({ data }) => {
   const items = data[0];
   return (
@@ -24,10 +26,10 @@ const HowToUseHaroforBacklinks = ({ data }) => {
               <section className="faq_section type_one pt-30">
                 <div className="block_faq">
                   {items.lists.map((item) => (
-                    <div className="haro-active-header"key={item.id}>
+                    <div className="haro-active-header" key={item.id}>
                       <dl className="">
                         <dt className="faq_header active">
-                          <img
+                          <Image
                             src={item.icon}
                             className="img-fluid svg_image text-center"
                             alt="icon png"

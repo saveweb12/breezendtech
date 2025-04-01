@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const MaketheRightDecisions = ({ data }) => {
   const items = data[0];
 
@@ -17,7 +19,7 @@ const MaketheRightDecisions = ({ data }) => {
                   <div className="list_item_box style_two style_list">
                     <ul className="list-inline">
                       {items.lists.map((item) => (
-                        <li className="list_items pd_bottom_10"key={item.id}>
+                        <li className="list_items pd_bottom_10" key={item.id}>
                           <small className="d-flex align-items-center">
                             <span className="icon_bx">
                               <i className=" icon-checked" />
@@ -43,7 +45,7 @@ const MaketheRightDecisions = ({ data }) => {
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="image one pd_bottom_25">
-                    <img src={items.image} className="img-fluid" alt="about" />
+                    <Image src={items.image} className="img-fluid" alt="about" />
                     <div className="video_box">
                       <a href="#" className="lightbox-image">
                         <i className="icon-play" />

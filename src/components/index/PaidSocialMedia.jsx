@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const PaidSocialMedia = ({ data }) => {
 
   console.log(data);
@@ -12,7 +14,7 @@ const PaidSocialMedia = ({ data }) => {
                 <div className="service_box style_two dark_color">
                   <div className="image_boxes style_four">
                     <div className="image one">
-                      <img src={items.image} className="img-fluid" alt="about" />
+                      <Image src={items.image} className="img-fluid" alt="about" />
                     </div>
                   </div>
                 </div>

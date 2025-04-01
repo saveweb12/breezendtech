@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const AvailableJobsChoose = ({ data }) => {
 
   if (!Array.isArray(data) || data.length === 0) {
@@ -32,7 +33,7 @@ const AvailableJobsChoose = ({ data }) => {
               <div className="col-lg-7">
                 <div className="image_boxes style_four">
                   <div className="image_box one">
-                    <img src={items.video} className="img-fluid" alt="about" />
+                    <Image src={items.video} className="img-fluid" alt="about" />
                   </div>
                   <div className="video_box">
                     <a href="#" className="lightbox-image">

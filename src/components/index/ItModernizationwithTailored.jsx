@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const ItModernizationwithTailored = ({ data }) => {
   const items = data[0];
@@ -25,7 +26,7 @@ const ItModernizationwithTailored = ({ data }) => {
                 <div className="service_box style_two dark_color text-center">
                   <div className="image_boxes style_six">
                     <div className="image_box">
-                      <img
+                      <Image
                         src={items.image}
                         className="img-fluid"
                         alt="about"

@@ -42,6 +42,8 @@ import {
 
 const CategoryTable = () => {
 
+  const [isYes, setIsYes] = useState(false);
+
   const data = [
     {
       id: "1",
@@ -171,7 +173,6 @@ const CategoryTable = () => {
       accessorKey: "active",
       header: "Active",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
         return (
           <Toggle
             pressed={isYes}

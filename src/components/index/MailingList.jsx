@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MailingList = ({data}) => {
+const MailingList = ({ data }) => {
     console.log(data);
     return (
         <>

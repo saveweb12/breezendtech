@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const Catapultyour = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
@@ -49,7 +50,7 @@ const Catapultyour = ({ data }) => {
                       <div className="col-xl-6">
                         <div className="image_boxes style_four text-center">
                           <div className="one">
-                            <img
+                            <Image
                               src={items.image}
                               className="img-fluid"
                               alt="about"

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image'
 const OurSatisfiedCustomers = ({ data }) => {
   return (
     <>
@@ -32,7 +32,7 @@ const OurSatisfiedCustomers = ({ data }) => {
                       <div className="testimonial_box">
                         <div className="box_inner not_ovelay">
                           <div className="image_box icon">
-                            <img src={item.image} alt="image" />
+                            <Image src={item.image} alt="image" />
                           </div>
                           <div className="rating">
                             <ul className="icon-pd">
@@ -50,7 +50,7 @@ const OurSatisfiedCustomers = ({ data }) => {
                           <p className="description">{item.text}</p>
                           <div className="client_bx">
                             <div className="image_box">
-                              <img src={item.icon} alt="image" />
+                              <Image src={item.icon} alt="image" />
                             </div>
                             <div className="left_s">
                               <h2 className="title">{item.name} </h2>

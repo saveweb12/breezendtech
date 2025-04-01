@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const OurClientsGetResults = ({ data }) => {
 
   if (!Array.isArray(data) || data.length === 0) {
@@ -28,7 +30,7 @@ const OurClientsGetResults = ({ data }) => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div className="case-study">
                   <div className="image_boxes">
-                    <img src="images/about/about-12.jpg" className="background_image" alt="image" />
+                    <Image src="images/about/about-12.jpg" className="background_image" alt="image" />
                     <div className="video_box">
                       <a href="#" className="lightbox-image"><i className="icon-play"></i></a>
                     </div>
@@ -57,7 +59,7 @@ const OurClientsGetResults = ({ data }) => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div className="case-study">
                   <div className="image_boxes">
-                    <img src="/images/about/about-12.jpg" className="background_image" alt="image" />
+                    <Image src="/images/about/about-12.jpg" className="background_image" alt="image" />
                     <div className="video_box">
                       <a href="#" className="lightbox-image"><i className="icon-play"></i></a>
                     </div>

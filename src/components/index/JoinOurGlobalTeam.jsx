@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const JoinOurGlobalTeam = ({ data }) => {
 
   return (
@@ -88,7 +90,7 @@ const JoinOurGlobalTeam = ({ data }) => {
                 <div className="service_box style_two dark_color bg_cover">
                   <div className="image_boxes style_four">
                     <div className="image one">
-                      <img src={items.image} className="img-fluid" alt="about" />
+                      <Image src={items.image} className="img-fluid" alt="about" />
                     </div>
                   </div>
                 </div>

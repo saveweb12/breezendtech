@@ -1,7 +1,9 @@
+import Image from 'next/image'
+
 const JoinOurSuccessStories = () => {
   return (
-   <>
-   <section className="service-section bg_light_1">
+    <>
+      <section className="service-section bg_light_1">
         <div className="pd_top_70">
           <div className="container">
             <div className="row">
@@ -20,9 +22,9 @@ const JoinOurSuccessStories = () => {
                       <div className="process_box style_four dark_color">
                         <div className="process_box text-center">
                           <div className="icon success-top">
-                            <img
+                            <Image
                               src="/images/icons/hd-office.png"
-                              className="img-score svg_image"
+                              className="Image-score svg_image"
                               alt="icon png"
                             />
                           </div>
@@ -50,9 +52,9 @@ const JoinOurSuccessStories = () => {
                       <div className="process_box style_four dark_color">
                         <div className="process_box text-center ">
                           <div className="icon success-top">
-                            <img
+                            <Image
                               src="/images/icons/realized-contact.png"
-                              className="img-score svg_image"
+                              className="Image-score svg_image"
                               alt="icon png"
                             />
                           </div>
@@ -82,7 +84,7 @@ const JoinOurSuccessStories = () => {
           </div>
         </div>
       </section>
-   </>
+    </>
   )
 }
 

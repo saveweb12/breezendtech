@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Ourclients = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
     return <div>No data available</div>;
@@ -14,7 +16,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-01.jpg"
                         className="img-fluid"
                         alt="image"
@@ -27,7 +29,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-02.jpg"
                         className="img-fluid"
                         alt="image"
@@ -40,7 +42,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-03.jpg"
                         className="img-fluid"
                         alt="image"
@@ -53,7 +55,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-04.jpg"
                         className="img-fluid"
                         alt="image"
@@ -66,7 +68,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-05.jpg"
                         className="img-fluid"
                         alt="image"
@@ -79,7 +81,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-06.jpg"
                         className="img-fluid"
                         alt="image"
@@ -92,7 +94,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-07.jpg"
                         className="img-fluid"
                         alt="image"
@@ -105,7 +107,7 @@ const Ourclients = ({ data }) => {
                 <div className="image_box">
                   <div className="item-img">
                     <a href="#">
-                      <img
+                      <Image
                         src="assets/images/client-logo/client-08.jpg"
                         className="img-fluid"
                         alt="image"

@@ -1,5 +1,7 @@
+import Image from 'next/image'
+
 const WhyChooseThriveFor = ({ data }) => {
-  
+
   return (
     <>
       {data.map((items) => (
@@ -28,7 +30,7 @@ const WhyChooseThriveFor = ({ data }) => {
                     <div className="process_box style_one dark_color">
                       <div className="process_box_outer">
                         <div className="icon">
-                          <img
+                          <Image
                             src={item.icon}
                             className="img-fluid svg_image"
                             alt="icon png"

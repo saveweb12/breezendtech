@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const DedicatedTeam = ({ data }) => {
   //const items = data[0];
   if (!Array.isArray(data) || data.length === 0) {
@@ -32,7 +33,7 @@ const DedicatedTeam = ({ data }) => {
                 <div className="team_box style_four">
                   <div className="team_box_outer">
                     <div className="image_box ">
-                      <img src="/images/team/team-1.jpg" alt="team image" />
+                      <Image src="/images/team/team-1.jpg" alt="team image" />
                     </div>
                     <div className="content_box ">
                       <div className="share_links ">
@@ -58,7 +59,7 @@ const DedicatedTeam = ({ data }) => {
                 <div className="team_box style_four">
                   <div className="team_box_outer">
                     <div className="image_box ">
-                      <img src="/images/team/team-4.png" alt="team image" />
+                      <Image src="/images/team/team-4.png" alt="team image" />
                     </div>
                     <div className="content_box ">
                       <div className="share_links ">
@@ -84,7 +85,7 @@ const DedicatedTeam = ({ data }) => {
                 <div className="team_box style_four">
                   <div className="team_box_outer">
                     <div className="image_box ">
-                      <img src="/images/team/team-2.jpg" alt="team image" />
+                      <Image src="/images/team/team-2.jpg" alt="team image" />
                     </div>
                     <div className="content_box ">
                       <div className="share_links ">
@@ -110,7 +111,7 @@ const DedicatedTeam = ({ data }) => {
                 <div className="team_box style_four">
                   <div className="team_box_outer">
                     <div className="image_box ">
-                      <img src="/images/team/team-3.png" alt="team image" />
+                      <Image src="/images/team/team-3.png" alt="team image" />
                     </div>
                     <div className="content_box ">
                       <div className="share_links ">

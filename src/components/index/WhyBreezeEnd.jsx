@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhyBreezeEnd = ({ data }) => {
   // console.log(data)
   return (
@@ -10,7 +12,7 @@ const WhyBreezeEnd = ({ data }) => {
             <div className="col-xxl-4 col-xl-4 col-lg-12">
               <div className="image_boxes style_one fluid">
                 <div className="image one">
-                  <img src={item.image} className="img-fluid" alt="image" />
+                  <Image src={item.image} className="img-fluid" alt="image" />
                 </div>
               </div>
             </div>
@@ -25,7 +27,7 @@ const WhyBreezeEnd = ({ data }) => {
                     <div className="icon_box_all  style_two" style={{ border: 0 }}>
                       <div className="icon_content  icon_imgs ">
                         <div className="icon">
-                          <img src="/images/icons/positive-icon.png" className="img-fluid svg_image" alt="icon png" />
+                          <Image src="/images/icons/positive-icon.png" className="img-fluid svg_image" alt="icon png" />
                         </div>
                         <div className="light_color">
                           <h6><a href="#" rel="nofollow">Positive Work Culture</a>
@@ -38,7 +40,7 @@ const WhyBreezeEnd = ({ data }) => {
                     <div className="icon_box_all  style_two" style={{ border: 0 }}>
                       <div className="icon_content  icon_imgs ">
                         <div className="icon">
-                          <img src="/images/icons/long-term-icon.png" className="img-fluid svg_image" alt="icon png" />
+                          <Image src="/images/icons/long-term-icon.png" className="img-fluid svg_image" alt="icon png" />
                         </div>
                         <div className="light_color">
                           <h6><a href="#" rel="nofollow">Long-Term Career Paths</a></h6>
@@ -50,7 +52,7 @@ const WhyBreezeEnd = ({ data }) => {
                     <div className="icon_box_all  style_two" style={{ border: 0 }}>
                       <div className="icon_content  icon_imgs ">
                         <div className="icon">
-                          <img src="/images/icons/people-oriented-icon.png" className="img-fluid svg_image" alt="icon png" />
+                          <Image src="/images/icons/people-oriented-icon.png" className="img-fluid svg_image" alt="icon png" />
                         </div>
                         <div className="light_color">
                           <h6><a href="#" rel="nofollow">People-Oriented Leadership</a></h6>

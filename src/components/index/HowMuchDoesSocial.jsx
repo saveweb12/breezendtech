@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const HowMuchDoesSocial = ({ data }) => {
   const items = data[0];
   return (
@@ -10,7 +11,7 @@ const HowMuchDoesSocial = ({ data }) => {
               <div className="service_box style_two dark_color">
                 <div className="image_boxes style_four">
                   <div className="one">
-                    <img src={items.image} className="img-fluid" alt="about" />
+                    <Image src={items.image} className="img-fluid" alt="about" />
                   </div>
                 </div>
               </div>

@@ -1,11 +1,12 @@
+import Image from 'next/image';
 const FranchiseSEO = ({ data }) => {
   const items = data[0];
- 
+
   return (
     <>
       <section className="service-section-two franchise-digital-services bg_light_1 text-center align-items-center">
         <div className="heading-col">
-          <img src={items.titleicon} className="img-fluid" alt="icon png" />
+          <Image src={items.titleicon} className="img-fluid" alt="icon png" />
           <h2>
             <a
               target="_blank"
@@ -40,7 +41,7 @@ const FranchiseSEO = ({ data }) => {
                 >
                   <div className="icon_content ">
                     <div className="icon">
-                      <img
+                      <Image
                         src={item.cardicon}
                         className="img-fluid svg_image"
                         alt="icon png"

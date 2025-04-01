@@ -1,14 +1,14 @@
-
+import Image from 'next/image'
 
 const ResultsDrivenSocial = () => {
   return (
     <>
-     <div id="content" className="site-content ">
-       
+      <div id="content" className="site-content ">
+
         <section className="service-section">
-         
+
           <div className="pd_top_70" />
-          
+
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -113,7 +113,7 @@ const ResultsDrivenSocial = () => {
                 <div className="service_box style_two dark_color">
                   <div className="image_boxes style_four">
                     <div className="image one pd_bottom_25">
-                      <img
+                      <Image
                         src="/images/service/social-media-advertising-img.jpg"
                         className="img-fluid"
                         alt="about"

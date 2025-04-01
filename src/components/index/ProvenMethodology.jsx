@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const ProvenMethodology = ({ data }) => {
   return (
     <>
@@ -14,7 +16,7 @@ const ProvenMethodology = ({ data }) => {
                   <div className="process_box style_four dark_color icon_box_new_box type_two ">
                     <div className="process_box_outer_four ">
                       <div className="icon">
-                        <img
+                        <Image
                           src={item.icon}
                           className="img-fluid svg_image"
                           alt="icon png"

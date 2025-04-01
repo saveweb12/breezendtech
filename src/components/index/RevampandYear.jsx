@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const RevampandYear = () => {
   return (
@@ -36,7 +37,7 @@ const RevampandYear = () => {
             <div className="col-lg-6">
               <div className="image_boxes style_four">
                 <div className="one">
-                  <img
+                  <Image
                     src="/images/about/about-5.jpg"
                     className="img-fluid"
                     alt="about"
@@ -45,8 +46,8 @@ const RevampandYear = () => {
               </div>
             </div>
           </div>
-           <div className="pd_bottom_70" />
-         </div>
+          <div className="pd_bottom_70" />
+        </div>
       </section>
     </>
   )

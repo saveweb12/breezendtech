@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhiteLabelLink = ({ data }) => {
   return (
     <>
@@ -11,7 +13,7 @@ const WhiteLabelLink = ({ data }) => {
                 <div className="service_box style_two dark_color">
                   <div className="image_boxes style_four">
                     <div className="one">
-                      <img
+                      <Image
                         src={items.image}
                         className="img-fluid"
                         alt="about"

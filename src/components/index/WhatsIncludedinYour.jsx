@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const WhatsIncludedinYour = ({ data }) => {
   return (
@@ -47,7 +48,7 @@ const WhatsIncludedinYour = ({ data }) => {
                 <div className="image_box_new type_two clearfix pd_left_40">
                   <div className="image_box_inner">
                     <div className="image one">
-                      <img
+                      <Image
                         src={items.image1}
                         className="img-fluid"
                         alt="img"
@@ -62,7 +63,7 @@ const WhatsIncludedinYour = ({ data }) => {
                       </div>
                     </div>
                     <div className="image two">
-                      <img src={items.image2} className="img-fluid" alt="img" />
+                      <Image src={items.image2} className="img-fluid" alt="img" />
                     </div>
                   </div>
                 </div>

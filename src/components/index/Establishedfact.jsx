@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const Establishedfact = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) {
@@ -25,12 +26,12 @@ const Establishedfact = ({ data }) => {
             </div>
             <div className="">
               <div className="row">
-                {items.images?.map((img, idx) => (
-                  <div className="col-lg-3" key={img.id || idx}>
+                {items.images?.map((Image, idx) => (
+                  <div className="col-lg-3" key={Image.id || idx}>
                     <div className="image_boxes">
                       <div className="image_box">
-                        <img
-                          src={img.video}
+                        <Image
+                          src={Image.video}
                           className="img-fluid"
                           alt="about"
                         />

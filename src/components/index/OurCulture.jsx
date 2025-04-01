@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const OurCulture = ({ data }) => {
 
   return (
@@ -29,7 +31,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/empowerment.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/empowerment.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">
@@ -44,7 +46,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/appreciation.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/appreciation.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">
@@ -58,7 +60,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/teamwork.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/teamwork.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">
@@ -77,7 +79,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/integration.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/integration.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">
@@ -92,7 +94,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/nurturing.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/nurturing.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">
@@ -106,7 +108,7 @@ const OurCulture = ({ data }) => {
                 <div className="process_box style_four dark_color">
                   <div className="process_box_outer_four ">
                     <div className="icon">
-                      <img src="/images/icons/balance.png" className="img-fluid svg_image" alt="icon png" />
+                      <Image src="/images/icons/balance.png" className="img-fluid svg_image" alt="icon png" />
 
                     </div>
                     <div className="content_box">

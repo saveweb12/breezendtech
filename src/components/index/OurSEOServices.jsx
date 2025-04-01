@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const OurSEOServices = () => {
   return (
     <>
@@ -24,7 +26,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/keyword-research-strategy.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -47,7 +49,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/link-building.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -70,7 +72,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/technical-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -95,7 +97,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/local-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -118,7 +120,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/on-page-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -141,7 +143,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/off-page-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -166,7 +168,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/franchise-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -189,7 +191,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/shopify-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -212,7 +214,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/amazon-seo.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -237,7 +239,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/ecommerce-marketing.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -260,7 +262,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/content-writing.png"
                       className="img-fluid svg_image"
                       alt="icon png"
@@ -283,7 +285,7 @@ const OurSEOServices = () => {
               <div className="process_box style_one dark_color">
                 <div className="process_box_outer">
                   <div className="icon">
-                    <img
+                    <Image
                       src="/images/icons/reputation-management.png"
                       className="img-fluid svg_image"
                       alt="icon png"

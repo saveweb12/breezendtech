@@ -1,9 +1,9 @@
-import { Item } from "@radix-ui/react-dropdown-menu";
 import React from "react";
+import Image from 'next/image'
 
 const FranchaiseDigitalMarketing = ({ data }) => {
   const items = data[0];
-  
+
   return (
     <section className="service-section">
       <div className="pd_top_70">
@@ -90,7 +90,7 @@ const FranchaiseDigitalMarketing = ({ data }) => {
                   </div>
                 </div>
                 {items.sections.map((sec) => (
-                  <div className="content-wrap"key={sec.id}>
+                  <div className="content-wrap" key={sec.id}>
                     <div className="wraper-number">
                       <div className="number">{sec.number}</div>
                       <div className="number-content">
@@ -119,8 +119,8 @@ const FranchaiseDigitalMarketing = ({ data }) => {
                     </div>
                   </div>
                 ))}
-                
-               
+
+
               </div>
               <div className="pd_bottom_70" />
             </div>

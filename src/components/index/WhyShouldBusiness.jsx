@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const WhyShouldBusiness = ({ data }) => {
   return (
     <>
@@ -16,7 +18,7 @@ const WhyShouldBusiness = ({ data }) => {
                       <div className="grid_box _card " key={item.id}>
                         <div className=" news_box default_style list_view has_images">
                           <div className="image img_hover-1">
-                            <img
+                            <Image
                               width={750}
                               height={220}
                               src={item.image}
@@ -131,7 +133,7 @@ export default WhyShouldBusiness;
 //     {items.cards.map((item) => (
 //       <div className="card" key={item.id}>
 //         <div className="card-image">
-//           <img src={item.image} alt={item.title} />
+//           <Image src={item.image} alt={item.title} />
 //         </div>
 //         <div className="card-content">
 //           <h2 className="card-title">{item.title}</h2>
