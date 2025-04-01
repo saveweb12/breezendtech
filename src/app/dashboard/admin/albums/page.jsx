@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { GrAdd, GrTrash } from "react-icons/gr"
 import AlbumTable from "./AlbumTable"
