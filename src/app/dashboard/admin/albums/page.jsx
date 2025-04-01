@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { GrAdd, GrTrash } from "react-icons/gr"
 import AlbumTable from "./AlbumTable"
 import Link from "next/link"
-const Album = () => {
+const Page = () => {
     return (
         <>
             <section className="w-full mx-auto transition-all duration-300 pb-5 mt-16">
@@ -28,4 +28,4 @@ const Album = () => {
     )
 }
 
-export default Album
+export default Page
