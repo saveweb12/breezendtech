@@ -17,7 +17,7 @@ import DataTable from "@/components/data-table/DataTable";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchqustion } from "@/libAdmin/features/qustionslice";
 
-const page = () => {
+const Page = () => {
   const dispatch = useDispatch();
   const { questions } = useSelector((state) => state.qustions);
 
@@ -190,4 +190,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

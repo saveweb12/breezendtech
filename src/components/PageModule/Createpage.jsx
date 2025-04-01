@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Controller } from "react-hook-form";
 
 
-const createpage = ({ control }) => {
+const Createpage = ({ control }) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false); // State to track modal visibility
 
@@ -93,4 +93,4 @@ const createpage = ({ control }) => {
     )
 }
 
-export default createpage
+export default Createpage

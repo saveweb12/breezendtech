@@ -154,7 +154,7 @@ const JobTable = () => {
   const handleChange = useCallback((pageIndex) => {
     setPagination((prev) => ({ ...prev, pageIndex }));
     table.setPageIndex(pageIndex);
-  });
+  }, []);
 
   const handleDelete = async (selectedIds) => {
     console.log(selectedIds)

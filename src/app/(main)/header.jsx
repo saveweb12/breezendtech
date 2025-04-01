@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation';
 import React from 'react'
 import Link from 'next/link'
 import { AlignJustify, CircleX, ChevronDown, SquareChevronRight } from 'lucide-react';
+import Image from 'next/image'
 
 
-const header = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isServicesVisible, setIsServicesVisible] = useState(false);
   const [isAboutVisible, setIsAboutVisible] = useState(false);
@@ -64,7 +65,7 @@ const header = () => {
     <>
       <div className="fixed top-0 left-0 w-full h-20 bg-white shadow-md flex items-center justify-between px-6 z-50 !rounded-none !border-none">
         <div >
-          <img src="/images/logo-default.png" alt="logo" className="h-12 mix-blend-multiply" />
+          <Image src="/images/logo-default.png" alt="logo" className="h-12 mix-blend-multiply" />
         </div>
         <div className="cursor-pointer" onClick={handleMenuToggle}>
           <AlignJustify size={40} />
@@ -156,4 +157,4 @@ const header = () => {
     </>
   )
 }
-export default header
+export default Header

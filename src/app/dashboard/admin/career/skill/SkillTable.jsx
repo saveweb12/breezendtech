@@ -2,39 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSkills } from "@/libAdmin/features/skills";
-import {
-  useReactTable,
-  getCoreRowModel,
-  ColumnFiltering,
-  flexRender,
-  getPaginationRowModel,
-  getSortedRowModel,
-  getFilteredRowModel,
-} from "@tanstack/react-table";
-
-import {
-  Table,
-  TableHeader,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-} from "@/components/ui/table";
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
-  Select,
-  SelectContent,
-  SelectTrigger,
-  SelectItem,
-  SelectValue,
-} from "@/components/ui/select";
-import { ImEye, ImEyeBlocked, ImBin } from "react-icons/im";
-import { Input } from "@/components/ui/input";
 import { AlignJustify, SquarePen, X, Filter, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Toggle } from "@/components/ui/toggle";

@@ -9,7 +9,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addSkill, updateSkill } from "@/libAdmin/features/skills";
 import { toast } from "react-hot-toast";
-const page = () => {
+const Page = () => {
   const {
     register,
     handleSubmit,
@@ -62,4 +62,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

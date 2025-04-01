@@ -22,6 +22,7 @@ import { updateJobs } from '@/libAdmin/features/addJob'
 import axios from 'axios'
 
 const Editjob = () => {
+    const dispatch = useDispatch();
     const { id } = useParams();
     const {
         register,
@@ -75,7 +76,6 @@ const Editjob = () => {
     }, [id, reset])
 
 
-    const dispatch = useDispatch();
     const selectedQuestions = watch("selectedQuestions");
 
     const onSubmit = async (data) => {

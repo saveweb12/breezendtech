@@ -3,13 +3,14 @@ import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/scss/elements/theme-css.css";
 import { MoveRight } from 'lucide-react';
 import { FaFacebook, FaTwitterSquare, FaInstagram, FaSkype } from "react-icons/fa";
+import Image from "next/image"
 
-const footer = () => {
+const Footer = () => {
   return (
     <>
       <div className="flex justify-center p-20">
         <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
-          <img src="/images/logo-default.png" alt="logo" className="h-14 mix-blend-multiply" />
+          <Image src="/images/logo-default.png" alt="logo" className="h-14 mix-blend-multiply" />
           <p className="text-center text-gray-700 text-base leading-relaxed" >Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
@@ -78,4 +79,4 @@ const footer = () => {
   )
 
 }
-export default footer
+export default Footer

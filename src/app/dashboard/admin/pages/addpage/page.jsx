@@ -10,7 +10,7 @@ import { useForm, FormProvider, Controller } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux';
 import { sendDataToBackend } from '@/libAdmin/features/formSlice';
 
-const page = () => {
+const Page = () => {
   // const [pageData, setPageData] = useState([])
   const dispatch = useDispatch();
   const methods = useForm();
@@ -184,4 +184,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

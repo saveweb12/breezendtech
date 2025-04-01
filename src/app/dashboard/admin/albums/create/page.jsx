@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import Editor from '@/components/Editor';
+import Image from "next/image"
 
 const Page = () => {
   const [image, setImage] = useState();
@@ -110,7 +111,7 @@ const Page = () => {
             <div className="relative flex items-center justify-center border-dashed border-2 border-gray-300 rounded-lg p-4 cursor-pointer">
               {image ? (
                 <div className="relative">
-                  <img src={image} alt="Preview" className="h-28 w-28 object-cover rounded-md" />
+                  <Image src={image} alt="Preview" className="h-28 w-28 object-cover rounded-md" />
                   <Button
                     size="icon"
                     variant="destructive"

@@ -142,7 +142,7 @@ import toast from 'react-hot-toast'
 
 
 
-const albumTable = () => {
+const AlbumTable = () => {
 
     const [data, setData] = useState([]);
     // console.log(data);
@@ -621,4 +621,4 @@ const albumTable = () => {
     )
 }
 
-export default albumTable
+export default AlbumTable

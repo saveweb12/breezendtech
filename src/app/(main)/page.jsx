@@ -6,10 +6,11 @@ import { useRef, useEffect, useState } from "react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image"
 
 gsap.registerPlugin(ScrollTrigger);
 
-const index = () => {
+const Index = () => {
     const sectionRef = useRef(null);
     const headingRef = useRef(null);
 
@@ -161,9 +162,9 @@ const index = () => {
                                         </div>
                                         <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                                             <div className="slider_image">
-                                                <img
+                                                <Image
                                                     src="/images/sliders/slider-2-1.png"
-                                                    className="img-fluid"
+                                                    className="Image-fluid"
                                                     alt="slider image"
                                                 />
                                             </div>
@@ -205,9 +206,9 @@ const index = () => {
                                         </div>
                                         <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                                             <div className="slider_image">
-                                                <img
+                                                <Image
                                                     src="/images/sliders/slider-2-2.png"
-                                                    className="img-fluid"
+                                                    className="Image-fluid"
                                                     alt="slider image"
                                                 />
                                             </div>
@@ -249,9 +250,9 @@ const index = () => {
                                         </div>
                                         <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 image_column">
                                             <div className="slider_image">
-                                                <img
+                                                <Image
                                                     src="/images/sliders/slider-2-3.png"
-                                                    className="img-fluid"
+                                                    className="Image-fluid"
                                                     alt="slider image"
                                                 />
                                             </div>
@@ -268,7 +269,7 @@ const index = () => {
             <section
                 ref={sectionRef}
                 className="process-section fixed-background bg_op_1"
-                style={{ backgroundImage: "url(/images/background-img3.jpg)" }}
+                style={{ backgroundImage: "url(/images/background-Image3.jpg)" }}
             >
                 {/*===============spacing==============*/}
                 <div className="pd_top_60" />
@@ -352,7 +353,7 @@ const index = () => {
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-01.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -360,7 +361,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-02.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -368,7 +369,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-03.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -376,7 +377,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-04.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -384,7 +385,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-05.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -392,7 +393,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-06.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -400,7 +401,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-07.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -408,7 +409,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-08.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -416,7 +417,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-09.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -424,7 +425,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-10.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -432,7 +433,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-11.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -440,7 +441,7 @@ const index = () => {
                                         </div>
                                         <div className="swiper-slide">
                                             <div className="image">
-                                                <img
+                                                <Image
                                                     src="/images/icons/partners-12.jpg"
                                                     alt="clients-logo"
                                                 />
@@ -481,4 +482,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;

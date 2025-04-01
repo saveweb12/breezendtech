@@ -38,194 +38,183 @@ import {
   TableCell,
 } from "@/components/ui/table";
 
-// const page = () => {
-//   return (
-//     <section className="w-full">
-//       <header className="w-full flex justify-between mt-5">
-//         <div>Categories List</div>
-//         <Link href="/admin/blogs/categoryList/create" passHref>
-//           <Button>Add Category</Button>
-//         </Link>
-//       </header>
-//     </section>
-//   );
-// };
 
-// export default page;
-
-const data = [
-  {
-    id: "1",
-    name: "Home",
-    parent: "No Parent",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "2",
-    name: "about",
-    parent: "Computer Services",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "3",
-    name: "contect",
-    parent: "Printer Support Services",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "4",
-    name: "sliders",
-    parent: "Home Security Systems",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "5",
-    name: "banners",
-    parent: "No Parent",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "6",
-    name: "selectors",
-    parent: "	Computer Services",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "7",
-    name: "select",
-    parent: "No Parent",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "8",
-    name: "Renders",
-    parent: "Computer Services",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "9",
-    name: "Traders",
-    parent: "Computer Services",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-  {
-    id: "10",
-    name: "post",
-    parent: "No Parent",
-    active: "",
-    createdat: "",
-    action: "",
-  },
-];
-
-const columns = [
-  {
-    id: "Select",
-    header: ({ table }) => (
-      <Checkbox
-        checked={
-          table.getIsAllPageRowsSelected() ||
-          (table.getIsSomePageRowsSelected() && "indeterminate")
-        }
-        onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-        aria-label="Select all"
-      />
-    ),
-    cell: ({ row }) => (
-      <Checkbox
-        checked={row.getIsSelected()}
-        onCheckedChange={(value) => row.toggleSelected(!!value)}
-        aria-label="Select row"
-      />
-    ),
-  },
-  {
-    accessorKey: "id",
-    header: "ID",
-    cell: ({ row }) => {
-      return <div>{row.getValue("id")}</div>;
-    },
-  },
-  {
-    accessorKey: "name",
-    header: "Name",
-    cell: ({ row }) => {
-      return <div>{row.getValue("name")}</div>;
-    },
-  },
-  {
-    accessorKey: "parent",
-    header: "Parent",
-    cell: ({ row }) => {
-      return <div>{row.getValue("parent")}</div>;
-    },
-  },
-  {
-    accessorKey: "active",
-    header: "Active",
-    cell: () => {
-      const [isYes, setIsYes] = useState(false);
-      return (
-        <Toggle
-          pressed={isYes}
-          onPressedChange={setIsYes}
-          className={`!text-white w-5 h-5 ${isYes ? "!bg-green-600" : "!bg-red-400"
-            }`}
-        >
-          {isYes ? "Yes" : "No"}
-        </Toggle>
-      );
-    },
-  },
-  {
-    accessorKey: "createdat",
-    header: "Created At",
-    cell: ({ row }) => {
-      const date = new Date(row.getValue("createdat"));
-      const formattedDate = date.toLocaleDateString("en-GB");
-
-      return <div>{formattedDate}</div>;
-    },
-  },
-  {
-    accessorKey: "action",
-    header: "Action",
-    cell: () => (
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="ghost">
-            <AlignJustify />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="!min-w-4 absolute -right-2 bg-black pointer-events-none">
-          <Button className="w-20 h-6 space-x-1">
-            <SquarePen />
-          </Button>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    ),
-  },
-];
 
 const CategoryTable = () => {
+
+  const data = [
+    {
+      id: "1",
+      name: "Home",
+      parent: "No Parent",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "2",
+      name: "about",
+      parent: "Computer Services",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "3",
+      name: "contect",
+      parent: "Printer Support Services",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "4",
+      name: "sliders",
+      parent: "Home Security Systems",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "5",
+      name: "banners",
+      parent: "No Parent",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "6",
+      name: "selectors",
+      parent: "	Computer Services",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "7",
+      name: "select",
+      parent: "No Parent",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "8",
+      name: "Renders",
+      parent: "Computer Services",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "9",
+      name: "Traders",
+      parent: "Computer Services",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+    {
+      id: "10",
+      name: "post",
+      parent: "No Parent",
+      active: "",
+      createdat: "",
+      action: "",
+    },
+  ];
+
+  const columns = [
+    {
+      id: "Select",
+      header: ({ table }) => (
+        <Checkbox
+          checked={
+            table.getIsAllPageRowsSelected() ||
+            (table.getIsSomePageRowsSelected() && "indeterminate")
+          }
+          onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
+          aria-label="Select all"
+        />
+      ),
+      cell: ({ row }) => (
+        <Checkbox
+          checked={row.getIsSelected()}
+          onCheckedChange={(value) => row.toggleSelected(!!value)}
+          aria-label="Select row"
+        />
+      ),
+    },
+    {
+      accessorKey: "id",
+      header: "ID",
+      cell: ({ row }) => {
+        return <div>{row.getValue("id")}</div>;
+      },
+    },
+    {
+      accessorKey: "name",
+      header: "Name",
+      cell: ({ row }) => {
+        return <div>{row.getValue("name")}</div>;
+      },
+    },
+    {
+      accessorKey: "parent",
+      header: "Parent",
+      cell: ({ row }) => {
+        return <div>{row.getValue("parent")}</div>;
+      },
+    },
+    {
+      accessorKey: "active",
+      header: "Active",
+      cell: () => {
+        const [isYes, setIsYes] = useState(false);
+        return (
+          <Toggle
+            pressed={isYes}
+            onPressedChange={setIsYes}
+            className={`!text-white w-5 h-5 ${isYes ? "!bg-green-600" : "!bg-red-400"
+              }`}
+          >
+            {isYes ? "Yes" : "No"}
+          </Toggle>
+        );
+      },
+    },
+    {
+      accessorKey: "createdat",
+      header: "Created At",
+      cell: ({ row }) => {
+        const date = new Date(row.getValue("createdat"));
+        const formattedDate = date.toLocaleDateString("en-GB");
+
+        return <div>{formattedDate}</div>;
+      },
+    },
+    {
+      accessorKey: "action",
+      header: "Action",
+      cell: () => (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost">
+              <AlignJustify />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="!min-w-4 absolute -right-2 bg-black pointer-events-none">
+            <Button className="w-20 h-6 space-x-1">
+              <SquarePen />
+            </Button>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      ),
+    },
+  ];
+
+
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 5 });
 
   const table = useReactTable({

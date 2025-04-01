@@ -41,94 +41,95 @@ import { ImEye, ImEyeBlocked, ImBin } from "react-icons/im"
 import { SquarePen, AlignJustify, X, Filter, Search, Files } from "lucide-react";
 
 
-const data = [
-    { id: 1, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 2, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 3, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 4, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 5, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 6, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 7, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 8, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 9, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-    { id: 10, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
-]
+const Slidertable = () => {
 
-const columns = [
-    {
-        id: "Select",
-        header: ({ table }) => (
-            <Checkbox
-                checked={
-                    table.getIsAllPageRowsSelected() ||
-                    (table.getIsSomePageRowsSelected() && "indeterminate")
-                }
-                onCheckedChange={value => table.toggleAllPageRowsSelected(!!value)}
-                aria-label="Select all"
-            />
-        ),
-        cell: ({ row }) => (
-            <Checkbox
-                checked={row.getIsSelected()}
-                onCheckedChange={value => row.toggleSelected(!!value)}
-                aria-label="Select row"
-            />
-        )
-    },
-    {
-        accessorKey: 'Name',
-        header: 'Name',
-        cell: ({ row }) => (
-            <div>{row.getValue('Name')}</div>
-        )
-    },
-    {
-        accessorKey: 'type',
-        header: 'Type'
-    },
-    {
-        accessorKey: 'active',
-        header: 'Active',
-        cell: () => {
-            const [isYes, setIsYes] = useState(true);
-            return (
-                <Toggle
-                    pressed={isYes}
-                    onPressedChange={setIsYes}
-                    className={`!text-white w-5 h-5 ${isYes ? "!bg-green-600" : "!bg-red-400"}`}
-                >
-                    {isYes ? "Yes" : "No"}
-                </Toggle >
+    const data = [
+        { id: 1, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 2, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 3, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 4, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 5, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 6, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 7, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 8, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 9, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+        { id: 10, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
+    ]
+
+    const columns = [
+        {
+            id: "Select",
+            header: ({ table }) => (
+                <Checkbox
+                    checked={
+                        table.getIsAllPageRowsSelected() ||
+                        (table.getIsSomePageRowsSelected() && "indeterminate")
+                    }
+                    onCheckedChange={value => table.toggleAllPageRowsSelected(!!value)}
+                    aria-label="Select all"
+                />
+            ),
+            cell: ({ row }) => (
+                <Checkbox
+                    checked={row.getIsSelected()}
+                    onCheckedChange={value => row.toggleSelected(!!value)}
+                    aria-label="Select row"
+                />
+            )
+        },
+        {
+            accessorKey: 'Name',
+            header: 'Name',
+            cell: ({ row }) => (
+                <div>{row.getValue('Name')}</div>
+            )
+        },
+        {
+            accessorKey: 'type',
+            header: 'Type'
+        },
+        {
+            accessorKey: 'active',
+            header: 'Active',
+            cell: () => {
+                const [isYes, setIsYes] = useState(true);
+                return (
+                    <Toggle
+                        pressed={isYes}
+                        onPressedChange={setIsYes}
+                        className={`!text-white w-5 h-5 ${isYes ? "!bg-green-600" : "!bg-red-400"}`}
+                    >
+                        {isYes ? "Yes" : "No"}
+                    </Toggle >
+                )
+            }
+        },
+        {
+            accessorKey: 'Createdat',
+            header: 'Created At'
+        },
+        {
+            accessorKey: 'action',
+            header: 'Action',
+            cell: () => (
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <Button variant="ghost">
+                            <AlignJustify />
+                        </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="!min-w-4 absolute -right-2 bg-black pointer-events-none">
+                        <Button className="w-15 h-5 space-x-1">
+                            <SquarePen />
+                            <DropdownMenuSeparator className="text-white" />
+                            <Files />
+                        </Button>
+                    </DropdownMenuContent>
+                </DropdownMenu>
             )
         }
-    },
-    {
-        accessorKey: 'Createdat',
-        header: 'Created At'
-    },
-    {
-        accessorKey: 'action',
-        header: 'Action',
-        cell: () => (
-            <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                    <Button variant="ghost">
-                        <AlignJustify />
-                    </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="!min-w-4 absolute -right-2 bg-black pointer-events-none">
-                    <Button className="w-15 h-5 space-x-1">
-                        <SquarePen />
-                        <DropdownMenuSeparator className="text-white" />
-                        <Files />
-                    </Button>
-                </DropdownMenuContent>
-            </DropdownMenu>
-        )
-    }
-]
+    ]
 
-const Slidertable = () => {
 
     const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 5 })
 
