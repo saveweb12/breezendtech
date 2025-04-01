@@ -1,8 +1,14 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { GrAdd, GrTrash } from "react-icons/gr"
-import AlbumTable from "./AlbumTable"
+//import AlbumTable from "./AlbumTable"
+import dynamic from "next/dynamic"
 import Link from "next/link"
+const AlbumTable = dynamic(() => import("./AlbumTable"),
+    {
+        ssr: false
+    })
+
 const Page = () => {
     return (
         <>
