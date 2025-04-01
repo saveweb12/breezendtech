@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { GrAdd } from "react-icons/gr"
 import Slidertable from "./Slidertable"
