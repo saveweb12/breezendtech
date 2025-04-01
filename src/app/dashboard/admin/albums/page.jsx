@@ -1,15 +1,9 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { GrAdd, GrTrash } from "react-icons/gr"
-//import AlbumTable from "./AlbumTable"
-import dynamic from "next/dynamic"
+import AlbumTable from "./AlbumTable"
 import Link from "next/link"
-const AlbumTable = dynamic(() => import("./AlbumTable"),
-    {
-        ssr: false
-    })
-
-const Page = () => {
+const Album = () => {
     return (
         <>
             <section className="w-full mx-auto transition-all duration-300 pb-5 mt-16">
@@ -34,4 +28,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Album

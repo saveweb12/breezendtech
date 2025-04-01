@@ -39,113 +39,9 @@ import toast from 'react-hot-toast'
 
 
 
-// const data = [
-//     {
-//         id: "1",
-//         Image: 316,
-//         Title: "home",
-//         Active: "",
-//         CreatedAt: "qwerty1",
-//         Action: ""
-//     },
-//     {
-//         id: "2",
-//         Image: 242,
-//         Title: "Trade-in Program",
-//         Active: "",
-//         CreatedAt: "qwerty2",
-//         Action: ""
-//     },
-//     {
-//         id: "3",
-//         Image: 837,
-//         Title: "Privacy Policy",
-//         Active: "",
-//         CreatedAt: "qwerty3",
-//         Action: ""
-//     },
-//     {
-//         id: "4",
-//         Image: 874,
-//         Title: "Policy & Warranty",
-//         Active: "",
-//         CreatedAt: "qwerty4",
-//         Action: ""
-//     },
-//     {
-//         id: "5",
-//         Image: 721,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "6",
-//         Image: 741,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "7",
-//         Image: 751,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "8",
-//         Image: 761,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "9",
-//         Image: 771,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "10",
-//         Image: 781,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "11",
-//         Image: 781,
-//         Title: "Refund Policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     },
-//     {
-//         id: "12",
-//         Image: 781,
-//         Title: "policy",
-//         Active: "",
-//         CreatedAt: "qwerty",
-//         Action: ""
-//     }
-// ]
-
-
-
-
-
-
 const AlbumTable = () => {
 
-    const [isActive, setIsActive] = useState(row.getValue("active"));
+    const [isActive, setIsActive] = useState();
     const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
 
     const [data, setData] = useState([]);
@@ -207,7 +103,9 @@ const AlbumTable = () => {
             header: "Active",
             cell: ({ row }) => {
                 const portfolioId = row.original.id;
-
+                const getActiveRow = row.getValue("active")
+                setIsActive(getActiveRow)
+                // const [isActive, setIsActive] = useState(row.getValue("active"));
 
                 const handleToggleActive = async () => {
                     console.log(portfolioId)

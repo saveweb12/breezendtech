@@ -1,5 +1,6 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, SaveAll, Upload, Trash, Link2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,9 +9,12 @@ import { Input } from '@/components/ui/input';
 import { useForm } from 'react-hook-form';
 import axios from 'axios'
 import toast from 'react-hot-toast'
-import Editor from '@/components/Editor';
+// import Editor from '@/components/Editor';
+// import dynamic from 'next/dynamic'
 import Image from "next/image"
 
+
+// const Editor = dynamic(() => import("@/components/Editor"), { ssr: false });
 const Page = () => {
   const [image, setImage] = useState();
   const { handleSubmit, register, formState: { error }, watch, setValue, reset } = useForm();
@@ -138,7 +142,7 @@ const Page = () => {
             {/* <Input type="url" placeholder="Enter project link" className="flex-1 border-none outline-none"
               {...register("link", { required: "Link is required", pattern: { value: /^(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}.*$/, message: "Enter a valid URL" } })}
             /> */}
-            <Editor />
+            {/* <Editor /> */}
           </div>
           <Label className="mb-1">Portfolio Link</Label>
           <div className="flex items-center gap-2 border p-2 rounded-md">
