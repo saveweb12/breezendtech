@@ -1,5 +1,5 @@
 import React from 'react'
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import Ourclients from '../index/Ourclients'
 const page = () => {
     return (

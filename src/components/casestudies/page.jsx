@@ -1,6 +1,6 @@
 import React from "react";
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
-import RevampandYear from "./RevampandYear";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
+import RevampandYear from "../index/RevampandYear";
 import Incredibly from "./Incredibly";
 import MailingList from "../../app/contactus/MailingList";
 const page = () => {

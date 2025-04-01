@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import BreezendTechContentMarketing from "../index/BreezendTechContentMarketing";
 const page = () => {
   return (

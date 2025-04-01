@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "../digitalmarketingservices/DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import EntrustYourBrandToThePros from "../index/EntrustYourBrandToThePros";
 import FranchiseSEO from "../index/FranchiseSEO";
 import FranchiseHyperLocalSEO from "./FranchiseHyperLocalSeo";

@@ -1,4 +1,4 @@
-import DigitalMarketingServices from "./DigitalMarketingServices";
+import DigitalMarketingServices from "../index/DigitalMarketingServices";
 import Letstalk from "./let'stalk";
 import MarketingBrandingStrategy from "./MarketingBrandingStrategy";
 import Longestablishedfact from "./longestablishedfact";
