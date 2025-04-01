@@ -7,7 +7,7 @@ const Ourclients = ({ data }) => {
   return (
     <>
       {data.map((item) => (
-        <section className="features project bg_light_1">
+        <section className="features project bg_light_1" key={item.id}>
           <h1>{item.title} </h1>
           <div className="container">
             <div className="pd_top_70" />

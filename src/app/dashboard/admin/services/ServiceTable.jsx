@@ -41,6 +41,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 
 const ServicesTable = () => {
+  const [isYes, setIsYes] = useState(false);
 
   const data = [
     {
@@ -171,7 +172,6 @@ const ServicesTable = () => {
       accessorKey: "active",
       header: "Active",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
         return (
           <Toggle
             pressed={isYes}

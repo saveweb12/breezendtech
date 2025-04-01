@@ -30,6 +30,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Toggle } from "@/components/ui/toggle"
+import Image from "next/image";
 import Link from "next/link";
 import { ImEye, ImEyeBlocked, ImBin } from "react-icons/im"
 import { SquarePen, AlignJustify, X, Filter, Search, Files, Eye } from "lucide-react";
@@ -144,6 +145,9 @@ import toast from 'react-hot-toast'
 
 const AlbumTable = () => {
 
+    const [isActive, setIsActive] = useState(row.getValue("active"));
+    const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
+
     const [data, setData] = useState([]);
     // console.log(data);
 
@@ -173,7 +177,7 @@ const AlbumTable = () => {
             header: "Image",
             cell: (row) => (
                 <div className="capitalize">
-                    <img src={row.getValue("image")} alt="Image" className="h-8 w-10 object-cover" />
+                    <Image src={row.getValue("image")} alt="Image" className="h-8 w-10 object-cover" />
                 </div>
             )
         },
@@ -191,7 +195,6 @@ const AlbumTable = () => {
             accessorKey: "link",
             header: "Link",
             cell: ({ row }) => {
-                // const [isYes, setIsYes] = useState(true)
                 return (
                     <div>
                         <Link href={`${row.getValue('link')}`} target="_blank" rel="noopener noreferrer"><Eye width={20} height={20} /></Link>
@@ -203,7 +206,6 @@ const AlbumTable = () => {
             accessorKey: "active",
             header: "Active",
             cell: ({ row }) => {
-                const [isActive, setIsActive] = useState(row.getValue("active"));
                 const portfolioId = row.original.id;
 
 
@@ -263,7 +265,6 @@ const AlbumTable = () => {
 
     ]
 
-    const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
 
     useEffect(() => {
         const fetchData = async () => {

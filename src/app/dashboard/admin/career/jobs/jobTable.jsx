@@ -39,6 +39,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { deleteJobs } from "@/libAdmin/features/addJob";
 
 const JobTable = () => {
+  const [isYes, setIsYes] = useState(false);
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 25 });
   const dispatch = useDispatch();
   const { jobs = [] } = useSelector((state) => state.jobs);
@@ -102,7 +103,7 @@ const JobTable = () => {
       accessorKey: "active",
       header: "Active",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
+
         return (
           <Toggle
             pressed={isYes}

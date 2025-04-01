@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchqustion } from "@/libAdmin/features/qustionslice";
 
 const Page = () => {
+  const [isYes, setIsYes] = useState(false);
   const dispatch = useDispatch();
   const { questions } = useSelector((state) => state.qustions);
 
@@ -79,7 +80,6 @@ const Page = () => {
       accessorKey: "active",
       header: "Required?",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
         return (
           <Toggle
             pressed={isYes}

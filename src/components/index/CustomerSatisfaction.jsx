@@ -146,7 +146,7 @@ const CustomerSatisfaction = ({ data }) => {
                             <h4>Main IT Services, Inc</h4>
                             <h6>Feedback on Main IT Services, Inc</h6>
                             <div className="comment">
-                              I have utilized Breeze End Technology for everything from initial site concept to final site launch and search engine optimization (SEO) campaigns. Breeze End Technology is the only web development company I've ever worked with that genuinely cares about the quality of their output, and I've spent a lot of time in the industry over the past few years. Honest, timely, and never miss a deadline. If your project involves the internet, I highly suggest using them.
+                              I have utilized Breeze End Technology for everything from initial site concept to final site launch and search engine optimization (SEO) campaigns. Breeze End Technology is the only web development company I&apos;ve ever worked with that genuinely cares about the quality of their output, and I&apos;ve spent a lot of time in the industry over the past few years. Honest, timely, and never miss a deadline. If your project involves the internet, I highly suggest using them.
                             </div>
                             <div className="details clearfix">
                               <div className="c_image">

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const LinkBuilding = ({ data }) => {
   const items = data[0];
 

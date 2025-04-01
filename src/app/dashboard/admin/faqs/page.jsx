@@ -10,7 +10,7 @@ import { Toggle } from '@/components/ui/toggle'
 const Page = () => {
 
     const [faqData, setFaqData] = useState([]);
-
+    const [isYes, setIsYes] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -70,7 +70,6 @@ const Page = () => {
             accessorKey: "active",
             header: "Active",
             cell: () => {
-                const [isYes, setIsYes] = useState(false);
                 return (
                     <Toggle
                         pressed={isYes}

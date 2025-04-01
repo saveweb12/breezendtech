@@ -177,7 +177,7 @@ const ViewAll = () => {
                       <p>Web Development</p>
                       <h2 className="title_pro">
                         <a href="project-details.html" rel="bookmark">
-                          A.A. Shah's IAS Institute
+                          A.A. Shah&apos;s IAS Institute
                         </a>
                       </h2>
                     </div>

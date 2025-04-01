@@ -2,8 +2,8 @@ import React from 'react'
 
 const kindofvideo = () => {
   return (
-   <>
-    <section className="features video bg_light_1">
+    <>
+      <section className="features video bg_light_1">
         <div className="container">
           {/*===============spacing==============*/}
           <div className="pd_top_70" />
@@ -34,8 +34,8 @@ const kindofvideo = () => {
                   It is a long established fact that a reader will be distracted by
                   the readable content of a page when looking at its layout. The
                   point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using 'Content here,
-                  content here', making it look like readable English. Many desktop
+                  distribution of letters, as opposed to using &apos;Content here,
+                  content here&apos;, making it look like readable English. Many desktop
                   publishing packages and web page editors now use.
                 </p>
                 <p>
@@ -75,8 +75,8 @@ const kindofvideo = () => {
                   It is a long established fact that a reader will be distracted by
                   the readable content of a page when looking at its layout. The
                   point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using 'Content here,
-                  content here', making it look like readable English. Many desktop
+                  distribution of letters, as opposed to using &apos;Content here,
+                  content here&apos;, making it look like readable English. Many desktop
                   publishing packages and web page editors now use.
                 </p>
                 <p>
@@ -92,8 +92,8 @@ const kindofvideo = () => {
                   It is a long established fact that a reader will be distracted by
                   the readable content of a page when looking at its layout. The
                   point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using 'Content here,
-                  content here', making it look like readable English. Many desktop
+                  distribution of letters, as opposed to using &apos;Content here,
+                  content here&apos;, making it look like readable English. Many desktop
                   publishing packages and web page editors now use.
                 </p>
                 <p>
@@ -131,8 +131,8 @@ const kindofvideo = () => {
                   It is a long established fact that a reader will be distracted by
                   the readable content of a page when looking at its layout. The
                   point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using 'Content here,
-                  content here', making it look like readable English. Many desktop
+                  distribution of letters, as opposed to using &apos;Content here,
+                  content here&apos;, making it look like readable English. Many desktop
                   publishing packages and web page editors now use.
                 </p>
                 <p>
@@ -147,7 +147,7 @@ const kindofvideo = () => {
         <div className="pd_bottom_50" />
         {/*===============spacing==============*/}
       </section>
-   </>
+    </>
   )
 }
 

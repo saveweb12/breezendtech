@@ -10,6 +10,7 @@ import DataTable from "@/components/data-table/DataTable";
 import axios from "axios";
 
 const SkillTable = ({ onEdit }) => {
+  const [isYes, setIsYes] = useState(false);
   const dispatch = useDispatch();
   const { skills } = useSelector((state) => state.skills);
   useEffect(() => {
@@ -63,7 +64,6 @@ const SkillTable = ({ onEdit }) => {
       accessorKey: "active",
       header: "Active",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
         return (
           <Toggle
             pressed={isYes}

@@ -73,7 +73,7 @@ const Editjob = () => {
             }
         }
         if (id) fetchData();
-    }, [id, reset])
+    }, [id, reset, dispatch])
 
 
     const selectedQuestions = watch("selectedQuestions");

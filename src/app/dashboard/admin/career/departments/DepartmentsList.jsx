@@ -12,6 +12,7 @@ import axios from "axios";
 const DepartmentList = ({ onEdit }) => {
 
   const dispatch = useDispatch();
+  const [isYes, setIsYes] = useState(false);
   const { departments } = useSelector((state) => state.departments);
   useEffect(() => {
     dispatch(fetchdepartment());
@@ -64,7 +65,6 @@ const DepartmentList = ({ onEdit }) => {
       accessorKey: "active",
       header: "Active",
       cell: () => {
-        const [isYes, setIsYes] = useState(false);
         return (
           <Toggle
             pressed={isYes}

@@ -42,7 +42,7 @@ import { SquarePen, AlignJustify, X, Filter, Search, Files } from "lucide-react"
 
 
 const Slidertable = () => {
-
+    const [isYes, setIsYes] = useState(true);
     const data = [
         { id: 1, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
         { id: 2, Name: "Clients", type: "Slider", active: "", Createdat: "", action: "" },
@@ -92,7 +92,7 @@ const Slidertable = () => {
             accessorKey: 'active',
             header: 'Active',
             cell: () => {
-                const [isYes, setIsYes] = useState(true);
+
                 return (
                     <Toggle
                         pressed={isYes}

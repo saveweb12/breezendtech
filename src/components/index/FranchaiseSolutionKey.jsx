@@ -25,7 +25,7 @@ const FranchaiseSolutionKey = ({ data }) => {
               <div className="one">
                 <Image
                   src={items.image}
-                  className="Image-fluid"
+                  className="img-fluid"
                   alt="about"
                 />
               </div>

@@ -36,7 +36,7 @@ const OurClientsGetResults = ({ data }) => {
                     </div>
                   </div>
                   <div className="case-text-align">
-                    <h6>"It is a long established fact"</h6>
+                    <h6>It is a long established fact</h6>
                   </div>
                   <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
                     <div className="wp-block-column case-text left is-layout-flow wp-block-column-is-layout-flow">
@@ -65,7 +65,7 @@ const OurClientsGetResults = ({ data }) => {
                     </div>
                   </div>
                   <div className="case-text-align">
-                    <h6>"It is a long established fact"</h6>
+                    <h6>It is a long established fact</h6>
                   </div>
                   <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
                     <div className="wp-block-column case-text left is-layout-flow wp-block-column-is-layout-flow">

@@ -19,7 +19,7 @@ const useOutsideClick = (callback) => {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, []);
+    }, [callback]);
 
     return ref;
 };

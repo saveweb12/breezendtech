@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useFormContext, Controller, useFieldArray } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
+import Image from 'next/image'
 
 
 
@@ -69,7 +69,7 @@ const DynamicForm = ({ imageId, schema, name }) => {
                     className="w-full p-2 border rounded"
                   />
                   {filePreviews[field.name] && (
-                    <img src={filePreviews[field.name]} alt="Preview" width="50" />
+                    <Image src={filePreviews[field.name]} alt="Preview" width="50" />
                   )}
                 </>
               ) : field.type === "textarea" ? (
