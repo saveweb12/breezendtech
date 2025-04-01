@@ -231,7 +231,7 @@ const Index = () => {
                                             <div className="slider_content">
                                                 <h1>Recruit the best employees</h1>
                                                 <h6>
-                                                    Our search results mitigate your company's exposure
+                                                    Our search results mitigate your company&apos;s exposure
                                                 </h6>
                                                 <p className="description">
                                                     Duty obligations of business it will frequently occur
