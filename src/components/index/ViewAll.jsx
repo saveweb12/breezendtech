@@ -23,7 +23,7 @@ const ViewAll = () => {
   return (
     <>
       <section className="project_all filt_style_four  filter_enabled">
-        <h1>Effective portfolio</h1>
+        <h1 className='text-center pt-5'>Effective portfolio</h1>
         <div className="container">
           <div className="pd_top_90" />
           <div className="row">
