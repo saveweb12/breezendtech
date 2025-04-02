@@ -34,38 +34,38 @@ const footer = () => {
       <div className="bg-black">
         <div className="pt-10">
           <h1 className=" flex justify-center text-white" >Growing Businesses Since 2008</h1>
-          <p className=" flex justify-center text-xl text-white">Made with in 25 cities around the world</p>
+          <p className=" flex justify-center text-xl text-gray-200">Made with in 25 cities around the world</p>
         </div>
-        <div className="flex justify-between pb-10 pt-10 ml-40 mr-40 ">
-          <ul className="text-white text-xl cursor-pointer ">
+        <div className="flex justify-between pb-10 pt-3 ml-40 mr-40 ">
+          <ul className="text-gray-300 text-xl cursor-pointer ">
             <li className="hover:text-red-500 ">Arlington</li>
             <li className="hover:text-red-500">Atlanta</li>
             <li className="hover:text-red-500">Austin</li>
             <li className="hover:text-red-500 ">Baltimore</li>
             <li className="hover:text-red-500 ">Chicago</li>
           </ul>
-          <ul className="text-white text-xl cursor-pointer">
+          <ul className="text-gray-300 text-xl cursor-pointer">
             <li className="hover:text-red-500">Cleveland</li>
             <li className="hover:text-red-500">Dallas</li>
             <li className="hover:text-red-500">Denver</li>
             <li className="hover:text-red-500">Houston</li>
             <li className="hover:text-red-500">Jacksonville</li>
           </ul>
-          <ul className="text-white text-xl cursor-pointer">
+          <ul className="text-gray-300 text-xl cursor-pointer">
             <li className="hover:text-red-500">Kansas City</li>
             <li className="hover:text-red-500" >Las Vegas</li>
             <li className="hover:text-red-500">Los Angeles</li>
             <li className="hover:text-red-500">Louisville</li>
             <li className="hover:text-red-500">New York City</li>
           </ul>
-          <ul className="text-white text-xl cursor-pointer">
+          <ul className="text-gray-300 text-xl cursor-pointer">
             <li className="hover:text-red-500">Miami</li>
             <li className="hover:text-red-500">Minneapolis</li>
             <li className="hover:text-red-500">Phoenix</li>
             <li className="hover:text-red-500">New Orleans</li>
             <li className="hover:text-red-500">Orlando</li>
           </ul>
-          <ul className="text-white text-xl cursor-pointer">
+          <ul className="text-gray-300 text-xl cursor-pointer">
             <li className="hover:text-red-500">Philadelphia</li>
             <li className="hover:text-red-500">Portland</li>
             <li className="hover:text-red-500">San Antonio</li>

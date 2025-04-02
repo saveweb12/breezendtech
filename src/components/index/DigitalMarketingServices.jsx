@@ -18,7 +18,7 @@ const DigitalMarketingServices = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="banner_title_inner">
-              <div className="title_page">Digital Marketing Services</div>
+              <div className="title_page pt-12">Digital Marketing Services</div>
               <p className="service-text">
                 Grow Your Client Base With Data-Driven and Targeted Strategies
               </p>
