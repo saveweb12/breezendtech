@@ -82,7 +82,7 @@ const Header = () => {
                   <div key={items.id}>
                     {items.title === "Home" &&
                       <button className="flex justify-start items-center mb-4 !important">
-                        <a href="#" className="hover-text  font-sans font-semibold text-2xl">
+                        <a href={items.slug}className="hover-text  font-sans font-semibold text-2xl">
                           {items.title}
                         </a>
                       </button>
@@ -142,7 +142,7 @@ const Header = () => {
                     {
                       item.title !== "Home" && item.parent !== "About Us" && item.parent !== "Services" && item.parent !== "Our Work" &&
                       <button className="flex justify-start items-center mb-4 !important">
-                        <a href="#" className="hover-text  font-sans font-semibold text-2xl">
+                        <a href= {item.slug} className="hover-text  font-sans font-semibold text-2xl">
                           {item.title}
                         </a>
                       </button>
