@@ -1,7 +1,25 @@
-import React from 'react'
-import Image from 'next/image'
+"use client"
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
 const ViewAll = () => {
+  const [data, setdata] = useState([])
+  const [selectedCotegory, setselectedCotegory] = useState("All")
+  console.log("portfoliodata", data)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://breezend-backend-2.onrender.com/api/portfolio/get-all-portfolio')
+        setdata(response.data.allPortfolio)
+      } catch (error) {
+        console.error('Create Page API Error:', error.response?.data || 'Something went wrong');
+      }
+    }
+    fetchData()
+  }, [])
+
+  const filterCotegory = selectedCotegory === "All" ? data : data.filter(item => item.category === selectedCotegory)
+
   return (
     <>
       <section className="project_all filt_style_four  filter_enabled">
@@ -15,14 +33,16 @@ const ViewAll = () => {
                 style={{ textAlign: "center!important" }}
               >
                 <ul className="project_filter dark clearfix">
-                  <li data-filter="*" className="current">
+                  <li onClick={() => setselectedCotegory("All")} className={selectedCotegory === "All" ? "current" : ""}>
                     View All
                   </li>
-                  <li data-filter=".project_category-coaching">Web Design</li>
-                  <li data-filter=".project_category-human-resources">
+                  <li onClick={() => setselectedCotegory("web design")} className={selectedCotegory === "web design" ? "current" : ""}>
+                    Web Design
+                  </li>
+                  <li onClick={() => setselectedCotegory("Web Development")} className={selectedCotegory === "Web Development" ? "current" : ""}>
                     Web Development
                   </li>
-                  <li data-filter=".project_category-leadership">
+                  <li onClick={() => setselectedCotegory("App Development")} className={selectedCotegory === "App Development" ? "current" : ""}>
                     App Development
                   </li>
                 </ul>
@@ -33,194 +53,45 @@ const ViewAll = () => {
             className="project_container  clearfix "
             style={{ position: "relative", height: 1202 }}
           >
+
             <div className="row clearfix">
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-coaching"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project01.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>Web design</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          Skynet Power Solutions
-                        </a>
-                      </h2>
+              {filterCotegory.map((item) => (
+                <div
+                  key={item.id}
+                  className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-coaching"
+                >
+                  <div className="project_post style_one style_four">
+                    <div className="image">
+                      <img
+                        loading="lazy"
+                        width={746}
+                        height={497}
+                        src={item.image}
+                        className="img-fluid"
+                        alt="img"
+                      />
+                      <a href="project-details.html" className="two">
+                        <i className="icon-right-arrow" />
+                      </a>
+                    </div>
+                    <div className="project_caro_content">
+                      <div className="left_side">
+                        <p>{item.category}</p>
+                        <h2 className="title_pro">
+                          <a href="project-details.html" rel="bookmark">
+                            {item.title}
+                          </a>
+                        </h2>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-human-resources"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project02.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>Web Development</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          Breeze End Technology
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-leadership"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project03.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>App Development</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          Interdum Et Malesuada
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-leadership"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project03.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>App Development</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          Pellentesque Lacus
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-human-resources"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project05.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>Web Development</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          A.A. Shah&apos;s IAS Institute
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="project-wrapper grid-item col-xl-4 col-lg-6 col-md-12 col-sm-12 project_category-coaching"
-                style={{ position: "absolute", left: 0, top: 0 }}
-              >
-                <div className="project_post style_one style_four">
-                  <div className="image">
-                    <Image
-                      loading="lazy"
-                      width={746}
-                      height={497}
-                      src="/images/projects/project04.jpg"
-                      className="img-fluid"
-                      alt="img"
-                    />
-                    <a href="project-details.html" className="two">
-                      <i className="icon-right-arrow" />
-                    </a>
-                  </div>
-                  <div className="project_caro_content">
-                    <div className="left_side">
-                      <p>Web design</p>
-                      <h2 className="title_pro">
-                        <a href="project-details.html" rel="bookmark">
-                          Designer Zone jeweller
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="pd_bottom_20" />
         </div>
       </section>
-
-
     </>
   )
 }
