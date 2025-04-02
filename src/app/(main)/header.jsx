@@ -77,7 +77,7 @@ const Header = () => {
           </div>
           <nav className="mt-24 w-30">
             <ul>
-              {
+              {/* {
                 pages.map((items) => (
                   <div key={items.id}>
                     {items.title === "Home" &&
@@ -89,7 +89,20 @@ const Header = () => {
                     }
                   </div>
                 ))
+              } */}
+
+              {
+                pages.map((items) => (
+                  <div key={items.id}>
+                    {items.title === "Home" && (
+                      <Link href="/" className="hover-text font-sans font-semibold text-2xl flex justify-start items-center mb-4">
+                        {items.title}
+                      </Link>
+                    )}
+                  </div>
+                ))
               }
+
               <button className="flex justify-start items-center gap-8 mb-4 !important">
                 <h1 onClick={handleAboutVisible} className="hover-text font-sans font-semibold text-2xl">About Us</h1>
                 <SquareChevronRight size={25} />
@@ -142,7 +155,7 @@ const Header = () => {
                     {
                       item.title !== "Home" && item.parent !== "About Us" && item.parent !== "Services" && item.parent !== "Our Work" &&
                       <button className="flex justify-start items-center mb-4 !important">
-                        <Link href= {item.slug} className="hover-text  font-sans font-semibold text-2xl">
+                        <Link href={item.slug} className="hover-text  font-sans font-semibold text-2xl">
                           {item.title}
                         </Link>
                       </button>
