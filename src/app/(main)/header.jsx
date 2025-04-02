@@ -39,7 +39,7 @@ const Header = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https:breezend-backend-2.onrender.com/api/get-all-page');
+        const response = await axios.get('https://highwebs.netlify.app/api/get-all-page');
         console.log(response.data.success);
 
         if (Array.isArray(response.data.pages)) {
