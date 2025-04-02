@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import Editor from "@/components/Editor";
+//import Editor from "@/components/Editor";
 import DynamicSelect from "@/components/Select";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -162,13 +162,13 @@ const Jobform = () => {
                     </div>
                     <div className="space-y-1">
                         <Label>Description</Label>
-                        <Controller
+                        {/* <Controller
                             name="description"
                             control={control}
                             render={({ field }) => (
                                 <Editor value={field.value} onChange={field.onChange} />
                             )}
-                        />
+                        /> */}
                     </div>
                 </div>
                 <div className="grid grid-cols-2 bg-white text-black rounded-sm p-4 gap-4">
