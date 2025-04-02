@@ -59,7 +59,7 @@ const Jobform = () => {
                 },
             ],
         };
-        console.log(formdata);
+       // console.log(formdata);
         // dispatch(addJob(formdata)).unwrap()
         //     .then(() => {
         //         alert("Job Created Successfully")
@@ -162,12 +162,13 @@ const Jobform = () => {
                     </div>
                     <div className="space-y-1">
                         <Label>Description</Label>
+                        <Textarea {...register("description")} />
                         {/* <Controller
                             name="description"
                             control={control}
-                            render={({ field }) => (
-                                <Editor value={field.value} onChange={field.onChange} />
-                            )}
+                            // render={({ field }) => (
+                            //     <Editor value={field.value} onChange={field.onChange} />
+                            // )}
                         /> */}
                     </div>
                 </div>
