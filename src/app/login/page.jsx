@@ -20,6 +20,7 @@ import {
 import { useForm } from 'react-hook-form'
 import toast from "react-hot-toast";
 import axios from 'axios'
+import { cookies } from 'next/headers'
 
 const Login = () => {
     const {
@@ -39,7 +40,10 @@ const Login = () => {
     const handleLogin = async (data) => {
         try {
             const response = await axios.post('https://breezend-backend-2.onrender.com/api/user/login-account', data, { withCredentials: true });
-            console.log(response.data)
+            const token = response.data;
+            if(token.token){
+                cookies().set('auth_token', )
+            }
             toast.success(response.data.message);
             loginreset();
         } catch (error) {
@@ -81,11 +85,6 @@ const Login = () => {
                         </CardHeader>
                         <form onSubmit={handleLoginSubmit(handleLogin)}>
                             <CardContent className="space-y-2">
-                                {/* <div className="space-y-1">
-                                    <Label htmlFor="loginUsername">Username</Label>
-                                    <Input id="loginUsername" type="text" {...register("loginUsername", { required: true })} />
-                                    {errors.loginUsername && <p className="text-red-500">Username is required</p>}
-                                </div> */}
                                 <div className="space-y-1">
                                     <Label htmlFor="loginEmail">Email</Label>
                                     <Input id="loginEmail" type="email" autoComplete="on" {...registerLogin("email", { required: true })} />
