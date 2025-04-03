@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className="flex justify-center p-20">
         <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
-          <Image src="/images/logo-default.png" alt="logo" className="h-14 mix-blend-multiply" />
+          <Image src="/images/logo-default.png" alt="logo" width={200} height={50} className="h-14 mix-blend-multiply" />
           <p className="text-center text-gray-700 text-base leading-relaxed" >Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">

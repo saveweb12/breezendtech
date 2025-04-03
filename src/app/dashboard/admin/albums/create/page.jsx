@@ -17,7 +17,7 @@ import Image from "next/image"
 // const Editor = dynamic(() => import("@/components/Editor"), { ssr: false });
 const Page = () => {
   const [image, setImage] = useState();
-  const { handleSubmit, register, formState: { error }, watch, setValue, reset } = useForm();
+  const { handleSubmit, register, formState: { errors }, watch, setValue, reset } = useForm();
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
