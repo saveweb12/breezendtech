@@ -20,7 +20,7 @@ import {
 import { useForm } from 'react-hook-form'
 import toast from "react-hot-toast";
 import axios from 'axios'
-import { cookies } from 'next/headers'
+// import { cookies } from 'next/headers'
 
 const Login = () => {
     const {
@@ -30,20 +30,20 @@ const Login = () => {
         reset: loginreset
     } = useForm();
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-        reset
-    } = useForm();
+    // const {
+    //     register,
+    //     handleSubmit,
+    //     formState: { errors },
+    //     reset
+    // } = useForm();
 
     const handleLogin = async (data) => {
         try {
             const response = await axios.post('https://breezend-backend-2.onrender.com/api/user/login-account', data, { withCredentials: true });
             const token = response.data;
-            if(token.token){
-                cookies().set('auth_token', )
-            }
+            // if (token.token) {
+            //     cookies().set('auth_token',)
+            // }
             toast.success(response.data.message);
             loginreset();
         } catch (error) {
@@ -53,35 +53,36 @@ const Login = () => {
         }
     }
 
-    const onSubmit = async (data) => {
-        console.log(data)
-        try {
-            const response = await axios.post('https://breezend-backend-2.onrender.com/api/user/create-account', data, { withCredentials: true });
-            toast.success(response.data.message);
-            reset();
-        } catch (error) {
-            console.error("Signup Error:", error.response?.data);
-            toast.error(`Signup Error: ${error.response?.data?.message || "Something went wrong"}`);
-            reset();
-        }
-    }
+    // const onSubmit = async (data) => {
+    //     console.log(data)
+    //     try {
+    //         const response = await axios.post('https://breezend-backend-2.onrender.com/api/user/create-account', data, { withCredentials: true });
+    //         toast.success(response.data.message);
+    //         reset();
+    //     } catch (error) {
+    //         console.error("Signup Error:", error.response?.data);
+    //         toast.error(`Signup Error: ${error.response?.data?.message || "Something went wrong"}`);
+    //         reset();
+    //     }
+    // }
 
     return (
         <div className="w-screen h-screen flex justify-center items-center">
-            <Tabs defaultValue="login" className="w-[400px]">
-                <TabsList className="grid w-full grid-cols-2">
-                    <TabsTrigger value="login">Login</TabsTrigger>
+            <Tabs defaultValue="login" className="w-[400px] bg-white">
+                {/* <TabsList className="grid w-full">
+                    <TabsTrigger value="login" className="!w-full">Login</TabsTrigger>
                     <TabsTrigger value="signup">Sign up</TabsTrigger>
-                </TabsList>
+                    <div className='text-center'>Login</div>
+                </TabsList> */}
 
                 {/* Login Form */}
                 <TabsContent value="login">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Login</CardTitle>
-                            <CardDescription>
+                            <CardTitle className='text-center'>Login</CardTitle>
+                            {/* <CardDescription>
                                 If you haven't signed up yet, please sign up.
-                            </CardDescription>
+                            </CardDescription> */}
                         </CardHeader>
                         <form onSubmit={handleLoginSubmit(handleLogin)}>
                             <CardContent className="space-y-2">
@@ -104,7 +105,7 @@ const Login = () => {
                 </TabsContent>
 
                 {/* Signup Form */}
-                <TabsContent value="signup">
+                {/* <TabsContent value="signup">
                     <Card>
                         <CardHeader>
                             <CardTitle>Sign Up</CardTitle>
@@ -140,7 +141,7 @@ const Login = () => {
                             </CardFooter>
                         </form>
                     </Card>
-                </TabsContent>
+                </TabsContent> */}
             </Tabs>
         </div>
     );

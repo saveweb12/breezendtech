@@ -8,7 +8,7 @@ export default async function DynamicPage({ params }) {
   if (slug === "favicon.ico") {
     return null;
   }
-  if (slug === "admin") {
+  if (slug === "dashboard") {
     redirect("/dashboard/admin/home");
   }
   if (slug === "/") {

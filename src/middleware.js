@@ -4,13 +4,13 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
 
   // If the path starts with "/dashboard", let it go to its actual route
-  if (pathname.startsWith("/admin")) {
+  if (pathname.startsWith("/dashboard")) {
     return NextResponse.redirect(new URL("/dashboard/admin/home", request.url));
   }
 
-  if (pathname.startsWith("/")) {
-    return NextResponse.redirect(new URL("/home", request.url));
-  }
+  // if (pathname.startsWith("/")) {
+  //   return NextResponse.redirect(new URL("/home", request.url));
+  // }
 
   return NextResponse.next();
 }
