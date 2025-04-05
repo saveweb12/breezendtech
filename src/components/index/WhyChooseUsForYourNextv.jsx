@@ -1,4 +1,3 @@
-import { Description } from "@radix-ui/react-dialog"
 
 const WhyChooseUsForYourNextv = ({data}) => {
     return (
