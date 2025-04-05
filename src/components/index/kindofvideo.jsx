@@ -1,14 +1,12 @@
 import React from 'react'
 
-const kindofvideo = () => {
+const Kindofvideo = () => {
   return (
     <>
       <section className="features video bg_light_1">
         <div className="container">
-          {/*===============spacing==============*/}
           <div className="pd_top_70" />
-          {/*===============spacing==============*/}
-          <div className="row">
+           <div className="row">
             <div className="col-lg-12">
               <div className="title_all_box style_one text-center dark_color">
                 <div className="title_sections">
@@ -20,10 +18,8 @@ const kindofvideo = () => {
                     normal distribution of letters, as opposed to using.
                   </p>
                 </div>
-                {/*===============spacing==============*/}
                 <div className="pd_bottom_20" />
-                {/*===============spacing==============*/}
-              </div>
+               </div>
             </div>
           </div>
           <div className="row">
@@ -143,12 +139,10 @@ const kindofvideo = () => {
             </div>
           </div>
         </div>
-        {/*===============spacing==============*/}
         <div className="pd_bottom_50" />
-        {/*===============spacing==============*/}
       </section>
     </>
   )
 }
 
-export default kindofvideo
+export default Kindofvideo
