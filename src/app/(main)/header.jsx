@@ -63,110 +63,138 @@ const Header = () => {
   console.log(aboutPages);
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-20 bg-white shadow-md flex items-center justify-between px-6 z-50 !rounded-none !border-none">
-        <div >
-          <Image  src="/images/logo-default.png"  alt="logo" width={200} height={50} className="h-12 mix-blend-multiply" />
-        </div>
-        <div className="cursor-pointer" onClick={handleMenuToggle}>
-          <AlignJustify size={40} />
-        </div>
-        <div className={`fixed top-0 left-0 h-full w-full bg-gray-900 text-white transform transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "-translate-x-full"
-          }`} >
-          < div onClick={handleMenuToggle} style={{ cursor: "pointer", display: "inline", float: "right", marginTop: "1rem", marginRight: "1rem" }}>
-            <CircleX size={50} />
-          </div>
-          <nav className="mt-24 w-30">
-            <ul>
-              {/* {
-                pages.map((items) => (
-                  <div key={items.id}>
-                    {items.title === "Home" &&
-                      <button className="flex justify-start items-center mb-4 !important">
-                        <Link href="/" className="hover-text  font-sans font-semibold text-2xl">
-                          {items.title}
-                        </Link>
-                      </button>
-                    }
-                  </div>
-                ))
-              } */}
+      <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-4 py-3">
+  <div className="flex justify-between items-center">
+    {/* Logo */}
+    <Image
+      src="/images/logo-default.png"
+      alt="logo"
+      width={200}
+      height={50}
+      className="h-12 w-auto mix-blend-multiply"
+    />
 
-              {
-                pages.map((items) => (
-                  <div key={items.id}>
-                    {items.title === "Home" && (
-                      <Link href="/" className="hover-text font-sans font-semibold text-2xl flex justify-start items-center mb-4">
-                        {items.title}
-                      </Link>
-                    )}
-                  </div>
-                ))
-              }
+    {/* Mobile Menu Button */}
+    <button onClick={handleMenuToggle} className="md:hidden">
+      <AlignJustify size={32} />
+    </button>
 
-              <button className="flex justify-start items-center gap-8 mb-4 !important">
-                <h1 onClick={handleAboutVisible} className="hover-text font-sans font-semibold text-2xl">About Us</h1>
-                <SquareChevronRight size={25} />
-                <div className={`ml-[60px] overflow-hidden transition-all duration-500 ease-in-out ${isAboutVisible ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-                  }`}>
-                  <ul className={`flex absolute -ml-[22px] cursor-pointer transition-transform duration-500 ease-in-out ${isAboutVisible ? "translate-x-0" : "-translate-x-5"}`}>
-                    <span className="mt-[-18px] flex gap-4">
-                      {aboutPages.map((page) => (
-                        <a href={page.slug} className="text-2xl hover-text" key={page.id}>{page.title}</a>
-                      ))}
-                    </span>
-                  </ul>
-                </div>
-              </button>
+    {/* Desktop Menu */}
+    <ul className="hidden md:flex space-x-8 text-lg font-medium">
+      <li><Link href="/">Home</Link></li>
 
-              <button className="flex  justify-start items-center gap-10 mb-4 !important">
-                <h1 onClick={handleServicesVisible} className="hover-text  font-sans font-semibold text-2xl ">Service</h1>
-                <SquareChevronRight size={25} />
-                <div className={`ml-[60px] overflow-hidden transition-all duration-500 ease-in-out ${isServicesVisible ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-                  }`}>
-                  <ul className={`flex absolute -ml-[22px] cursor-pointer transition-transform duration-500 ease-in-out ${isServicesVisible ? "translate-x-0" : "-translate-x-5"
-                    }`}>
-                    <span className="mt-[-18px] flex gap-4" >
-                      {servicesPages.map((page) => (
-                        <a href={page.slug} className="text-2xl hover-text" key={page.id}>{page.title}</a>
-                      ))}
-                    </span>
-                  </ul>
-                </div>
-              </button>
+      <li className="relative group">
+        <button onClick={handleAboutVisible}>About Us</button>
+        {isAboutVisible && (
+          <ul className="absolute top-full left-0 bg-white shadow-lg rounded p-4 space-y-2 z-50">
+            {aboutPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
 
-              <button className="flex justify-start items-center mb-4 gap-8 !important">
-                <h1 onClick={handleOurWorkVisible} className="hover-text  font-sans font-semibold text-2xl">Our work</h1>
-                <SquareChevronRight size={25} />
-                <div className={`ml-[60px] overflow-hidden transition-all duration-500 ease-in-out ${isOurWorkVisible ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-                  }`}>
-                  <ul className={`flex absolute list-none -ml-[22px] cursor-pointer transition-transform duration-500 ease-in-out ${isOurWorkVisible ? "translate-x-0" : "-translate-x-5"
-                    }`}>
-                    <span className="mt-[-18px] flex gap-4">
-                      {ourWorkPages.map((page) => (
-                        <a href={page.slug} className="text-2xl hover-text" key={page.id}>{page.title}</a>
-                      ))}
-                    </span>
-                  </ul>
-                </div>
-              </button>
-              {
-                pages.map((item) => (
-                  <div key={item.id}>
-                    {
-                      item.title !== "Home" && item.parent !== "About Us" && item.parent !== "Services" && item.parent !== "Our Work" &&
-                      <button className="flex justify-start items-center mb-4 !important">
-                        <Link href={item.slug} className="hover-text  font-sans font-semibold text-2xl">
-                          {item.title}
-                        </Link>
-                      </button>
-                    }
-                  </div>
-                ))
-              }
-            </ul>
-          </nav>
-        </div >
-      </div >
+      <li className="relative group">
+        <button onClick={handleServicesVisible}>Services</button>
+        {isServicesVisible && (
+          <ul className="absolute top-full left-0 bg-white shadow-lg rounded p-4 space-y-2 z-50">
+            {servicesPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+
+      <li className="relative group">
+        <button onClick={handleOurWorkVisible}>Our Work</button>
+        {isOurWorkVisible && (
+          <ul className="absolute top-full left-0 bg-white shadow-lg rounded p-4 space-y-2 z-50">
+            {ourWorkPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+
+      {pages.map((item) => {
+        const notGrouped = !["Home", "About Us", "Services", "Our Work"].includes(item.parent);
+        return notGrouped ? (
+          <li key={item.id}>
+            <Link href={item.slug}>{item.title}</Link>
+          </li>
+        ) : null;
+      })}
+    </ul>
+  </div>
+
+  {/* Mobile Drawer */}
+  <div
+    className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white p-6 z-50 transform transition-transform duration-300 ease-in-out ${
+      menuOpen ? "translate-x-0" : "-translate-x-full"
+    } md:hidden`}
+  >
+    <div className="flex justify-end">
+      <CircleX size={30} onClick={handleMenuToggle} className="cursor-pointer" />
+    </div>
+    <nav className="mt-8 space-y-4">
+      <Link href="/" className="block text-xl font-semibold" onClick={handleMenuToggle}>Home</Link>
+
+      <div>
+        <button onClick={handleAboutVisible} className="text-xl font-semibold">About Us</button>
+        {isAboutVisible && (
+          <ul className="pl-4 mt-2 space-y-2">
+            {aboutPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug} onClick={handleMenuToggle}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <div>
+        <button onClick={handleServicesVisible} className="text-xl font-semibold">Services</button>
+        {isServicesVisible && (
+          <ul className="pl-4 mt-2 space-y-2">
+            {servicesPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug} onClick={handleMenuToggle}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <div>
+        <button onClick={handleOurWorkVisible} className="text-xl font-semibold">Our Work</button>
+        {isOurWorkVisible && (
+          <ul className="pl-4 mt-2 space-y-2">
+            {ourWorkPages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.slug} onClick={handleMenuToggle}>{page.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      {pages.map((item) => {
+        const notGrouped = !["Home", "About Us", "Services", "Our Work"].includes(item.parent);
+        return notGrouped ? (
+          <Link key={item.id} href={item.slug} className="block text-xl font-semibold" onClick={handleMenuToggle}>
+            {item.title}
+          </Link>
+        ) : null;
+      })}
+    </nav>
+  </div>
+</div>
     </>
   )
 }
