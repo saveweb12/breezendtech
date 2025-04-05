@@ -290,36 +290,94 @@ const initialState = {
       id: 7,
       name: "Portfolio",
       items: [
-        { id: 701, image: "/portfolio/image1.png", name: "DigitalMarketingServices" },
-        { id: 702, image: "/portfolio/portfolio.png", name: "AvailableJobsChoose" },
+        { id: 701, image: "/portfolio/image1.png", name: "DigitalMarketingServices", schema:[
+          { name: "heading", type: "text" },
+          { name: "text", type: "text" },
+        ] },
+
+        { id: 702, image: "/portfolio/portfolio.png", name: "ViewAll", schema:[
+          { name: "title", type: "text" },
+          
+        ] },
       ]
     },
     {
       id: 8,
       name: "Video Production",
       items: [
-        { id: 801, image: "/video/image1.png", name: "DigitalMarketingServices" },
-        { id: 802, image: "/video/image2.png", name: "AvailableJobsChoose" },
-        { id: 803, image: "/video/image3.png", name: "AvailableJobsChoose" },
-        { id: 804, image: "/video/image4.png", name: "AvailableJobsChoose" },
+        { id: 801, image: "/video/image1.png", name: "DigitalMarketingServices", schema:[
+          { name: "heading", type: "text" },
+          { name: "text", type: "text" },
+        ] },
+        { id: 802, image: "/video/image2.png", name: "WhyChooseUsForYourNextv", schema:[
+          { name: "title", type: "text" },
+          { name: "description", type: "textarea" },
+          { name: "link", type: "file" }
+        ] },
+        { id: 803, image: "/video/image3.png", name: "Kindofvideo", schema:[
+          { name: "heading", type: "text" },
+          { name: "description", type: "textarea" },
+
+          { name: "title1", type: "text" },
+          { name: "description1", type: "textarea" },
+          { name: "link1", type: "text" },
+
+          { name: "title2", type: "text" },
+          { name: "description2", type: "textarea" },
+          { name: "link2", type: "text" },
+
+          { name: "title3", type: "text" },
+          { name: "description3", type: "textarea" },
+          { name: "link3", type: "text" },
+
+          { name: "title4", type: "text" },
+          { name: "description4", type: "textarea" },
+          { name: "link4", type: "text" }
+        ] },
+
+        { id: 804, image: "/video/image4.png", name: "VideoProductionServices", schema:[
+          { name: "title", type: "text" },
+        ] },
       ]
     },
     {
       id: 9,
       name: "Clients",
       items: [
-        { id: 801, image: "/clients/image1.png", name: "DigitalMarketingServices" },
-        { id: 802, image: "/clients/client.png", name: "AvailableJobsChoose" }
+        { id: 801, image: "/clients/image1.png", name: "DigitalMarketingServices", schema:[
+          { name: "heading", type: "text" },
+          { name: "text", type: "text" },
+        ] },
+        { id: 802, image: "/clients/client.png", name: "AvailableJobsChoose", schema:[
+          { name: "title", type: "text" },
+          { name: "description", type: "textarea" },
+          { name: "image", type: "file" }
+        ] }
       ]
     },
     {
       id: 10,
       name: "Case Study",
       items: [
-        { id: 901, image: "/case-study/image1.png", name: "DigitalMarketingServices" },
-        { id: 902, image: "/case-study/Revamp.png", name: "AvailableJobsChoose" },
-        { id: 903, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose" },
-        { id: 904, image: "/case-study/joinourmail.png", name: "AvailableJobsChoose" }
+        { id: 901, image: "/case-study/image1.png", name: "DigitalMarketingServices", schema:[
+          { name: "heading", type: "text" },
+          { name: "text", type: "text" },
+        ] },
+        { id: 902, image: "/case-study/Revamp.png", name: "AvailableJobsChoose", schema:[
+          { name: "title", type: "text" },
+          { name: "description", type: "textarea" },
+          { name: "image", type: "file" }
+        ] },
+        { id: 903, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose", schema:[
+          { name: "title", type: "text" },
+          { name: "description", type: "textarea" },
+          { name: "image", type: "file" }
+        ] },
+        { id: 904, image: "/case-study/joinourmail.png", name: "AvailableJobsChoose", schema:[
+          { name: "title", type: "text" },
+          { name: "description", type: "textarea" },
+          { name: "image", type: "file" }
+        ] }
       ]
     }
   ],
