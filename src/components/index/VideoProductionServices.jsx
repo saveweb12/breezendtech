@@ -23,7 +23,7 @@ const VideoProductionServices = ({data}) => {
                                 <div className="process_box_outer">
                                     <div className="icon">
                                         <Image
-                                            src="assets/images/icons/content-writing.png"
+                                            src="/images/icons/content-writing.png"
                                             className="img-fluid svg_image"
                                             alt="icon png"
                                         />
@@ -46,7 +46,7 @@ const VideoProductionServices = ({data}) => {
                                 <div className="process_box_outer">
                                     <div className="icon">
                                         <Image
-                                            src="assets/images/icons/production.png"
+                                            src="/images/icons/production.png"
                                             className="img-fluid svg_image"
                                             alt="icon png"
                                         />
@@ -69,7 +69,7 @@ const VideoProductionServices = ({data}) => {
                                 <div className="process_box_outer">
                                     <div className="icon">
                                         <Image
-                                            src="assets/images/icons/video-production.png"
+                                            src="/images/icons/video-production.png"
                                             className="img-fluid svg_image"
                                             alt="icon png"
                                         />
@@ -92,7 +92,7 @@ const VideoProductionServices = ({data}) => {
                                 <div className="process_box_outer">
                                     <div className="icon">
                                         <Image
-                                            src="assets/images/icons/video-player.png"
+                                            src="/images/icons/video-player.png"
                                             className="img-fluid svg_image"
                                             alt="icon png"
                                         />

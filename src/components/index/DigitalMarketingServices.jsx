@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 const DigitalMarketingServices = ({ data }) => {
+  console.log(data)
   return (
     <>
       {data.map((items) => (
