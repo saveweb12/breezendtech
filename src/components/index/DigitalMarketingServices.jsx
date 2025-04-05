@@ -1,12 +1,12 @@
 import React from 'react'
-
+import Image from 'next/image'
 const DigitalMarketingServices = () => {
   return (
     <>
      <div className="page_header_default style_one ">
     <div className="parallax_cover">
       <div className="simpleParallax">
-        <img
+        <Image
           src="/images/bg-inner-banner.jpg"
           alt="bg_image"
           className="cover-parallax"

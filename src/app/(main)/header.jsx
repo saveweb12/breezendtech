@@ -65,7 +65,7 @@ const Header = () => {
     <>
       <div className="fixed top-0 left-0 w-full h-20 bg-white shadow-md flex items-center justify-between px-6 z-50 !rounded-none !border-none">
         <div >
-          <Image src="/images/logo-default.png" alt="logo" className="h-12 mix-blend-multiply" />
+          <Image  src="/images/logo-default.png"  alt="logo" width={200} height={50} className="h-12 mix-blend-multiply" />
         </div>
         <div className="cursor-pointer" onClick={handleMenuToggle}>
           <AlignJustify size={40} />

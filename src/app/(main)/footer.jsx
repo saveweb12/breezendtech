@@ -8,75 +8,63 @@ import Image from "next/image"
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-center p-20">
-        <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
-          <Image src="/images/logo-default.png" alt="logo" className="h-14 mix-blend-multiply" />
-          <p className="text-center text-gray-700 text-base leading-relaxed" >Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.</p>
-        </div>
-        <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
-          <h2>Location</h2>
-          <p >6383 Little River Turnpike Alexandria, VA 22312, United States</p>
-          <p className="text-red-500 hover:text-blue-600 flex cursor-pointer ">Contact Us&nbsp;<MoveRight />&nbsp; Breezendtech Gives Back&nbsp;<MoveRight />&nbsp; </p>
-
+      {/* Top Footer Section */}
+      <div className="flex flex-col md:flex-row justify-center items-start md:items-center px-4 md:px-10 py-10 gap-10 bg-white">
+        {/* Left Section */}
+        <div className="flex flex-col items-center text-center space-y-4 max-w-md w-full">
+          <Image src="/images/logo-default.png" alt="logo" width={200} height={50} className="h-14 mix-blend-multiply" />
+          <p className="text-gray-700 text-base leading-relaxed">
+            Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.
+          </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
-          <div className="flex text-4xl">
-            <FaFacebook className=" hover:text-red-500" />
-            <FaTwitterSquare className=" hover:text-red-500" />
-            <FaInstagram className=" hover:text-red-500" />
-            <FaSkype className=" hover:text-red-500" />
+        {/* Middle Section */}
+        <div className="flex flex-col items-center text-center space-y-4 max-w-md w-full">
+          <h2 className="text-lg font-semibold">Location</h2>
+          <p>6383 Little River Turnpike Alexandria, VA 22312, United States</p>
+          <p className="text-red-500 hover:text-blue-600 cursor-pointer flex items-center justify-center flex-wrap text-center">
+            Contact Us&nbsp;<MoveRight />
+            &nbsp;Breezendtech Gives Back&nbsp;<MoveRight />
+          </p>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex flex-col items-center text-center space-y-4 max-w-md w-full">
+          <div className="flex gap-4 text-3xl justify-center">
+            <FaFacebook className="hover:text-red-500" />
+            <FaTwitterSquare className="hover:text-red-500" />
+            <FaInstagram className="hover:text-red-500" />
+            <FaSkype className="hover:text-red-500" />
           </div>
-          <p><span className="font-bold text-lg">Phone :</span> +1 (703) 712-7808</p>
-          <p><span className="font-bold text-lg">Mail Us :</span>  info@breezendtechs.com</p>
+          <p><span className="font-bold">Phone:</span> +1 (703) 712-7808</p>
+          <p><span className="font-bold">Mail Us:</span> info@breezendtechs.com</p>
         </div>
       </div>
 
-      <div className="bg-black">
-        <div className="pt-10">
-          <h1 className=" flex justify-center text-white" >Growing Businesses Since 2008</h1>
-          <p className=" flex justify-center text-xl text-white">Made with in 25 cities around the world</p>
+      {/* Bottom Section */}
+      <div className="bg-black w-full">
+        <div className="py-8 text-center space-y-2">
+          <h1 className="text-white text-lg">Growing Businesses Since 2008</h1>
+          <p className="text-white text-base">Made with ❤️ in 25 cities around the world</p>
         </div>
-        <div className="flex justify-between pb-10 pt-10 ml-40 mr-40 ">
-          <ul className="text-white text-xl cursor-pointer ">
-            <li className="hover:text-red-500 ">Arlington</li>
-            <li className="hover:text-red-500">Atlanta</li>
-            <li className="hover:text-red-500">Austin</li>
-            <li className="hover:text-red-500 ">Baltimore</li>
-            <li className="hover:text-red-500 ">Chicago</li>
-          </ul>
-          <ul className="text-white text-xl cursor-pointer">
-            <li className="hover:text-red-500">Cleveland</li>
-            <li className="hover:text-red-500">Dallas</li>
-            <li className="hover:text-red-500">Denver</li>
-            <li className="hover:text-red-500">Houston</li>
-            <li className="hover:text-red-500">Jacksonville</li>
-          </ul>
-          <ul className="text-white text-xl cursor-pointer">
-            <li className="hover:text-red-500">Kansas City</li>
-            <li className="hover:text-red-500" >Las Vegas</li>
-            <li className="hover:text-red-500">Los Angeles</li>
-            <li className="hover:text-red-500">Louisville</li>
-            <li className="hover:text-red-500">New York City</li>
-          </ul>
-          <ul className="text-white text-xl cursor-pointer">
-            <li className="hover:text-red-500">Miami</li>
-            <li className="hover:text-red-500">Minneapolis</li>
-            <li className="hover:text-red-500">Phoenix</li>
-            <li className="hover:text-red-500">New Orleans</li>
-            <li className="hover:text-red-500">Orlando</li>
-          </ul>
-          <ul className="text-white text-xl cursor-pointer">
-            <li className="hover:text-red-500">Philadelphia</li>
-            <li className="hover:text-red-500">Portland</li>
-            <li className="hover:text-red-500">San Antonio</li>
-            <li className="hover:text-red-500">San Diego</li>
-            <li className="hover:text-red-500">Seattle</li>
-          </ul>
+
+        {/* Cities Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6 md:px-20 pb-10 text-white text-base">
+          {[
+            "Arlington", "Atlanta", "Austin", "Baltimore", "Chicago",
+            "Cleveland", "Dallas", "Denver", "Houston", "Jacksonville",
+            "Kansas City", "Las Vegas", "Los Angeles", "Louisville", "New York City",
+            "Miami", "Minneapolis", "Phoenix", "New Orleans", "Orlando",
+            "Philadelphia", "Portland", "San Antonio", "San Diego", "Seattle"
+          ].map((city, index) => (
+            <div key={index} className="hover:text-red-500 cursor-pointer">
+              {city}
+            </div>
+          ))}
         </div>
       </div>
     </>
   )
-
 }
+
 export default Footer
