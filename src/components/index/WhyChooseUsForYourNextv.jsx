@@ -4,7 +4,7 @@ const WhyChooseUsForYourNextv = ({data}) => {
     return (
         <>
         {data.map((items)=>(
-            <section className="timeline-section">
+            <section key={items.id} className="timeline-section">
                 <div className="pd_top_70" />
                 <div className="container">
                     <div className="row">

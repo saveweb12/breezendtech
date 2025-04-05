@@ -4,7 +4,7 @@ const VideoProductionServices = ({data}) => {
     return (
         <>
         {data.map((items)=>(
-            <section className="service-section">
+            <section key={items.id} className="service-section">
                 <div className="pd_top_80" />
                 <div className="container">
                     <div className="row">
