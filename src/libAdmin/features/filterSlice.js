@@ -312,7 +312,7 @@ const initialState = {
         { id: 802, image: "/video/image2.png", name: "WhyChooseUsForYourNextv", schema:[
           { name: "title", type: "text" },
           { name: "description", type: "textarea" },
-          { name: "link", type: "file" }
+          { name: "link", type: "text" }
         ] },
         { id: 803, image: "/video/image3.png", name: "Kindofvideo", schema:[
           { name: "heading", type: "text" },
