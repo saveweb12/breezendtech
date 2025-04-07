@@ -363,7 +363,7 @@ const initialState = {
           { name: "heading", type: "text" },
           { name: "text", type: "text" },
         ] },
-        { id: 902, image: "/case-study/Revamp.png", name: "AvailableJobsChoose", schema:[
+        { id: 902, image: "/case-study/Revamp.png", name: "RevampandYear", schema:[
           { name: "title", type: "text" },
           { name: "description", type: "textarea" },
           { name: "image", type: "file" }
@@ -373,10 +373,10 @@ const initialState = {
           { name: "description", type: "textarea" },
           { name: "image", type: "file" }
         ] },
-        { id: 904, image: "/case-study/joinourmail.png", name: "AvailableJobsChoose", schema:[
+        { id: 904, image: "/case-study/joinourmail.png", name: "MailingList", schema:[
           { name: "title", type: "text" },
-          { name: "description", type: "textarea" },
-          { name: "image", type: "file" }
+          { name: "text", type: "text" },
+         
         ] }
       ]
     }
