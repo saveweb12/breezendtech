@@ -20,13 +20,23 @@ export default function DashboardLayout({ children }) {
                 <Provider store={store}>
                     <QueryClientProvider client={queryClient}>
                         <Toaster position="top-center" reverseOrder={false} />
-                        <header className="flex w-full h-14 shrink-0 items-center gap-2 bg-muted/50 transition-[width,height] 
-                        ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-14 fixed z-50 px-2 shadow-sm">
+                        <header className="flex w-full h-14 shrink-0 items-center gap-[1000px] bg-muted/50 transition-[width,height] 
+                        ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-14 fixed  z-50 px-2 shadow-sm">
                             <SidebarTrigger />
-                            <div className="flex gap-4">
+                            <div className="flex items-center">
                                 <NavUser />
                             </div>
                         </header>
+                        {/* <header className="fixed top-0 left-0 right-0 z-50 flex h-14 w-full items-center justify-between
+                         bg-muted/50 px-4 shadow-sm transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-14">
+                            
+                            <SidebarTrigger />
+
+                            
+                            <div className="flex items-center">
+                                <NavUser />
+                            </div>
+                        </header> */}
                         <div className="flex flex-col min-h-screen px-3 bg-muted/50" >
                             <div className="flex-1">
                                 {children}

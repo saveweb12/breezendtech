@@ -1,7 +1,12 @@
-import UserCard from "@/components/UserCard";
+'use client'
 import React from "react";
+import UserCard from "@/components/UserCard";
+import { getUsername } from '@/helpers/auth.js'
+import { getGreeting } from '@/helpers/greet.js'
 
-const page = () => {
+const Page = () => {
+  const userName = getUsername();
+  const greet = getGreeting();
   return (
     <div>
       <div className="flex justify-between m-5 mt-20 ">
@@ -10,7 +15,7 @@ const page = () => {
       </div>
       <hr className="mt-5" />
       <div className="mt-5 pl-7">
-        Good Morning <span className="text-2xl ">Santosh!</span> <br />
+        {greet} <span className="text-2xl ">{userName}!</span> <br />
         <span className="text-purple-900">
           {" "}
           Here’s what’s happening with your site today.
@@ -27,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -167,39 +167,39 @@ const data = {
           label: "Interview Schedules",
           link: "/dashboard/admin/career/interview-schedule"
         },
-        {
-          icon: FaUserFriends,
-          label: "Candidate Database",
-          link: "#"
-        }
+        // {
+        //   icon: FaUserFriends,
+        //   label: "Candidate Database",
+        //   link: "#"
+        // }
       ]
     },
     {
       title: "Additionals",
       items: [
-        {
-          icon: MdMoveToInbox,
-          label: "Inbox",
-          link: "#",
-          additionalItem: [
-            { label: "Contact", link: "#" },
-            { label: "Subscribe", link: "#" },
-          ],
-        },
-        {
-          icon: FaEnvelopeOpen,
-          label: "Form",
-          link: "#",
-          additionalItem: [
-            { label: "Packages", link: "#" },
-            { label: "Contact Us", link: "#" },
-            { label: "Service Form", link: "#" },
-            { label: "Deleted Form", link: "#" },
-          ],
-        },
-        { icon: RiQuestionnaireLine, label: "Menu", link: "#" },
+        // {
+        //   icon: MdMoveToInbox,
+        //   label: "Inbox",
+        //   link: "#",
+        //   additionalItem: [
+        //     { label: "Contact", link: "#" },
+        //     { label: "Subscribe", link: "#" },
+        //   ],
+        // },
+        // {
+        //   icon: FaEnvelopeOpen,
+        //   label: "Form",
+        //   link: "#",
+        //   additionalItem: [
+        //     { label: "Packages", link: "#" },
+        //     { label: "Contact Us", link: "#" },
+        //     { label: "Service Form", link: "#" },
+        //     { label: "Deleted Form", link: "#" },
+        //   ],
+        // },
+        // { icon: RiQuestionnaireLine, label: "Menu", link: "#" },
         { icon: MdOutlineApps, label: "FAQ", link: "/dashboard/admin/faqs" },
-        { icon: GrServices, label: "Footer", link: "#" },
+        // { icon: GrServices, label: "Footer", link: "#" },
       ],
     },
   ]
