@@ -14,7 +14,7 @@ const Selector = ({ value, onChange }) => {
         { key: 2, Option: "Home" },
         { key: 3, Option: "About Us" },
         { key: 4, Option: "Services" },
-        { key: 5, Option: "Our work" },
+        { key: 5, Option: "Our Work" },
         { key: 6, Option: "Associations of Cpmouter Repair" },
         { key: 8, Option: "Album" },
         { key: 9, Option: "Contact Us" },

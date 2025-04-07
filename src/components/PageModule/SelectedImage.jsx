@@ -81,7 +81,7 @@ const SelectedImage = () => {
                 >
                   {(provided) => (
                     <div
-                      className={`w-full h-64 mt-2 border-2 border-black bg-muted-50 relative ${ismask.includes(index)
+                      className={`w-full min-h-64 mt-2 border-2 border-black bg-muted-50 relative ${ismask.includes(index)
                         ? "inset-0 bg-white opacity-50"
                         : ""
                         }`}

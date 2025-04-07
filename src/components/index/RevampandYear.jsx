@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
-const RevampandYear = () => {
+const RevampandYear = ({data}) => {
   return (
     <>
-      <section className="image-section">
+    {data.map((items)=>(
+      <section key={items.id} className="image-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
@@ -12,24 +13,10 @@ const RevampandYear = () => {
               <div className="title_all_box style_one dark_color">
                 <div className="title_sections content_box">
                   <h2>
-                    Revamp and 10-Year Support for Advertising Software Powered by
-                    AR and Machine Learning
+                  {items.title}
                   </h2>
                   <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using &apos;Content
-                    here, content here&apos;, making it look like readable English. Many
-                    desktop publishing packages and web page editors now use. The
-                    point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using &apos;Content here,
-                    content here.
-                  </p>
-                  <p>
-                    The great explorer of the truth, the master-builder of human
-                    happiness no one rejects dislikes avoids pleasure itself because
-                    it is pleasure but because.
+                  {items.description}
                   </p>
                 </div>
               </div>
@@ -38,7 +25,7 @@ const RevampandYear = () => {
               <div className="image_boxes style_four">
                 <div className="one">
                   <Image
-                    src="/images/about/about-5.jpg"
+                    src={items.image}
                     className="img-fluid"
                     alt="about"
                   />
@@ -49,6 +36,8 @@ const RevampandYear = () => {
           <div className="pd_bottom_70" />
         </div>
       </section>
+    ))}
+      
     </>
   )
 }
