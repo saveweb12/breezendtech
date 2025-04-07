@@ -5,7 +5,7 @@ const MailingList = ({ data }) => {
     return (
         <>
         {data.map((items)=>(
-            <section className="newsteller style_one bg_dark_1">
+            <section key={items.id} className="newsteller style_one bg_dark_1">
                 <div className="pd_top_40" />
                 <div className="auto-container">
                     <div className="row align-items-center">

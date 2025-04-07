@@ -5,7 +5,7 @@ const RevampandYear = ({data}) => {
   return (
     <>
     {data.map((items)=>(
-      <section className="image-section">
+      <section key={items.id} className="image-section">
         <div className="pd_top_70" />
         <div className="container">
           <div className="row">
