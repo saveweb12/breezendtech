@@ -95,9 +95,9 @@ const Header = () => {
                 pages.map((items) => (
                   <div key={items.id}>
                     {items.title === "Home" && (
-                      <a href="/" className="hover-text font-sans font-semibold text-2xl flex justify-start items-center mb-4">
+                      <Link href="/" passHref className="hover-text font-sans font-semibold text-2xl flex justify-start items-center mb-4">
                         {items.title}
-                      </a>
+                      </Link>
                     )}
                   </div>
                 ))
@@ -155,9 +155,9 @@ const Header = () => {
                     {
                       item.title !== "Home" && item.parent !== "About Us" && item.parent !== "Services" && item.parent !== "Our Work" &&
                       <span className="flex justify-start items-center mb-4 !important">
-                        <a href={item.slug} className="hover-text  font-sans font-semibold text-2xl">
+                        <Link href={item.slug} passHref className="hover-text  font-sans font-semibold text-2xl">
                           {item.title}
-                        </a>
+                        </Link>
                       </span>
                     }
                   </div>
