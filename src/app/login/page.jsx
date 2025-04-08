@@ -63,7 +63,7 @@ const Login = () => {
                         </form>
                     </CardContent>
                     <CardFooter>
-                        <Button type="submit" form="login-form">Save changes</Button>
+                        <Button type="submit" form="login-form">Login</Button>
                     </CardFooter>
                 </Card>
             </div>

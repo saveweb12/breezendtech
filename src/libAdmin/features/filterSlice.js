@@ -95,23 +95,90 @@ const initialState = {
     {
       id: 2,
       name: "About",
-      items: []
+      items: [
+        {
+          id: 201, image: "/about-us/about.png", name: "AboutUs", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 202, image: "/about-us/OptimzeMarketingProcesses.png", name: "OptimzeMarketingProcesses", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 203, image: "/about-us/Reviews.png", name: "Reviews", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 204, image: "/about-us/SupportService.png", name: "SupportService", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 205, image: "/about-us/OutofOurServices.png", name: "OutofOurServices", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 206, image: "/about-us/DigitalMarketingAgency.png", name: "DigitalMarketingAgency", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 207, image: "/about-us/OurHistory.png", name: "OurHistory", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 208, image: "/about-us/ProfessionalGrowth.png", name: "ProfessionalGrowth", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 209, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" }
+          ]
+        }
+      ]
     },
     {
       id: 3,
       name: "Contact Us",
       items: [
         {
-          id: "301", image: "/contactus/experience-results.png", name: "LetsStartDiscussion",
+          id: 301, image: "/contactus/experience-results.png", name: "LetsStartDiscussion", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
         },
         {
-          id: "302", image: "/contactus/team.png", name: "Werea500Team",
+          id: 302, image: "/contactus/team.png", name: "Werea500Team", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
         },
         {
-          id: "303", image: "/contactus/join-our-story.png", name: "JoinOurSuccessStories",
+          id: 303, image: "/contactus/join-our-story.png", name: "JoinOurSuccessStories", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
         },
         {
-          id: "304", image: "/case-study/joinourmail.png", name: "",
+          id: 304, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
         },
       ]
     },
@@ -222,11 +289,7 @@ const initialState = {
 
       ]
     },
-    {
-      id: 5,
-      name: "Our work",
-      items: []
-    },
+
     {
       id: 6,
       name: "Careers",
@@ -321,7 +384,6 @@ const initialState = {
         {
           id: 702, image: "/portfolio/portfolio.png", name: "ViewAll", schema: [
             { name: "title", type: "text" },
-
           ]
         },
       ]

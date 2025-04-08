@@ -13,7 +13,7 @@ const page = () => {
         <h1 className="text-2xl font-bold">Dashboard</h1>
         <div>Dashboard</div>
       </div>
-      <hr className="mt-5" />``
+      <hr className="mt-5" />
       <div className="mt-5 pl-7">
         {greet} <span className="text-2xl ">{userName}!</span> <br />
         <span className="text-purple-900">
