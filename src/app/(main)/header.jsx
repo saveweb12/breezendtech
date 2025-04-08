@@ -5,11 +5,12 @@ import axios from "axios";
 import { usePathname } from 'next/navigation';
 import React from 'react'
 import Link from 'next/link'
-import { AlignJustify, CircleX, ChevronDown, SquareChevronRight } from 'lucide-react';
+import { AlignJustify, CircleX, SquareChevronRight } from 'lucide-react';
 import Image from 'next/image'
 
 
 const Header = () => {
+  const pathName = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isServicesVisible, setIsServicesVisible] = useState(false);
   const [isAboutVisible, setIsAboutVisible] = useState(false);
@@ -54,6 +55,10 @@ const Header = () => {
 
     fetchData();
   }, []);
+
+useEffect(()=>{
+ setMenuOpen(false)
+},[pathName])
 
   const aboutPages = pages.filter((page) => page.parent === "About Us");
   const servicesPages = pages.filter((page) => page.parent === "Services");

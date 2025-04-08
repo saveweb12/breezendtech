@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-const DigitalMarketingAgency = () => {
+const DigitalMarketingAgency = ({data}) => {
   return (
    <>
-   <section className="service-section-two">
+   {data.map((items)=>(
+    <section key={items.id} className="service-section-two">
        <div className="pd_top_70" />
         <div className="container">
          <div className="row">
@@ -11,14 +12,9 @@ const DigitalMarketingAgency = () => {
            <div className="col-lg-10">
              <div className="title_all_box style_one text-center dark_color">
                <div className="title_sections">
-                 <h2>Were a Results-Driven Digital Marketing Agency</h2>
+                 <h2>{items.title} </h2>
                  <p>
-                   It is a long established fact that a reader will be distracted
-                   by the readable content of a page when looking at its layout.
-                   The point of using Lorem Ipsum is that it has a more-or-less
-                   normal distribution of letters  as opposed to using Content
-                   here, content here  making it look like readable English.
-                   Many desktop publishing packages and web page editors now use.
+                  {items.description}
                  </p>
                </div>
                 <div className="pd_bottom_20" />
@@ -234,6 +230,8 @@ const DigitalMarketingAgency = () => {
        </div>
        <div className="pd_bottom_60" />
      </section>
+   ))}
+   
    </>
   )
 }

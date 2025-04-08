@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-const OptimzeMarketingProcesses = () => {
+const OptimzeMarketingProcesses = ({data}) => {
     return (
         <>
-            <section className="image-section bg_light_1">
+        {data.map((items)=>(
+            <section key={items.id} className="image-section bg_light_1">
                 <div className="pd_top_70" />
                 <div className="container">
                     <div className="row">
@@ -11,11 +12,7 @@ const OptimzeMarketingProcesses = () => {
                         <div className="col-lg-10">
                             <div className="description_box text-center">
                                 <p>
-                                    The great explorer of the truth, the master-builder of human
-                                    happiness no one rejects dislikes avoids pleasure itself because
-                                    it is pleasure but because know who do not those how to pursue
-                                    pleasures rationally encounter consequences that are extremely
-                                    painful desires to obtain.{" "}
+                                    {items.text}
                                 </p>
                             </div>
                             <div className="pd_bottom_50" />
@@ -89,6 +86,8 @@ const OptimzeMarketingProcesses = () => {
                     </div>
                 </div>
             </section>
+        ))}
+            
         </>
     )
 }
