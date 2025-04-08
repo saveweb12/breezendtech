@@ -34,10 +34,8 @@ const MailingList = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                {/*===============spacing==============*/}
-                <div className="pd_bottom_40" />
-                {/*===============spacing==============*/}
-            </section>
+               <div className="pd_bottom_40" />
+           </section>
         ))}
             
         </>

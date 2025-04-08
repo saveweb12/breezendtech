@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Kindofvideo = ({ data }) => {
+  console.log(data)
   return (
     <>
       {data.map((items) => (

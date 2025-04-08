@@ -25,7 +25,7 @@ const RevampandYear = ({data}) => {
               <div className="image_boxes style_four">
                 <div className="one">
                   <Image
-                    src={items.image}
+                    src="/images/about/about-5.jpg"
                     className="img-fluid"
                     alt="about"
                   />
