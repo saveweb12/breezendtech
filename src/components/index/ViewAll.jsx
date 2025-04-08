@@ -1,7 +1,7 @@
 "use client"
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-
+import Image from 'next/image'
 const ViewAll = () => {
   const [data, setdata] = useState([])
   const [selectedCotegory, setselectedCotegory] = useState("All")
@@ -62,7 +62,7 @@ const ViewAll = () => {
                 >
                   <div className="project_post style_one style_four">
                     <div className="image">
-                      <img
+                      <Image
                         loading="lazy"
                         width={746}
                         height={497}

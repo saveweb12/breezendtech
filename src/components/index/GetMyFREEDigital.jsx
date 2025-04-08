@@ -5,7 +5,7 @@ const GetMyFREEDigital = ({data}) => {
   return (
    <>
    {data.map((items)=>(
-    <section className="progress-section">
+    <section key={items.id} className="progress-section">
      <div className="pd_top_70" />
       <div className="container">
       <div className="row">
