@@ -8,14 +8,10 @@ import Image from "next/image"
 const Footer = () => {
   return (
     <>
-      {/* Top Footer Section */}
-      <div className="flex flex-col md:flex-row justify-center items-start md:items-center px-4 md:px-10 py-10 gap-10 bg-white">
-        {/* Left Section */}
-        <div className="flex flex-col items-center text-center space-y-4 max-w-md w-full">
-          <Image src="/images/logo-default.png" alt="logo" width={200} height={50} className="h-14 mix-blend-multiply" />
-          <p className="text-gray-700 text-base leading-relaxed">
-            Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.
-          </p>
+      <div className="flex justify-center p-20">
+        <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
+          <Image src="/images/saveasweb-logo.png" alt="logo" width={200} height={50} className="h-14 mix-blend-multiply" />
+          <p className="text-center text-gray-700 text-base leading-relaxed" >Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.</p>
         </div>
 
         {/* Middle Section */}

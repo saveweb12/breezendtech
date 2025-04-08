@@ -162,7 +162,7 @@ const Page = () => {
             <MdOutlineSave />
             <p>Create</p>
           </button>
-          <Link href="/admin/pagelist" className='flex justify-center items-center gap-2 rounded bg-black text-white px-4 py-1'>
+          <Link href="/dashboard/admin/pages/pagelist" className='flex justify-center items-center gap-2 rounded bg-black text-white px-4 py-1'>
             <IoMdArrowRoundBack />
             <p>Back</p>
           </Link>

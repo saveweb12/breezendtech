@@ -1,22 +1,34 @@
 import { NextResponse } from "next/server";
+import { jwtDecode } from "jwt-decode";
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
+  const token = request.cookies.get('auth_token')?.value;
+  console.log(token)
 
-  // If the path starts with "/dashboard", let it go to its actual route
-  if (pathname.startsWith("/dashboard")) {
-    return NextResponse.redirect(new URL("/dashboard/admin/home", request.url));
+  if (!token) {
+    return NextResponse.redirect(new URL("/login", request.url))
   }
 
-  // if (pathname.startsWith("/")) {
-  //   return NextResponse.redirect(new URL("/home", request.url));
-  // }
+  try {
+    const decodedToken = jwtDecode(token);
+    if (decodedToken.userType === "Admin" || decodedToken.userType === "Superadmin") {
+      if (pathname == '/dashboard') {
+        return NextResponse.redirect(new URL("/dashboard/admin/home", request.url));
+      }
+      return NextResponse.next();
+    } else {
+      return NextResponse.redirect(new URL("/login", request.url));
+    }
 
-  return NextResponse.next();
+  } catch (error) {
+    console.log("Invalid Token:", error)
+    return NextResponse.redirect(new URL("/login", request.url));
+  }
+
 }
 
-// Apply middleware to all routes
+// Apply middleware to all dashboard routes
 export const config = {
-  matcher: ["/"],
-  matcher: ["/admin"], // This makes middleware run for all routes
+  matcher: ["/dashboard/:path*"],
 };
