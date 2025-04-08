@@ -13,7 +13,7 @@ const page = () => {
                         <h2 className='text-2xl font-semibold'>Page</h2>
                     </ul>
                     <ul>
-                        <Link href="/admin/addpage" className="flex justify-center items-center gap-2 rounded bg-black text-white px-4 py-1">
+                        <Link href="/dashboard/admin/pages/addpage" className="flex justify-center items-center gap-2 rounded bg-black text-white px-4 py-1">
                             <Plus />
                             <p>Create Page</p>
                         </Link>

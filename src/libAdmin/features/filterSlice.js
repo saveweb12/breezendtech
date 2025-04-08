@@ -440,13 +440,13 @@ const initialState = {
       name: "Clients",
       items: [
         {
-          id: 801, image: "/clients/image1.png", name: "DigitalMarketingServices", schema: [
+          id: 901, image: "/clients/image1.png", name: "DigitalMarketingServices", schema: [
             { name: "heading", type: "text" },
             { name: "text", type: "text" },
           ]
         },
         {
-          id: 802, image: "/clients/client.png", name: "AvailableJobsChoose", schema: [
+          id: 902, image: "/clients/client.png", name: "AvailableJobsChoose", schema: [
             { name: "title", type: "text" },
             { name: "description", type: "textarea" },
             { name: "image", type: "file" }
@@ -459,27 +459,27 @@ const initialState = {
       name: "Case Study",
       items: [
         {
-          id: 901, image: "/case-study/image1.png", name: "DigitalMarketingServices", schema: [
+          id: 1001, image: "/case-study/image1.png", name: "DigitalMarketingServices", schema: [
             { name: "heading", type: "text" },
             { name: "text", type: "text" },
           ]
         },
         {
-          id: 902, image: "/case-study/Revamp.png", name: "RevampandYear", schema: [
+          id: 1002, image: "/case-study/Revamp.png", name: "RevampandYear", schema: [
             { name: "title", type: "text" },
             { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
         {
-          id: 903, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose", schema: [
+          id: 1003, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose", schema: [
             { name: "title", type: "text" },
             { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
         },
         {
-          id: 904, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+          id: 1004, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
             { name: "title", type: "text" },
             { name: "text", type: "text" },
 

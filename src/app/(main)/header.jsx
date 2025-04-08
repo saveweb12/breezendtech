@@ -60,7 +60,7 @@ const Header = () => {
   const ourWorkPages = pages.filter((page) => page.parent === "Our Work");
 
   console.log(ourWorkPages);
-  console.log(aboutPages);
+  // console.log(aboutPages);
   return (
     <>
       <div className="fixed top-0 left-0 w-full h-20 bg-white shadow-md flex items-center justify-between px-6 z-50 !rounded-none !border-none">
