@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const WhyBreezeEnd = ({ data }) => {
-  // console.log(data)
+   console.log(data)
   return (
     <>{data.map((item) => (
       <section className="contact-client-carousel-section" key={item.id}>

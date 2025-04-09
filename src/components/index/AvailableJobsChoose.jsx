@@ -33,7 +33,7 @@ const AvailableJobsChoose = ({ data }) => {
               <div className="col-lg-7">
                 <div className="image_boxes style_four">
                   <div className="image_box one">
-                    <Image src={items.video} className="img-fluid" alt="about" />
+                    <Image src={items.image} className="img-fluid" alt="about" />
                   </div>
                   <div className="video_box">
                     <a href="#" className="lightbox-image">
