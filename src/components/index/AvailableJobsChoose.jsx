@@ -1,6 +1,6 @@
 import Image from 'next/image'
 const AvailableJobsChoose = ({ data }) => {
-
+console.log(data)
   if (!Array.isArray(data) || data.length === 0) {
     return <div>No data available</div>;
   }

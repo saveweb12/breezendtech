@@ -300,7 +300,7 @@ const initialState = {
             { name: "title", type: "text" },
             { name: "text", type: "text" },
             { name: "description", type: "textarea" },
-            { name: "video", type: "file" },
+            { name: "image", type: "file" },
             { name: "btnText", type: "text" },
           ]
         },
