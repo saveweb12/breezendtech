@@ -25,6 +25,7 @@ const NavUser = () => {
     }
     return (
         <>
+
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Avatar>
@@ -53,6 +54,7 @@ const NavUser = () => {
                     </DropdownMenuGroup>
                 </DropdownMenuContent>
             </DropdownMenu>
+
         </>
     )
 }

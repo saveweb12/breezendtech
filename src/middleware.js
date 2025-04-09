@@ -33,7 +33,7 @@ import { jwtDecode } from "jwt-decode";
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
-  const token = request.cookies.get('token')?.value;
+  const token = request.cookies.get('auth_token')?.value;
   console.log(token)
 
   if (!token) {

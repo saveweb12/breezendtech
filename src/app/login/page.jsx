@@ -26,12 +26,15 @@ const Login = () => {
         try {
             const response = await axios.post('https://breezend-backend-2.onrender.com/api/user/login-account', data, { withCredentials: true });
             console.log("login success", response.data);
-            if (response.status === 200) {
-                setTimeout(() => {
-                    router.push('/dashboard/admin/home');
-                }, 5000)
-            }
+            const token = response.data.token;
+            const decodedToken = jwtDecode(token);
 
+            if (decodedToken.userType !== 'Admin' && decodedToken.userType !== "Superadmin") {
+                toast.error("Unauthorized user type");
+                return router.push('/login');
+            }
+            Cookies.set('auth_token', token)
+            router.push("/dashboard/admin/home");
         } catch (error) {
             console.error("login error:", error.response?.data || "somethings went wrong")
         }
@@ -59,7 +62,7 @@ const Login = () => {
                         </form>
                     </CardContent>
                     <CardFooter>
-                        <Button type="submit" form="login-form">Save changes</Button>
+                        <Button type="submit" form="login-form">Login</Button>
                     </CardFooter>
                 </Card>
             </div>

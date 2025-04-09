@@ -27,17 +27,7 @@ export default function DashboardLayout({ children }) {
                                 <NavUser />
                             </div>
                         </header>
-                        {/* <header className="fixed top-0 left-0 right-0 z-50 flex h-14 w-full items-center justify-between
-                         bg-muted/50 px-4 shadow-sm transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-14">
-                            
-                            <SidebarTrigger />
-
-                            
-                            <div className="flex items-center">
-                                <NavUser />
-                            </div>
-                        </header> */}
-                        <div className="flex flex-col min-h-screen px-3 bg-muted/50" >
+                        <div className="flex flex-col min-h-screen px-3 pt-16 bg-muted/50" >
                             <div className="flex-1">
                                 {children}
                             </div>
