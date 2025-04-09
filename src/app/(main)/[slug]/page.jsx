@@ -67,6 +67,8 @@ export default async function DynamicPage({ params }) {
     }
   });
 
+  console.log(loadedComponents);
+
   return (
     <div>
       {loadedComponents.length > 0 ? (
