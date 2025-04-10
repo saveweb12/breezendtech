@@ -11,8 +11,6 @@ const DigitalMarketingServices = ({ data }) => {
               <Image
                 src="/images/bg-inner-banner.jpg"
                 alt="bg_image"
-                width={100}
-                height={100}
                 className="cover-parallax"
               />
             </div>

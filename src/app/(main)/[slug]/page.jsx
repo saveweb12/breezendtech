@@ -44,8 +44,7 @@ export default async function DynamicPage({ params }) {
   }
 
   const { components: componentData, page } = data;
-
-  if (!page || !page.status) {
+  if (!page) {
     return <div>Page not found</div>;
   }
 
