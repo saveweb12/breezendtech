@@ -1,26 +1,22 @@
 
 const Growyourbusiness = ({ data }) => {
-    if (!Array.isArray(data) || data.length === 0) return null;
-    return (
-      <>
-        {data.map((items) => (
-          <section className="faqs-section bg_background2" key={items.id}>
-  
-            <div className="pd_top_80" />
-  
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="title_all_box style_three text-center light_color">
-                    <div className="title_sections three">
-                      <h2>{items.title}</h2>
-                      <p>
-                        {items.text}
-                      </p>
-                    </div>
-  
-                    <div className="mr_bottom_35" />
-  
+  if (!Array.isArray(data) || data.length === 0) return null;
+  return (
+    <>
+      {data.map((items) => (
+        <section className="faqs-section bg_background2" key={items.id}>
+
+          <div className="pd_top_80" />
+
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="title_all_box style_three text-center light_color">
+                  <div className="title_sections three">
+                    <h2>{items.title}</h2>
+                    <p>
+                      {items.text}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -62,7 +58,7 @@ const Growyourbusiness = ({ data }) => {
                 </div>
               </div>
             </div>
-  
+            </div>
             <div className="pd_bottom_60" />
   
           </section>

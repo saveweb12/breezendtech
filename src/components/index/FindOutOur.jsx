@@ -1,8 +1,7 @@
 import React from "react";
 
 const Findoutour = ({ data }) => {
-  if (!Array.isArray(data) || data.length === 0) return null; // or some fallback UI
-
+  if (!Array.isArray(data) || data.length === 0) return null;
   return (
     <>
       {data.map((items) => (
