@@ -1,13 +1,10 @@
 import Image from 'next/image'
 const AvailableJobsChoose = ({ data }) => {
-console.log(data)
-  if (!Array.isArray(data) || data.length === 0) {
-    return <div>No data available</div>;
-  }
+
   return (
     <>
-      {data.map((items, index) => (
-        <section key={items.id || index} className="image-section bg_light_1">
+      {data.map((items) => (
+        <section key={items.id} className="image-section bg_light_1">
           <div className="pd_top_130" />
           <div className="container">
             <div className="row">

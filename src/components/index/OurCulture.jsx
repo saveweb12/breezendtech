@@ -4,7 +4,7 @@ const OurCulture = ({ data }) => {
 
   return (
     <>
-      {data.map((items, index) => (
+      {data.map((items) => (
         <section className="service-section-two" key={items.id}>
           <div className="pd_top_70"></div>
           <div className="container">
