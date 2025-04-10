@@ -1,31 +1,25 @@
-
+import React from "react"
 const Growyourbusiness = ({ data }) => {
+  if (!Array.isArray(data) || data.length === 0) return null;
+
   return (
     <>
       {data.map((items) => (
         <section className="faqs-section bg_background2" key={items.id}>
-          {/*===============spacing==============*/}
-          <div className="pd_top_80" />
-          {/*===============spacing==============*/}
-          <div className="container">
+           <div className="pd_top_80" />
+           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="title_all_box style_three text-center light_color">
                   <div className="title_sections three">
                     <h2>{items.title}</h2>
-                    {/* <h2>READY TO GROW YOUR BUSINESS?</h2> */}
-                    <p>
+                     <p>
                       {items.text}
                     </p>
-                    {/* <p>
-                      Contact us to work with a results-driven digital marketing
-                      agency
-                    </p> */}
+                 
                   </div>
-                  {/*===============spacing==============*/}
-                  <div className="mr_bottom_35" />
-                  {/*===============spacing==============*/}
-                </div>
+                   <div className="mr_bottom_35" />
+                 </div>
               </div>
             </div>
             <div className="row">
@@ -69,16 +63,12 @@ const Growyourbusiness = ({ data }) => {
                     </a> */}
                   </div>
                 </div>
-                {/*===============spacing==============*/}
                 <div className="mr_bottom_25" />
-                {/*===============spacing==============*/}
-              </div>
+               </div>
             </div>
           </div>
-          {/*===============spacing==============*/}
-          <div className="pd_bottom_60" />
-          {/*===============spacing==============*/}
-        </section>
+            <div className="pd_bottom_60" />
+         </section>
       ))}
     </>
   )

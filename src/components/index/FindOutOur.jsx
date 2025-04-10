@@ -1,6 +1,8 @@
 import React from "react";
 
 const Findoutour = ({ data }) => {
+  if (!Array.isArray(data) || data.length === 0) return null; // or some fallback UI
+
   return (
     <>
       {data.map((items) => (
@@ -40,7 +42,7 @@ const Findoutour = ({ data }) => {
                               <div className="comments">
                                 <i className="icon-text" />
                                 <a
-                                  href="blog-single.html"
+                                  href="#"
                                   className="Comments are Closed"
                                 >
                                   Post Comment
@@ -55,7 +57,7 @@ const Findoutour = ({ data }) => {
                             </li>
                           </ul>
                           <h2 className="title">
-                            <a href="blog-single.html" rel="bookmark">
+                            <a href="#" rel="bookmark">
                               Policies &amp; Procedures for Startups
                             </a>
                           </h2>
@@ -63,7 +65,7 @@ const Findoutour = ({ data }) => {
                             How well this mistaken ideas off denouncing pleasure
                             &amp; praisings will give you complete.
                           </p>
-                          <a href="blog-single.html" className="link__go">
+                          <a href="#" className="link__go">
                             Read more
                             <i className="icon-right-arrow-long" />
                           </a>
@@ -81,7 +83,7 @@ const Findoutour = ({ data }) => {
                               <div className="comments">
                                 <i className="icon-text" />
                                 <a
-                                  href="blog-single.html"
+                                  href="#"
                                   className="Comments are Closed"
                                 >
                                   Post Comment
@@ -96,7 +98,7 @@ const Findoutour = ({ data }) => {
                             </li>
                           </ul>
                           <h2 className="title">
-                            <a href="blog-single.html" rel="bookmark">
+                            <a href="#" rel="bookmark">
                               Workplace problems in your business?
                             </a>
                           </h2>
@@ -104,7 +106,7 @@ const Findoutour = ({ data }) => {
                             Banter! Could “workplace banter” cause problems in
                             your business? The short answer? Yes.
                           </p>
-                          <a href="blog-single.html" className="link__go">
+                          <a href="#" className="link__go">
                             Read more
                             <i className="icon-right-arrow-long" />
                           </a>
@@ -122,7 +124,7 @@ const Findoutour = ({ data }) => {
                               <div className="comments">
                                 <i className="icon-text" />
                                 <a
-                                  href="blog-single.html"
+                                  href="#"
                                   className="Comments are Closed"
                                 >
                                   Post Comment
@@ -137,7 +139,7 @@ const Findoutour = ({ data }) => {
                             </li>
                           </ul>
                           <h2 className="title">
-                            <a href="blog-single.html" rel="bookmark">
+                            <a href="#" rel="bookmark">
                               How to Handle Your Good Employee
                             </a>
                           </h2>

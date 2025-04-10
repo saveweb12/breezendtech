@@ -70,7 +70,7 @@ const WhoArethe = ({ data }) => {
                 </div>
               </div>
               <div className="theme_btn_all color_one pd_top_50 text-center">
-                <a href="#" target="_blank" rel="nofollow" className="theme-btn one">{items.btnText}</a>
+                <a href="#" target="_blank" rel="nofollow" className="theme-btn one">{items.btntext}</a>
               </div>
             </div>
             <div className="pd_bottom_70"></div>
