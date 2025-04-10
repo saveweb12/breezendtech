@@ -46,6 +46,20 @@ const initialState = {
       id: 1,
       name: "Home",
       items: [
+        // {
+        //   id: 101, image: "/Home.png", name: "Banner",
+        //   schema: [
+        //     { name: "heading", type: "text", required: false },
+        //     { name: "description", type: "textarea", required: false, },
+        //     { name: "buttontext", type: "text", required: false, }
+        //   ]
+        // },
+        // {
+        //   id: 102, image: "/homeslider.png", name: "Slider",
+        //   schema: [
+        //     { name: "Upload Image", type: "file", label: "Image", required: false },
+        //   ],
+        // },
         {
           id: 103, image: "/home1.png", name: "OurClientsGetResults",
           schema: [
@@ -81,12 +95,95 @@ const initialState = {
     {
       id: 2,
       name: "About",
-      items: []
+      items: [
+        {
+          id: 201, image: "/about-us/about.png", name: "AboutUs", schema: [
+            { name: "heading", type: "text" },
+            { name: "title", type: "text" },
+            { name: "image", type: "file" }
+          ]
+        },
+        {
+          id: 202, image: "/about-us/OptimzeMarketingProcesses.png", name: "OptimzeMarketingProcesses", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+          ]
+        },
+        {
+          id: 203, image: "/about-us/Reviews.png", name: "Reviews", schema: [
+            { name: "title", type: "text" },
+          ]
+        },
+        {
+          id: 204, image: "/about-us/SupportService.png", name: "SupportService", schema: [
+            { name: "heading", type: "text" },
+            { name: "title", type: "text" },
+          ]
+        },
+        {
+          id: 205, image: "/about-us/OutofOurServices.png", name: "OutofOurServices", schema: [
+            { name: "heading", type: "text" },
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "image", type: "file" },
+          ]
+        },
+        {
+          id: 206, image: "/about-us/DigitalMarketingAgency.png", name: "DigitalMarketingAgency", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+          ]
+        },
+        {
+          id: 207, image: "/about-us/OurHistory.png", name: "OurHistory", schema: [
+            { name: "title", type: "text" },
+          ]
+        },
+        {
+          id: 208, image: "/about-us/ProfessionalGrowth.png", name: "ProfessionalGrowth", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "image", type: "file" },
+            { name: "btnText", type: "text" },
+          ]
+        },
+        {
+          id: 209, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" }
+          ]
+        }
+      ]
     },
     {
       id: 3,
       name: "Contact Us",
-      items: []
+      items: [
+        {
+          id: 301, image: "/contactus/experience-results.png", name: "LetsStartDiscussion", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
+        },
+        {
+          id: 302, image: "/contactus/team.png", name: "Werea500Team", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
+        },
+        {
+          id: 303, image: "/contactus/join-our-story.png", name: "JoinOurSuccessStories", schema: [
+            { name: "title", type: "text" },
+            { name: "subtitle", type: "text" }
+          ]
+        },
+        {
+          id: 304, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+      ]
     },
     {
       id: 4,
@@ -182,16 +279,20 @@ const initialState = {
             { name: "text", type: "text" },
             { name: "btnText", type: "text" },
           ]
+        },
+        {
+          id: 413, image: "/services/Getmyfree.png", name: "GetMyFree",
+          schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+            { name: "btnText", type: "text" },
+          ]
         }
         //PayPerClick(PPC)Marketing
 
       ]
     },
-    {
-      id: 5,
-      name: "Our work",
-      items: []
-    },
+
     {
       id: 6,
       name: "Careers",
@@ -202,7 +303,7 @@ const initialState = {
             { name: "title", type: "text" },
             { name: "text", type: "text" },
             { name: "description", type: "textarea" },
-            { name: "video", type: "file" },
+            { name: "image", type: "file" },
             { name: "btnText", type: "text" },
           ]
         },
@@ -269,6 +370,13 @@ const initialState = {
             { name: "description", type: "textarea" },
             { name: "image", type: "file" }
           ]
+        },
+        {
+          id: 610, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+
+          ]
         }
       ]
     },
@@ -276,36 +384,117 @@ const initialState = {
       id: 7,
       name: "Portfolio",
       items: [
-        { id: 701, image: "/portfolio/image1.png", name: "DigitalMarketingServices" },
-        { id: 702, image: "/portfolio/portfolio.png", name: "AvailableJobsChoose" },
+        {
+          id: 701, image: "/portfolio/image1.png", name: "DigitalMarketingServices", schema: [
+            { name: "heading", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+
+        {
+          id: 702, image: "/portfolio/portfolio.png", name: "ViewAll", schema: [
+            { name: "title", type: "text" },
+          ]
+        },
       ]
     },
     {
       id: 8,
       name: "Video Production",
       items: [
-        { id: 801, image: "/video/image1.png", name: "DigitalMarketingServices" },
-        { id: 802, image: "/video/image2.png", name: "AvailableJobsChoose" },
-        { id: 803, image: "/video/image3.png", name: "AvailableJobsChoose" },
-        { id: 804, image: "/video/image4.png", name: "AvailableJobsChoose" },
+        {
+          id: 801, image: "/video/image1.png", name: "DigitalMarketingServices", schema: [
+            { name: "heading", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 802, image: "/video/image2.png", name: "WhyChooseUsForYourNextv", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "link", type: "text" }
+          ]
+        },
+        {
+          id: 803, image: "/video/image3.png", name: "Kindofvideo", schema: [
+            { name: "heading", type: "text" },
+            { name: "description", type: "textarea" },
+
+            { name: "title1", type: "text" },
+            { name: "description1", type: "textarea" },
+            { name: "link1", type: "text" },
+
+            { name: "title2", type: "text" },
+            { name: "description2", type: "textarea" },
+            { name: "link2", type: "text" },
+
+            { name: "title3", type: "text" },
+            { name: "description3", type: "textarea" },
+            { name: "link3", type: "text" },
+
+            { name: "title4", type: "text" },
+            { name: "description4", type: "textarea" },
+            { name: "link4", type: "text" }
+          ]
+        },
+
+        {
+          id: 804, image: "/video/image4.png", name: "VideoProductionServices", schema: [
+            { name: "title", type: "text" },
+          ]
+        },
       ]
     },
     {
       id: 9,
       name: "Clients",
       items: [
-        { id: 801, image: "/clients/image1.png", name: "DigitalMarketingServices" },
-        { id: 802, image: "/clients/client.png", name: "AvailableJobsChoose" }
+        {
+          id: 901, image: "/clients/image1.png", name: "DigitalMarketingServices", schema: [
+            { name: "heading", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 902, image: "/clients/client.png", name: "AvailableJobsChoose", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "image", type: "file" }
+          ]
+        }
       ]
     },
     {
       id: 10,
       name: "Case Study",
       items: [
-        { id: 901, image: "/case-study/image1.png", name: "DigitalMarketingServices" },
-        { id: 902, image: "/case-study/Revamp.png", name: "AvailableJobsChoose" },
-        { id: 903, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose" },
-        { id: 904, image: "/case-study/joinourmail.png", name: "AvailableJobsChoose" }
+        {
+          id: 1001, image: "/case-study/image1.png", name: "DigitalMarketingServices", schema: [
+            { name: "heading", type: "text" },
+            { name: "text", type: "text" },
+          ]
+        },
+        {
+          id: 1002, image: "/case-study/Revamp.png", name: "RevampandYear", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "image", type: "file" }
+          ]
+        },
+        {
+          id: 1003, image: "/case-study/Case Studies.png", name: "AvailableJobsChoose", schema: [
+            { name: "title", type: "text" },
+            { name: "description", type: "textarea" },
+            { name: "image", type: "file" }
+          ]
+        },
+        {
+          id: 1004, image: "/case-study/joinourmail.png", name: "MailingList", schema: [
+            { name: "title", type: "text" },
+            { name: "text", type: "text" },
+
+          ]
+        }
       ]
     }
   ],
