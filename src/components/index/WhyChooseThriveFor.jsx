@@ -5,7 +5,7 @@ const WhyChooseThriveFor = ({ data }) => {
   return (
     <>
       {data.map((items) => (
-        <section className="team-section bg_light_2">
+        <section key={items.id} className="team-section bg_light_2">
           <div className="pd_top_80" />
           <div className="container">
             <div className="row">
@@ -29,10 +29,10 @@ const WhyChooseThriveFor = ({ data }) => {
                   It is a long established fact that a reader will be distracted by the
                   readable content of a page when looking at its layout. The point of
                   using Lorem Ipsum is that it has a more-or-less normal distribution of
-                  letters, as opposed to using 'Content here, content here', making it
+                  letters, as opposed to using Content here, content here, making it
                   look like readable English. Many desktop publishing packages and web
                   page editors now use Lorem Ipsum as their default model text, and a
-                  search for 'lorem ipsum' will uncover many web sites still in their
+                  search for lorem ipsum will uncover many web sites still in their
                   infancy.
                 </p>
                 <h6>Here are some reasons why:</h6>
