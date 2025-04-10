@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['breezend-backend-2.onrender.com'],
+    }
+};
 
 export default nextConfig;

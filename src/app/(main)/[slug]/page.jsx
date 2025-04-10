@@ -69,7 +69,7 @@ export default async function DynamicPage({ params }) {
   console.log(loadedComponents);
 
   return (
-    <div>
+    <div className="pt-20">
       {loadedComponents.length > 0 ? (
         loadedComponents
       ) : (
