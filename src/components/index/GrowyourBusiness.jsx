@@ -33,7 +33,7 @@ const Growyourbusiness = ({ data }) => {
                         rel="noopener"
                       >
                         <span className="fl-button-text">{items.btnText}</span>{" "}
-  
+
                       </a>
                     </div>
                     <div className="col-auto custom_or">
@@ -52,19 +52,19 @@ const Growyourbusiness = ({ data }) => {
                       </a>
                     </div>
                   </div>
-  
+
                   <div className="mr_bottom_25" />
-  
+
                 </div>
               </div>
             </div>
-            </div>
-            <div className="pd_bottom_60" />
-  
-          </section>
-        ))}
-      </>
-    )
-  }
-  
-  export default Growyourbusiness
+          </div>
+          <div className="pd_bottom_60" />
+
+        </section>
+      ))}
+    </>
+  )
+}
+
+export default Growyourbusiness
