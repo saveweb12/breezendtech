@@ -3,17 +3,17 @@ import Image from 'next/image'
 const Seoservices = () => {
   return (
     <>
-      {data.map((items, index) => (
-        <section key={items.id || index} className="feature-section bg_light_2">
+      {data.map((items) => (
+        <section key={items.id} className="feature-section bg_light_2">
           <div className="pd_top_90" />
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="title_all_box style_seven text-center dark_color">
                   <div className="title_sections">
-                    <div className="before_title">SEO Services</div>
+                    <div className="before_title">{items.text} </div>
                     <div className="small_text_sub">SEO SERVICES</div>
-                    <div className="title"> Our Digital Marketing Expertise</div>
+                    <div className="title">{items.title} </div>
                   </div>
                   <div className="pd_bottom_30" />
                 </div>
