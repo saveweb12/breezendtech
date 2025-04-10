@@ -61,13 +61,13 @@ const initialState = {
         //   ],
         // },
         {
-          id: 103, image: "/home1.png", name: "OurClientsGetResults",
+          id: 101, image: "/home1.png", name: "OurClientsGetResults",
           schema: [
             { name: "heading", type: "text", label: "Heading", required: false },
           ]
         },
         {
-          id: 104, image: "/testimonial.png", name: "CustomerSatisfaction",
+          id: 102, image: "/testimonial.png", name: "CustomerSatisfaction",
           schema: [
             { name: "title", type: "text", required: false },
             { name: "heading", type: "text", required: false },
@@ -75,10 +75,24 @@ const initialState = {
           ]
         },
         {
-          id: 105, image: "/Insights.png", name: "Findoutour",
+          id: 103, image: "/WhyChoose.png", name: "WhyChooseThriveFor",
+          schema: [
+            { name: "heading", type: "text" },
+            { name: "description", type: "textarea" },
+          ]
+        },
+        {
+          id: 104, image: "/Insights.png", name: "Findoutour",
           schema: [
             { name: "title", type: "text", required: false },
             { name: "heading", type: "text", required: false }
+          ]
+        },
+        {
+          id: 105, image: "/Seo-service.png", name: "Seoservices",
+          schema: [
+            { name: "text", type: "text" },
+            { name: "title", type: "text" },
           ]
         },
         {
