@@ -26,6 +26,8 @@ const Page = () => {
                 const response = await axios.get(`https://breezend-backend-2.onrender.com/api/edit/${id}`);
                 const pageData = response.data;
                 console.log(pageData);
+                const logoData = pageData.components.map(item => { return item });
+                console.log(logoData)
                 console.log(pageData.page.metaTags);
 
                 reset({
@@ -37,30 +39,30 @@ const Page = () => {
                     sitemap: pageData.page.sitemap,
                     separate_siteMap: pageData.page.show_in_root_sitemap,
 
-                    open_graph: pageData.page.enableOpenGraph,
-                    meta_tags: pageData.page.enableMetaTags,
-                    link_canonicals: pageData.page.enableLinkCanonicals,
-                    twitter_tags: pageData.page.enableTwitterTags,
-                    script_code: pageData.page.enableScriptCode,
+                    // open_graph: pageData.page.enableOpenGraph,
+                    // meta_tags: pageData.page.enableMetaTags,
+                    // link_canonicals: pageData.page.enableLinkCanonicals,
+                    // twitter_tags: pageData.page.enableTwitterTags,
+                    // script_code: pageData.page.enableScriptCode,
 
-                    meta_title: pageData.page.metaTags.meta_title,
-                    meta_description: pageData.page.metaTags.meta_desc,
-                    meta_keyword: pageData.page.metaTags.meta_key,
+                    // meta_title: pageData.page.metaTags.meta_title,
+                    // meta_description: pageData.page.metaTags.meta_desc,
+                    // meta_keyword: pageData.page.metaTags.meta_key,
 
-                    og_title: pageData.page.openGraph.title,
-                    og_url: pageData.page.openGraph.url,
-                    og_description: pageData.page.openGraph.description,
-                    og_type: pageData.page.openGraph.type,
+                    // og_title: pageData.page.openGraph.title,
+                    // og_url: pageData.page.openGraph.url,
+                    // og_description: pageData.page.openGraph.description,
+                    // og_type: pageData.page.openGraph.type,
                     // og_picture: ogPictureFile,
 
-                    tweeter_title: pageData.page.twitterTags.title,
-                    tweeter_url: pageData.page.twitterTags.url,
-                    tweeter_description: pageData.page.twitterTags.description,
-                    tweeter_card: pageData.page.twitterTags.card,
+                    // tweeter_title: pageData.page.twitterTags.title,
+                    // tweeter_url: pageData.page.twitterTags.url,
+                    // tweeter_description: pageData.page.twitterTags.description,
+                    // tweeter_card: pageData.page.twitterTags.card,
 
-                    script: pageData.page.scriptCode.description,
+                    // script: pageData.page.scriptCode.description,
 
-                    islinkscannonicals_href: pageData.page.linkCanonicals.href,
+                    // islinkscannonicals_href: pageData.page.linkCanonicals.href,
 
                     component: pageData.components
                 });

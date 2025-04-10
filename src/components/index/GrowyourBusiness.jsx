@@ -1,5 +1,6 @@
 
 const Growyourbusiness = ({ data }) => {
+  if (!Array.isArray(data) || data.length === 0) return null;
   return (
     <>
       {data.map((items) => (
