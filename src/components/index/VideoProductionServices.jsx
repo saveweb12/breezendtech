@@ -26,8 +26,8 @@ const VideoProductionServices = ({ data }) => {
                                                 src="/images/icons/content-writing.png"
                                                 className="img-fluid svg_image"
                                                 alt="icon png"
-                                                width={"auto"}
-                                                height={"auto"}
+                                                width={100}
+                                                height={100}
                                             />
                                         </div>
                                         <div className="content_box">
@@ -51,8 +51,8 @@ const VideoProductionServices = ({ data }) => {
                                                 src="/images/icons/production.png"
                                                 className="img-fluid svg_image"
                                                 alt="icon png"
-                                                width={"auto"}
-                                                height={"auto"}
+                                                width={100}
+                                                height={100}
                                             />
                                         </div>
                                         <div className="content_box">
@@ -76,8 +76,8 @@ const VideoProductionServices = ({ data }) => {
                                                 src="/images/icons/video-production.png"
                                                 className="img-fluid svg_image"
                                                 alt="icon png"
-                                                width={"auto"}
-                                                height={"auto"}
+                                                width={100}
+                                                height={100}
                                             />
                                         </div>
                                         <div className="content_box">
@@ -101,8 +101,8 @@ const VideoProductionServices = ({ data }) => {
                                                 src="/images/icons/video-player.png"
                                                 className="img-fluid svg_image"
                                                 alt="icon png"
-                                                width={"auto"}
-                                                height={"auto"}
+                                                width={100}
+                                                height={100}
                                             />
                                         </div>
                                         <div className="content_box">
