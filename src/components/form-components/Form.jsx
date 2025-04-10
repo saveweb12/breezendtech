@@ -18,16 +18,12 @@ const DynamicForm = ({ imageId, schema, name }) => {
       currentData[name] = [];
     }
 
-    // Pehle se data exist karta hai ya nahi check karo
+
     if (currentData[name][imageId] && Object.keys(currentData[name][imageId]).length > 0) {
-      return; // Agar pehle se valid data hai to `setValue` mat chalao
+      return;
     }
 
-    // Valid values ke bina setValue mat chalao
-    // const newData = schema.reduce((acc, field) => {
-    //   acc[field.name] = field.value || "";
-    //   return acc;
-    // }, {});
+
 
     const newData = schema.reduce((acc, field) => {
       acc[field.name] = field.type === "file" ? null : field.value || "";

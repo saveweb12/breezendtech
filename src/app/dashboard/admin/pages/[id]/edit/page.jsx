@@ -251,8 +251,8 @@ const Page = () => {
                         {/* <Createpage control={methods.control} setValue={methods.setValue} /> */}
                         <Createpage />
                         <SelectedImage />
-                        <CustomCss />
-                        {/* <CustomCss control={methods.control} unregister={methods.unregister} /> */}
+                        {/* <CustomCss /> */}
+                        <CustomCss control={methods.control} unregister={methods.unregister} />
                     </form>
                 </FormProvider>
             </main>
