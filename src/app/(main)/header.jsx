@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   const [pages, setPages] = useState([]);
-
+  console.log(pages)
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -56,9 +56,9 @@ const Header = () => {
     fetchData();
   }, []);
 
-useEffect(()=>{
- setMenuOpen(false)
-},[pathName])
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathName])
 
   const aboutPages = pages.filter((page) => page.parent === "About Us");
   const servicesPages = pages.filter((page) => page.parent === "Services");
