@@ -18,57 +18,53 @@ const Growyourbusiness = ({ data }) => {
                       {items.text}
                     </p>
                   </div>
-
-                  <div className="mr_bottom_35" />
-
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-lg-2" />
+                <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+                  <div className="row align-items-center">
+                    <div className="col get-perposal text-right">
+                      <a
+                        href="#"
+                        target="_self"
+                        className="primary-btn"
+                        role="button"
+                        rel="noopener"
+                      >
+                        <span className="fl-button-text">{items.btnText}</span>{" "}
+  
+                      </a>
+                    </div>
+                    <div className="col-auto custom_or">
+                      {" "}
+                      <p>OR</p>
+                    </div>
+                    <div className="col phone_custom">
+                      <a
+                        href="#"
+                        data-ctm-watch-id={3}
+                        data-ctm-tracked={1}
+                        data-ctm-remark={3}
+                      >
+                        <span className=" lazyloaded" />
+                        {items.btnText1}
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div className="mr_bottom_25" />
+  
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-2" />
-              <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12">
-                <div className="row align-items-center">
-                  <div className="col get-perposal text-right">
-                    <a
-                      href="#"
-                      target="_self"
-                      className="primary-btn"
-                      role="button"
-                      rel="noopener"
-                    >
-                      <span className="fl-button-text">{items.btnText}</span>{" "}
-
-                    </a>
-                  </div>
-                  <div className="col-auto custom_or">
-                    {" "}
-                    <p>OR</p>
-                  </div>
-                  <div className="col phone_custom">
-                    <a
-                      href="#"
-                      data-ctm-watch-id={3}
-                      data-ctm-tracked={1}
-                      data-ctm-remark={3}
-                    >
-                      <span className=" lazyloaded" />
-                      {items.btnText1}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="mr_bottom_25" />
-
-              </div>
             </div>
-          </div>
-
-          <div className="pd_bottom_60" />
-
-        </section>
-      ))}
-    </>
-  )
-}
-
-export default Growyourbusiness
+            <div className="pd_bottom_60" />
+  
+          </section>
+        ))}
+      </>
+    )
+  }
+  
+  export default Growyourbusiness
