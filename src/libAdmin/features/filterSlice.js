@@ -46,20 +46,20 @@ const initialState = {
       id: 1,
       name: "Home",
       items: [
-        {
-          id: 101, image: "/Home.png", name: "Banner",
-          schema: [
-            { name: "heading", type: "text", required: false },
-            { name: "description", type: "textarea", required: false, },
-            { name: "buttontext", type: "text", required: false, }
-          ]
-        },
-        {
-          id: 102, image: "/homeslider.png", name: "Slider",
-          schema: [
-            { name: "Upload Image", type: "file", label: "Image", required: false },
-          ],
-        },
+        // {
+        //   id: 101, image: "/Home.png", name: "Banner",
+        //   schema: [
+        //     { name: "heading", type: "text", required: false },
+        //     { name: "description", type: "textarea", required: false, },
+        //     { name: "buttontext", type: "text", required: false, }
+        //   ]
+        // },
+        // {
+        //   id: 102, image: "/homeslider.png", name: "Slider",
+        //   schema: [
+        //     { name: "Upload Image", type: "file", label: "Image", required: false },
+        //   ],
+        // },
         {
           id: 103, image: "/home1.png", name: "OurClientsGetResults",
           schema: [
