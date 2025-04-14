@@ -1,12 +1,27 @@
 "use client"
 import UserCard from "@/components/UserCard";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { getGreeting } from '@/helpers/greet.js'
 import { getUsername } from '@/helpers/auth.js'
+import axios from 'axios'
 
 const page = () => {
   const greet = getGreeting();
   const userName = getUsername();
+  const [data, setData] = useState("");
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`https://breezend-backend-2.onrender.com/api/get-all-page`);
+        console.log(response)
+        setData(response.data.pages);
+
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData();
+  }, [])
   return (
     <div>
       <div className="flex justify-between m-5 mt-20 ">
@@ -26,7 +41,7 @@ const page = () => {
         <UserCard title={"Product"} count={0} />
         <UserCard title={"Projects"} count={0} />
         <UserCard title={"Pending Applications"} count={0} />
-        <UserCard title={"Blogs"} count={70} />
+        <UserCard title={"Pages"} count={data.length} />
       </div>
     </div>
   );
