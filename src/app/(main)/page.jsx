@@ -70,7 +70,7 @@ const Index = () => {
   if (!data) return <div>Loading...</div>;
 
   const { components: componentData, page } = data;
-  if (!page?.status) return <div>Page not found</div>;
+  if (!page) return <div>Page not found</div>;
 
   // Dynamic Component Loader
   const loadComponent = (componentName) => {
