@@ -17,10 +17,10 @@ const Footer = () => {
         {/* Middle Section */}
         <div className="flex flex-col items-center text-center space-y-4 max-w-md w-full">
           <h2 className="text-lg font-semibold">Location</h2>
-          <p>6383 Little River Turnpike Alexandria, VA 22312, United States</p>
+          <p>Address: 306,3rd Floor, Crescent Business Park, Behind Sakinaka Telephone Exchange, Samhita Industrial Estate, Andheri Kurla Road, Andheri (East), Mumbai - 400072</p>
           <p className="text-red-500 hover:text-blue-600 cursor-pointer flex items-center justify-center flex-wrap text-center">
             Contact Us&nbsp;<MoveRight />
-            &nbsp;Breezendtech Gives Back&nbsp;<MoveRight />
+            &nbsp;Highweb Gives Back&nbsp;<MoveRight />
           </p>
         </div>
 
@@ -32,8 +32,12 @@ const Footer = () => {
             <FaInstagram className="hover:text-red-500" />
             <FaSkype className="hover:text-red-500" />
           </div>
-          <p><span className="font-bold">Phone:</span> +1 (703) 712-7808</p>
-          <p><span className="font-bold">Mail Us:</span> info@breezendtechs.com</p>
+          <p><span className="font-bold">Phone:</span> +91 976 906 1842
+            +91 976 909 8183
+          </p>
+          <p><span className="font-bold">Mail Us:</span>  saveasweb18@gmail.com
+
+          </p>
         </div>
       </div>
 
@@ -41,7 +45,7 @@ const Footer = () => {
       <div className="bg-black w-full">
         <div className="py-8 text-center space-y-2">
           <h1 className="text-white text-lg">Growing Businesses Since 2008</h1>
-          <p className="text-white text-base">Made with ❤️ in 25 cities around the world</p>
+          <p className="text-white text-base">Made with ❤️ around the world</p>
         </div>
 
         {/* Cities Grid */}
