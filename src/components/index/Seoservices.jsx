@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Seoservices = ({data}) => {
+const Seoservices = ({ data }) => {
   return (
     <>
       {data.map((items) => (

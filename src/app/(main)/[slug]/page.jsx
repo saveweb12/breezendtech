@@ -44,6 +44,7 @@ export default async function DynamicPage({ params }) {
   }
 
   const { components: componentData, page } = data;
+  console.log(page);
   if (!page) {
     return <div>Page not found</div>;
   }
