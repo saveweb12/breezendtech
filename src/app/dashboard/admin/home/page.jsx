@@ -5,7 +5,7 @@ import { getGreeting } from '@/helpers/greet.js'
 import { getUsername } from '@/helpers/auth.js'
 import axios from 'axios'
 
-const page = () => {
+const Page = () => {
   const greet = getGreeting();
   const userName = getUsername();
   const [data, setData] = useState("");
@@ -47,4 +47,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
