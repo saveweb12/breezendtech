@@ -22,23 +22,23 @@ const Index = () => {
       start: "top 28%",
       endTrigger: section04Ref.current,
       end: "top+=200%",
-      onEnter: () => gsap.set(headingRef.current, { 
-        position: "fixed", 
-        transform: "translate(10%, -50%)", 
-        zIndex: 3000 
+      onEnter: () => gsap.set(headingRef.current, {
+        position: "fixed",
+        transform: "translate(10%, -50%)",
+        zIndex: 3000
       }),
-      onLeave: () => gsap.set(headingRef.current, { 
-        position: "relative", 
-        transform: "none" 
+      onLeave: () => gsap.set(headingRef.current, {
+        position: "relative",
+        transform: "none"
       }),
-      onEnterBack: () => gsap.set(headingRef.current, { 
-        position: "fixed", 
-        transform: "translate(10%, -50%)", 
-        zIndex: 3000 
+      onEnterBack: () => gsap.set(headingRef.current, {
+        position: "fixed",
+        transform: "translate(10%, -50%)",
+        zIndex: 3000
       }),
-      onLeaveBack: () => gsap.set(headingRef.current, { 
-        position: "relative", 
-        transform: "none" 
+      onLeaveBack: () => gsap.set(headingRef.current, {
+        position: "relative",
+        transform: "none"
       })
     });
 
@@ -74,7 +74,7 @@ const Index = () => {
 
   // Dynamic Component Loader
   const loadComponent = (componentName) => {
-    return dynamic(() => 
+    return dynamic(() =>
       import(`@/components/index/${componentName}`).catch(() => () => null),
       { loading: () => <p>Loading {componentName}...</p> }
     );
@@ -83,14 +83,14 @@ const Index = () => {
   return (
     <>
       <div id="content" className="site-content ">
-      
+
       </div>
-       <section
+      <section
         ref={sectionRef}
         className="process-section fixed-background bg_op_1"
         style={{ backgroundImage: "url(/images/background-img3.jpg)" }}
       >
-          <div className="pd_top_60" />
+        <div className="pd_top_60" />
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -100,7 +100,7 @@ const Index = () => {
                   <h2 className="title-big">DIGITAL</h2>
                 </div>
                 <div className="mr_bottom_0 " />
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Index = () => {
         className="process-section fixed-title bg_op_1 "
         style={{ backgroundImage: "url(/images/image-mountain2.png)" }}
       >
-         <div className="pd_top_60" />
+        <div className="pd_top_60" />
         <div className="container ">
           <div className="row section04"></div>
         </div>
@@ -119,7 +119,7 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-               <div className="pd_top_30" />
+              <div className="pd_top_30" />
               <div className="title_all_box style_three text-center dark_color"></div>
               <div className="client_logo_carousel type_one">
                 <div
@@ -278,5 +278,3 @@ const Index = () => {
 };
 
 export default Index;
-
-
