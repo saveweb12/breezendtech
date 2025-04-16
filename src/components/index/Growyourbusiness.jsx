@@ -1,3 +1,4 @@
+import { TbMessage } from "react-icons/tb";
 const Growyourbusiness = ({ data }) => {
   if (!Array.isArray(data) || data.length === 0) return null;
   return (
@@ -31,7 +32,7 @@ const Growyourbusiness = ({ data }) => {
                         role="button"
                         rel="noopener"
                       >
-                        <div flex><div className="fl-button-text"> </div><div>{items.btnText}</div>{" "}</div>
+                        <div flex><span ><TbMessage/> </span> <span>{items.btnText}</span>{" "}</div>
 
                       </a>
                     </div>

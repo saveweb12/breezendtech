@@ -55,7 +55,7 @@ const Index = () => {
         const response = await fetch("https://breezend-backend-2.onrender.com/api/get-page", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ slug: "/" })
+          body: JSON.stringify({ slug: "" })
         });
         if (!response.ok) throw new Error("Failed to fetch");
         setData(await response.json());
