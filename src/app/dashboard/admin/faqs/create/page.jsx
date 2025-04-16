@@ -5,7 +5,8 @@ import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { useForm } from 'react-hook-form'
-import { Save } from "lucide-react"
+import { Save, ChevronLeft } from "lucide-react"
+import Link from 'next/link'
 import axios from 'axios'
 
 const Page = () => {
@@ -32,12 +33,16 @@ const Page = () => {
                 <ul>
                     <h2 className='text-2xl font-semibold'>FAQS</h2>
                 </ul>
-                <ul>
+                <div className='flex space-x-2'>
+                    <Link href="/dashboard/admin/faqs" className='flex justify-center items-center gap-2 rounded bg-black text-white px-4 py-1'>
+                        <ChevronLeft />
+                        <p>Back</p>
+                    </Link>
                     <Button type="submit" form="createFaqForm" className="flex items-center gap-2 rounded-md bg-black text-white px-4 py-1">
                         <Save />
                         <p>Save</p>
                     </Button>
-                </ul>
+                </div>
             </header>
             <div className="w-full mt-6">
                 <form id='createFaqForm' onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
