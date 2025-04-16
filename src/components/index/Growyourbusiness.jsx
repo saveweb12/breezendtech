@@ -31,8 +31,8 @@ const Growyourbusiness = ({ data }) => {
                           role="button"
                           rel="noopener"
                         >
-                          <span className="fl-button-text">{items.btnText}</span>{" "}
-  
+                          <div flex><div className="fl-button-text"><div>{items.btnText}</div> </div>{" "}</div>
+                          
                         </a>
                       </div>
                       <div className="col-auto custom_or">

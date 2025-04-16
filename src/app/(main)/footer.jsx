@@ -2,8 +2,9 @@ import "../../assets/css/style.css";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/scss/elements/theme-css.css";
 import { MoveRight } from 'lucide-react';
-import { FaFacebook, FaTwitterSquare, FaInstagram, FaSkype } from "react-icons/fa";
+import { FaFacebook, FaTwitterSquare,PhoneCall,MessageCircleReply, FaInstagram, FaSkype } from "react-icons/fa";
 import Image from "next/image"
+
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
       <div className="flex justify-center p-20">
         <div className="flex flex-col items-center justify-center p-6 space-y-4 max-w-lg mx-auto ">
           <Image src="/images/saveasweb-logo.png" alt="logo" width={200} height={50} className="h-14 mix-blend-multiply" />
-          <p className="text-center text-gray-700 text-base leading-relaxed" >Breeze End Technology offers a wide range of IT services by implementing the latest technological developments.</p>
+          <p className="text-center text-gray-700 text-base leading-relaxed" >Save As Web - Software Development Company in Mumbai | Website Development | e-Commerce Website</p>
         </div>
 
         {/* Middle Section */}
@@ -32,11 +33,9 @@ const Footer = () => {
             <FaInstagram className="hover:text-red-500" />
             <FaSkype className="hover:text-red-500" />
           </div>
-          <p><span className="font-bold">Phone:</span> +91 976 906 1842
-            +91 976 909 8183
+          <p><span className="font-bold">Phone:</span><MessageCircleReply/> +91 976 906 1842 <br /><PhoneCall/> +91 976 909 8183
           </p>
-          <p><span className="font-bold">Mail Us:</span>  saveasweb18@gmail.com
-
+          <p><span className="font-bold">Mail Us:</span>  saveasweb18@gmail.com <br />info@saveasweb.com
           </p>
         </div>
       </div>
