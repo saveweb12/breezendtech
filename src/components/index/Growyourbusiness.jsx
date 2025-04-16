@@ -32,7 +32,7 @@ const Growyourbusiness = ({ data }) => {
                         role="button"
                         rel="noopener"
                       >
-                        <div flex><span ><TbMessage/> </span> <span>{items.btnText}</span>{" "}</div>
+                        <div className="flex"><span ><TbMessage className="text-xl"/> </span> <span>{items.btnText}</span></div>
 
                       </a>
                     </div>
