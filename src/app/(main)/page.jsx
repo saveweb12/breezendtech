@@ -22,23 +22,23 @@ const Index = () => {
       start: "top 28%",
       endTrigger: section04Ref.current,
       end: "top+=200%",
-      onEnter: () => gsap.set(headingRef.current, {
-        position: "fixed",
-        transform: "translate(10%, -50%)",
-        zIndex: 3000
+      onEnter: () => gsap.set(headingRef.current, { 
+        position: "fixed", 
+        transform: "translate(10%, -50%)", 
+        zIndex: 3000 
       }),
-      onLeave: () => gsap.set(headingRef.current, {
-        position: "relative",
-        transform: "none"
+      onLeave: () => gsap.set(headingRef.current, { 
+        position: "relative", 
+        transform: "none" 
       }),
-      onEnterBack: () => gsap.set(headingRef.current, {
-        position: "fixed",
-        transform: "translate(10%, -50%)",
-        zIndex: 3000
+      onEnterBack: () => gsap.set(headingRef.current, { 
+        position: "fixed", 
+        transform: "translate(10%, -50%)", 
+        zIndex: 3000 
       }),
-      onLeaveBack: () => gsap.set(headingRef.current, {
-        position: "relative",
-        transform: "none"
+      onLeaveBack: () => gsap.set(headingRef.current, { 
+        position: "relative", 
+        transform: "none" 
       })
     });
 
@@ -74,7 +74,7 @@ const Index = () => {
 
   // Dynamic Component Loader
   const loadComponent = (componentName) => {
-    return dynamic(() =>
+    return dynamic(() => 
       import(`@/components/index/${componentName}`).catch(() => () => null),
       { loading: () => <p>Loading {componentName}...</p> }
     );
@@ -84,7 +84,7 @@ const Index = () => {
     <>
       <div id="content" className="site-content ">
         {/*-slider--*/}
-        <section className="slider style_one pag_position_two">
+        {/* <section className="slider style_one pag_position_two">
           <div
             className="banner_carousel owl-carousel owl_nav_none owl_dots_block theme_carousel owl-theme"
             data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'
@@ -188,7 +188,7 @@ const Index = () => {
                       <div className="slider_content">
                         <h1>Recruit the best employees</h1>
                         <h6>
-                          Our search results mitigate your company&apos;s exposure
+                          Our search results mitigate your company's exposure
                         </h6>
                         <p className="description">
                           Duty obligations of business it will frequently occur
@@ -219,7 +219,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       {/*-slider-end--*/}
       {/* <Enteryourweblink /> */}
@@ -424,3 +424,5 @@ const Index = () => {
 };
 
 export default Index;
+
+
