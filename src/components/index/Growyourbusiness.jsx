@@ -24,7 +24,7 @@ const Growyourbusiness = ({ data }) => {
                 <div className="col-lg-2" />
                 <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12">
                   <div className="row align-items-center">
-                    <div className="col get-perposal">
+                    <div className="col get-perposal text-right">
                       <a
                         href="#"
                         target="_self"
@@ -32,7 +32,7 @@ const Growyourbusiness = ({ data }) => {
                         role="button"
                         rel="noopener"
                       >
-                       <div className="flex"> <span className="fl-button-text"></span> <div>{items.btnText}</div>{" "}</div>
+                       <div className="flex"> <span className="fl-button-text"></span> <span className="text-sm">{items.btnText}</span>{" "}</div>
                         {/* <span className="fl-button-text">GET FREE PROPOSAL</span>{" "} */}
                       </a>
                     </div>
