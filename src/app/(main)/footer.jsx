@@ -2,9 +2,9 @@ import "../../assets/css/style.css";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/scss/elements/theme-css.css";
 import { MoveRight } from 'lucide-react';
-import { FaFacebook, FaTwitterSquare,PhoneCall,MessageCircleReply, FaInstagram, FaSkype } from "react-icons/fa";
+import { FaFacebook, FaTwitterSquare, FaInstagram, FaSkype } from "react-icons/fa";
 import Image from "next/image"
-
+import { MessageCircleReply,PhoneCall } from 'lucide-react';
 
 const Footer = () => {
   return (
