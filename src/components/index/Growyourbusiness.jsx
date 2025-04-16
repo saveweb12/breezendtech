@@ -24,7 +24,7 @@ const Growyourbusiness = ({ data }) => {
                 <div className="col-lg-2" />
                 <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12">
                   <div className="row align-items-center">
-                    <div className="col get-perposal text-right">
+                    <div className="col get-perposal">
                       <a
                         href="#"
                         target="_self"
