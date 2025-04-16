@@ -32,7 +32,7 @@ const Growyourbusiness = ({ data }) => {
                         role="button"
                         rel="noopener"
                       >
-                        <span className="fl-button-text">{items.btnText}</span>{" "}
+                       <div className="flex"> <span className="fl-button-text"></span> <span>{items.btnText}</span>{" "}</div>
                         {/* <span className="fl-button-text">GET FREE PROPOSAL</span>{" "} */}
                       </a>
                     </div>
