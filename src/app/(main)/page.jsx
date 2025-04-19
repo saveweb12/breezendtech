@@ -4,6 +4,9 @@ import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,157 +117,142 @@ const Index = () => {
           <div className="row section04"></div>
         </div>
       </section>
-      {/*-client--*/}
-      <section className="client-brand-section bg_light_1 ">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="pd_top_30" />
-              <div className="title_all_box style_three text-center dark_color"></div>
-              <div className="client_logo_carousel type_one">
-                <div
-                  className="swiper-container"
-                  data-swiper='{
-                          "autoplay": {
-                            "delay": 6000
-                          },
-                          "freeMode": true,
-                          "loop": true,
-                          "speed": 1000,
-                          "centeredSlides": false,
-                          "slidesPerView": 5,
-                          "spaceBetween": 30,
-                          "pagination": {
-                            "el": ".swiper-pagination",
-                            "clickable": true
-                          },
-                          "navigation": {
-                            "nextEl": ".swiper-button-next",
-                            "prevEl": ".swiper-button-prev"
-                          },
-                          "breakpoints": {
-                             "1200": {
-                                "slidesPerView": 5 
-                             },
-                             "1024": {
-                              "slidesPerView": 3 
-                             },
-                            "768": {
-                              "slidesPerView": 2 
-                            },
-                            "576": {
-                              "slidesPerView": 2 
-                            },
-                            "0": {
-                              "slidesPerView": 1 
-                            }
-                          }
-                        }'
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-04.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-02.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-03.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-04.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-04.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-05.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-06.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-07.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-08.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-09.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-10.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="image">
-                        <Image
-                          src="/images/icons/partners-11.jpg"
-                          alt="clients-logo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <section className="w-full h-56 bg-slate-200 flex justify-center items-center">
+        <div className="max-w-6xl m-auto p-4">
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            spaceBetween={40}
+            slidesPerView={5}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <Image
+                src="/images/icons/partners-01.jpg"
+                alt="clients-logo"
+                width={200}
+                height={150}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-02.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
               </div>
-            </div>
-          </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-03.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-04.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-05.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-06.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-07.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-08.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-09.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-10.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-11.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-md shadow-md">
+                <Image
+                  src="/images/icons/partners-12.jpg"
+                  alt="clients-logo"
+                  width={200}
+                  height={150}
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <div className="pd_bottom_30" />
       </section>
 
       {page.components.map((componentName) => {
