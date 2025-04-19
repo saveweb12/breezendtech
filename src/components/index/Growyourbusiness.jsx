@@ -36,7 +36,7 @@ const Growyourbusiness = ({ data }) => {
                         {/* <span className="fl-button-text">GET FREE PROPOSAL</span>{" "} */}
                       </a>
                     </div>
-                    <div className="col-auto custom_or">
+                    <div className="col-auto custom_or"> 
                       {" "}
                       <p>OR</p>
                     </div>
