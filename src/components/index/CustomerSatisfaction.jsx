@@ -1,361 +1,3 @@
-// import Image from 'next/image'
-// import "../../assets/css/swiper.min.css"
-// const CustomerSatisfaction = ({ data }) => {
-//   if (!Array.isArray(data) || data.length === 0) {
-//     return <div>No data available</div>;
-//   }
-//   return (
-//     <>
-//       {data.map((items) => (
-//         <section className="testimonial-section bg_light_1" key={items.id}>
-
-//           <div className="pd_bottom_80"></div>
-
-//           <div className="container">
-//             <div className="row">
-//               <div className="col-lg-12">
-//                 <div className="title_all_box style_one text-center dark_color">
-//                   <div className="title_sections ">
-//                     <div className="before_title">{items.title}</div>
-//                     <h2>{items.heading}</h2>
-//                     <p>{items.text}</p>
-//                   </div>
-
-//                   <div className="pd_bottom_15"></div>
-
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className="row">
-//               <div className="col-lg-1"></div>
-//               <div className="col-lg-10">
-//                 <div className="testimonial_sec position-relative style_v2_one">
-//                   <div className="swiper-container swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden" data-swiper="{
-//                        &quot;autoplay&quot;: {
-//                          &quot;delay&quot;: 6000
-//                        },
-//                        &quot;freeMode&quot;: true,
-//                        &quot;loop&quot;: true,
-//                        &quot;speed&quot;: 1000,
-//                        &quot;centeredSlides&quot;: false,
-//                        &quot;slidesPerView&quot;: 1,
-//                        &quot;spaceBetween&quot;: 10,
-//                        &quot;pagination&quot;: {
-//                          &quot;el&quot;: &quot;.swiper-pagination&quot;,
-//                          &quot;clickable&quot;: true
-//                        },
-//                        &quot;navigation&quot;: {
-//                           &quot;nextEl&quot;: &quot;.next-single-one&quot;,
-//                           &quot;prevEl&quot;: &quot;.prev-single-one&quot;
-//                         },
-//                        &quot;breakpoints&quot;: {
-//                           &quot;1200&quot;: {
-//                              &quot;slidesPerView&quot;: 1
-//                           },
-//                           &quot;1024&quot;: {
-//                            &quot;slidesPerView&quot;: 1 
-//                           },
-//                          &quot;768&quot;: {
-//                            &quot;slidesPerView&quot;: 1 
-//                          },
-//                          &quot;576&quot;: {
-//                            &quot;slidesPerView&quot;: 1 
-//                          },
-//                          &quot;0&quot;: {
-//                            &quot;slidesPerView&quot;: 1 
-//                          }
-//                        }
-//                      }">
-//                     <div className="swiper-wrapper" id="swiper-wrapper-8f8c6e1e8a999632" aria-live="off" style={{ transitionDuration: "0ms", transform: "translate3d(-1860px, 0px, 0px)" }}>
-
-//                       <div className="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-five-bg.jpg" alt="image" />
-//                           </div>/
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/12.png" alt="image" />
-//                             </div>
-//                             <h4>Software & Software</h4>
-//                             <h6>Highly Recommended for all businesses</h6>
-//                             <div className="comment">
-//                               I would suggest all businesses for adding great value, consult Breeze End Technology to improve and enhance their progress and gain the edge in the market as I got better than I expected. Keep it up Breeze End Technology Team!
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>John</h2>
-//                                   <span>CEO</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star empty"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 3" data-swiper-slide-index="2" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/1234.png" alt="image" />
-//                             </div>
-//                             <h4>House of Textile</h4>
-//                             <h6>Exceptional services with Great results</h6>
-//                             <div className="comment">
-//                               The quality and perfection are hard to put in words that were delivered by the Breeze End Technology Team. I was moved by their top-notch services as everything was so accurate about it. Great job guys!
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Badar Ahmed</h2>
-//                                   <span>CFO</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star empty"></span><span className="fa fa-star empty"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="3 / 3" data-swiper-slide-index="3" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/Logo_1.png" alt="image" />
-//                             </div>
-//                             <h4>Main IT Services, Inc</h4>
-//                             <h6>Feedback on Main IT Services, Inc</h6>
-//                             <div className="comment">
-//                               I have utilized Breeze End Technology for everything from initial site concept to final site launch and search engine optimization (SEO) campaigns. Breeze End Technology is the only web development company I&apos;ve ever worked with that genuinely cares about the quality of their output, and I&apos;ve spent a lot of time in the industry over the past few years. Honest, timely, and never miss a deadline. If your project involves the internet, I highly suggest using them.
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Kevin Coasta</h2>
-//                                   <span>Director</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="4 / 4" data-swiper-slide-index="4" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/salonegoo_logo.png" alt="image" />
-//                             </div>
-//                             <h4>Salone Goo</h4>
-//                             <h6>Feedback on Salone Goo</h6>
-//                             <div className="comment">
-//                               Dear Breeze End Technology Team, Your expertise in developing the Salone Goo Classified app surpassed expectations. Timely delivery, user-friendly design, and ongoing support highlight your dedication. Thanks to your team. Highly recommend your professional services.
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/female-avatar.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Zainab Koroma</h2>
-//                                   <span>Co-Founder</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="5 / 5" data-swiper-slide-index="5" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/logo-progect.png" alt="image" />
-//                             </div>
-//                             <h4>Main IT Store eCommerce</h4>
-//                             <h6>Feedback on Main IT Store eCommerce</h6>
-//                             <div className="comment">
-//                               Breeze End Tech fully understands the client’s goals and is guiding them through the development process. The client tracks progress through an online portal, and they have weekly meetings via Zoom. Their team communicates well and the upper-level management is directly involved in project management.
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Jacques Philippe</h2>
-//                                   <span>Sales Manager</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="6 / 6" data-swiper-slide-index="6" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/ES-AV-LLC.png" alt="image" />
-//                             </div>
-//                             <h4>ES.AV LLC</h4>
-//                             <h6>Professional App Design and Development company</h6>
-//                             <div className="comment">
-//                               Breeze End Technology has excellent staff and the best services. Thanks to the whole team for supporting my online business. I highly recommend Breeze End Technology to anyone looking for software ERP solutions.
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Edwin . F</h2>
-//                                   <span>CEO</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" data-swiper-slide-index="7" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/africa-center.png" alt="image" />
-//                             </div>
-//                             <h4>Africa Center for Strategic Progress</h4>
-//                             <h6>All about professionalism and excellent service delivery</h6>
-//                             <div className="comment">
-//                               My project, consisting of WEB DEVELOPMENT and SEO was completed and delivered on time and with a high-quality standard. Highly recommended!
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Jean Claude</h2>
-//                                   <span>President</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="swiper-slide swiper-slide-active" role="group" aria-label="2 / 6" data-swiper-slide-index="8" style={{ width: "920px", marginRight: "10px" }}>
-//                         <div className="testimonial_box clearfix">
-//                           <div className="image">
-//                             <Image src="/images/banner-four-bg.jpg" alt="image" />
-//                           </div>
-//                           <div className="authour_details">
-//                             <div className="b_image">
-//                               <Image src="/images/icons/123.png" alt="image" />
-//                             </div>
-//                             <h4>Midway Travels</h4>
-//                             <h6>Breeze End Technology Team Fulfilled My Expectations</h6>
-//                             <div className="comment">
-//                               It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
-//                             </div>
-//                             <div className="details clearfix">
-//                               <div className="c_image">
-//                                 <Image src="/images/icons/placeholder.png" alt="image" />
-//                               </div>
-//                               <div className="c_content">
-//                                 <div className="content_in">
-//                                   <h2>Alis Borison</h2>
-//                                   <span>CMO</span>
-//                                 </div>
-//                               </div>
-//                             </div>
-//                             <div className="rating">
-//                               <ul>
-//                                 <li><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span><span className="fa fa-star fill"></span></li>
-//                               </ul>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     </div>
-//                     <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-//                   <div className="arrows">
-//                     <div className="prev-single-one" tabIndex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-15965aee66ed10ed1"></div>
-//                     <div className="next-single-one" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-15965aee66ed10ed1"></div>
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className="col-lg-1"></div>
-//             </div>
-//           </div>
-
-//           <div className="pd_bottom_80"></div>
-
-//         </section >
-//       ))}
-//       {/*-tab-end-*/}
-//     </>
-//   );
-// };
-
-// export default CustomerSatisfaction;
-
 
 import Image from 'next/image'
 import "../../assets/css/swiper.min.css"
@@ -370,177 +12,245 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const CustomerSatisfaction = () => {
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "John",
-      title: "CEO",
-      mtitle: "software",
-      mainImage: "/images/banner-five-bg.jpg",
-      text: "Highly Recommended for all businesses",
-      icon: "/images/icons/12.png",
-      image: "/images/icons/placeholder.png",
-      comment: "I would suggest all businesses...",
-      rating: 4
-    },
-    {
-      id: 2,
-      name: "John",
-      title: "CEO",
-      mtitle: "software",
-      mainImage: "/images/banner-five-bg.jpg",
-      text: "Highly Recommended for all businesses",
-      icon: "/images/icons/12.png",
-      image: "/images/icons/placeholder.png",
-      comment: "I would suggest all businesses...",
-      rating: 4
-    },
-    // add more testimonials here
-  ];
+
   return (
-    <div className=''>
-      <Swiper
+    <div>
 
-        modules={[Navigation, Autoplay, A11y]}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false
-        }}
-        loop={true}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-      >
+      <section className="py-10 bg-gray-100">
+        <div className='flex justify-center items-center'>
+          <div><h4 className='text-blue-400'>Customer Satisfaction Drives Us To Do Better</h4>
+            <h1 className='flex justify-center items-center'>TESTIMONIALS</h1>
+            <p className='flex justify-center items-center pt-3 pb-5 text-xl'>Take a look at words of appreciation from our loyal customers.</p>
+          </div>
+        </div>
+        <div className="container mx-auto">
+          <Swiper
+            modules={[Navigation, Autoplay, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false
+            }}
+            loop={true}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+          >
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col md:flex-row items-center max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
 
-        <SwiperSlide className='flex justify-center items-center pt-10 '>
-          <div className='flex w-50  border-black shadow-2xl '>
-            <Image src="/images/banner-five-bg.jpg"
-              alt="image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '45%', height: '90vh' }}
-            />
+                {/* Left Image */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src="/images/banner-five-bg.jpg"
+                    alt="image"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="h-[90vh]"
+                  />
+                </div>
 
-            <div className='pl-10 pt-10'>
-              <Image src="/images/icons/123.png" alt='image' height={100} width={100} />
-              <h1>Midway Travels </h1>
-              <h6>Breeze End Technology Team Fulfilled My Expectations</h6>
-              <p>It has been a great professional experience working with Breeze
-                End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.</p>
+                {/* Right Content */}
+                <div className="w-full md:w-1/2 p-8 space-y-4">
+                  <Image src="/images/icons/123.png" alt="icon" height={100} width={100} />
+                  <h1 className="text-2xl font-bold">Midway Travels</h1>
+                  <h6 className="text-lg font-semibold text-gray-600">Breeze End Technology Team Fulfilled My Expectations</h6>
+                  <p className="text-gray-700">
+                    It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
+                  </p>
 
-              <div className='flex p-2'>
-                <Image src="/images/icons/placeholder.png" className='rounded' alt='image' height={30} width={60} />
-                <div>
-                  <h4>Alis Borison</h4>
-                  <p>CMO</p>
+                  <div className="flex items-center space-x-4 pt-2">
+                    <Image src="/images/icons/placeholder.png" className="rounded-full" alt="profile" height={40} width={40} />
+                    <div>
+                      <h4 className="font-bold text-gray-800">Alis Borison</h4>
+                      <p className="text-sm text-gray-500">CMO</p>
+                    </div>
+                  </div>
+
+                  <div className="text-yellow-500 text-xl">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="fa fa-star fill" />
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className='text-red-500'>
-                <span className="fa fa-star fill"></span> <span className="fa fa-star fill"></span> <span className="fa fa-star fill"></span> <span className="fa fa-star fill"></span> <span className="fa fa-star fill"></span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+            </SwiperSlide>
 
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col md:flex-row items-center max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
 
+                {/* Left Image */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src="/images/banner-four-bg.jpg"
+                    alt="image"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="h-[90vh]"
+                  />
+                </div>
 
-        <SwiperSlide className='flex justify-center items-center pt-10 '>
-          <div className='flex w-50  border-black shadow-2xl '>
-            <Image src="/images/banner-four-bg.jpg"
-              alt="image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '45%', height: '90vh' }}
-            />
+                {/* Right Content */}
+                <div className="w-full md:w-1/2 p-8 space-y-4">
+                  <Image src="/images/icons/1234.png" alt="icon" height={100} width={100} />
+                  <h1 className="text-2xl font-bold">Midway Travels</h1>
+                  <h6 className="text-lg font-semibold text-gray-600">Breeze End Technology Team Fulfilled My Expectations</h6>
+                  <p className="text-gray-700">
+                    It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
+                  </p>
 
-            <div className='pl-10 pt-10'>
-              <Image src="/images/icons/Logo_1.png" alt='image' height={100} width={100} />
-              <h1>Main IT Services, Inc </h1>
-              <h6>Feedback on Main IT Services, Inc</h6>
-              <p>It has been a great professional experience working with Breeze
-                End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.</p>
+                  <div className="flex items-center space-x-4 pt-2">
+                    <Image src="/images/icons/placeholder.png" className="rounded-full" alt="profile" height={40} width={40} />
+                    <div>
+                      <h4 className="font-bold text-gray-800">Alis Borison</h4>
+                      <p className="text-sm text-gray-500">CMO</p>
+                    </div>
+                  </div>
 
-              <div className='flex p-2'>
-                <Image src="/images/icons/placeholder.png" className='rounded-xl' alt='image' height={30} width={60} />
-                <div>
-                  <h4>Kevin Coasta</h4>
-                  <p>Director</p>
+                  <div className="text-yellow-500 text-xl">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="fa fa-star fill" />
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className='text-red-500'>
-                <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+            </SwiperSlide>
 
-        <SwiperSlide className='flex justify-center items-center pt-10 '>
-          <div className='flex w-50  border-black shadow-2xl '>
-            <Image src="/images/banner-five-bg.jpg"
-              alt="image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '45%', height: '90vh' }}
-            />
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col md:flex-row items-center max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
 
-            <div className='pl-10 pt-10'>
-              <Image src="/images/icons/salonegoo_logo.png" alt='image' height={100} width={100} />
-              <h1>Salone Goo </h1>
-              <h6>Feedback on Salone Goo</h6>
-              <p>It has been a great professional experience working with Breeze
-                End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.</p>
+                {/* Left Image */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src="/images/banner-four-bg.jpg"
+                    alt="image"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="h-[90vh]"
+                  />
+                </div>
 
-              <div className='flex p-2'>
-                <Image src="/images/icons/placeholder.png" className='rounded' alt='image' height={30} width={60} />
-                <div>
-                  <h4>Zainab Koroma</h4>
-                  <p>Co Founder</p>
+                {/* Right Content */}
+                <div className="w-full md:w-1/2 p-8 space-y-4">
+                  <Image src="/images/icons/123.png" alt="icon" height={100} width={100} />
+                  <h1 className="text-2xl font-bold">  Main IT Services, Inc </h1>
+                  <h6 className="text-lg font-semibold text-gray-600">Feedback on Main IT Services, Inc</h6>
+                  <p className="text-gray-700">
+                    It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
+                  </p>
+
+                  <div className="flex items-center space-x-4 pt-2">
+                    <Image src="/images/icons/placeholder.png" className="rounded-full" alt="profile" height={40} width={40} />
+                    <div>
+                      <h4 className="font-bold text-gray-800">Kevin Coasta</h4>
+                      <p className="text-sm text-gray-500">Director</p>
+                    </div>
+                  </div>
+
+                  <div className="text-yellow-500 text-xl">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="fa fa-star fill" />
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className='text-red-500'>
-                <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+            </SwiperSlide>
 
-        <SwiperSlide className='flex justify-center items-center pt-10 '>
-          <div className='flex w-50  border-black shadow-2xl '>
-            <Image src="/images/banner-five-bg.jpg"
-              alt="image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '45%', height: '90vh' }}
-            />
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col md:flex-row items-center max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
 
-            <div className='pl-10 pt-10'>
-              <Image src="/images/icons/logo-progect.png" alt='image' height={100} width={100} />
-              <h1>Midway Travels </h1>
-              <h6>Breeze End Technology Team Fulfilled My Expectations</h6>
-              <p>It has been a great professional experience working with Breeze
-                End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.</p>
+                {/* Left Image */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src="/images/banner-four-bg.jpg"
+                    alt="image"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="h-[90vh]"
+                  />
+                </div>
 
-              <div className='flex p-2'>
-                <Image src="/images/icons/placeholder.png" className='rounded' alt='image' height={30} width={60} />
-                <div>
-                  <h4>Jacques Philippe</h4>
-                  <p>Sales Manager</p>
+                {/* Right Content */}
+                <div className="w-full md:w-1/2 p-8 space-y-4">
+                  <Image src="/images/icons/salonegoo_logo.png" alt="icon" height={100} width={100} />
+                  <h1 className="text-2xl font-bold">Salone Goo</h1>
+                  <h6 className="text-lg font-semibold text-gray-600">Feedback on Salone Goo</h6>
+                  <p className="text-gray-700">
+                    It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
+                  </p>
+
+                  <div className="flex items-center space-x-4 pt-2">
+                    <Image src="/images/icons/placeholder.png" className="rounded-full" alt="profile" height={40} width={40} />
+                    <div>
+                      <h4 className="font-bold text-gray-800">Zainab Koroma</h4>
+                      <p className="text-sm text-gray-500">Founder</p>
+                    </div>
+                  </div>
+
+                  <div className="text-yellow-500 text-xl">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="fa fa-star fill" />
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className='text-red-500'>
-                <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span> <span class="fa fa-star fill"></span>
+            </SwiperSlide>
+
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col md:flex-row items-center max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
+
+                {/* Left Image */}
+                <div className="w-full md:w-1/2">
+                  <Image
+                    src="/images/banner-five-bg.jpg"
+                    alt="image"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="h-[90vh]"
+                  />
+                </div>
+
+                {/* Right Content */}
+                <div className="w-full md:w-1/2 p-8 space-y-4">
+                  <Image src="/images/icons/salonegoo_logo.png" alt="icon" height={100} width={100} />
+                  <h1 className="text-2xl font-bold">Midway Travels</h1>
+                  <h6 className="text-lg font-semibold text-gray-600">Breeze End Technology Team Fulfilled My Expectations</h6>
+                  <p className="text-gray-700">
+                    It has been a great professional experience working with Breeze End Technology as their team was very cooperative and gave valuable insights for the successful completion of projects.
+                  </p>
+
+                  <div className="flex items-center space-x-4 pt-2">
+                    <Image src="/images/icons/placeholder.png" className="rounded-full" alt="profile" height={40} width={40} />
+                    <div>
+                      <h4 className="font-bold text-gray-800">Jacques Philippe</h4>
+                      <p className="text-sm text-gray-500">Sales Manager</p>
+                    </div>
+                  </div>
+
+                  <div className="text-yellow-500 text-xl">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="fa fa-star fill" />
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
     </div>
+
   )
 };
 
